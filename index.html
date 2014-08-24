@@ -100,46 +100,18 @@ Source Code is viewable on GitHub at: <a href=http://github.com/mliq/HealthMap/t
     g1&lt;-100*((y2-y1)/y1); g1&lt;-as.numeric(format(round(g1, 2), nsmall = 2)) 
     g2&lt;-((y3-y2)/y2)*100; g2&lt;-as.numeric(format(round(g2, 2), nsmall = 2))
     avg&lt;-((g1+g2)/2)
-    df&lt;-data.frame(rbind(c(&quot;2010&quot;,&quot;2011&quot;,&quot;2012&quot;),c(&quot;YoY Growth % :&quot;,g1,g2)),check.rows = FALSE,check.names=FALSE)
+    df&lt;-data.frame(rbind(c(&quot;2010&quot;,&quot;2011&quot;,&quot;2012&quot;),c(y1,y2,y3),c(&quot;YoY Growth % :&quot;,g1,g2)))
     print(df);paste(&quot;Avg. Growth % &quot;,avg)
 </code></pre>
 
-<pre><code>##                1     2    3
-## 1           2010  2011 2012
-## 2 YoY Growth % : 14.22    8
+<pre><code>##               X1      X2      X3
+## 1           2010    2011    2012
+## 2         894.41 1021.61 1103.36
+## 3 YoY Growth % :   14.22       8
 </code></pre>
 
 <pre><code>## [1] &quot;Avg. Growth %  11.11&quot;
 </code></pre>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-5" style="background:;">
-  <hgroup>
-    <h2>Features/Usage - Data Table</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>To the right of the &quot;Calculate Growth Rates&quot; widget is the complete data table with the countries and their annual spending in each year. This table is sortable by clicking on the column heading for both ascending or descending sort.
-<br><br>
-<img src=assets/img/SNAG-0022.png></p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-6" style="background:;">
-  <hgroup>
-    <h2>Further Applications</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>This application could be easily adapted for internal use by international companies and marketers to map and track growth rates of different sets of data, including internal/proprietary sales figures.</p>
-
-<p>Please view the app at <a href=http://mliq.shinyapps.io/HealthMap/><a href="http://mliq.shinyapps.io/HealthMap/">http://mliq.shinyapps.io/HealthMap/</a></a>.
-<br><br>
-Source Code is viewable on GitHub at: <a href=http://github.com/mliq/HealthMap/tree/Add-Calculation><a href="http://github.com/mliq/HealthMap/tree/Add-Calculation">http://github.com/mliq/HealthMap/tree/Add-Calculation</a></a>
-<br></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -171,18 +143,6 @@ Source Code is viewable on GitHub at: <a href=http://github.com/mliq/HealthMap/t
       <a href="#" target="_self" rel='tooltip' 
         data-slide=4 title='Calculations Code'>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Features/Usage - Data Table'>
-         5
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Further Applications'>
-         6
       </a>
     </li>
   </ul>
