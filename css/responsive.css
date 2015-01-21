@@ -1,0 +1,93 @@
+/**********************
+TABLETS
+**********************/
+
+@media screen and (min-width: 480px) {
+  
+  /**********************
+  TWO COLUMN LAYOUT
+  **********************/
+  #primary {
+    width:50%;
+    float: left;
+  }
+  
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+
+  /**********************
+  PAGE: PORTFOLIO
+  **********************/
+  
+  /*
+  MATH:
+  we know we want 3 elements side by side.
+  total width of each element is 5 because of margin 2.5 all sides.
+  3 * 5 = 15
+  So 15% is the total margin.
+  100% - 15% = 85%
+  Leaving 85% for our items.
+  85/3 = 28.3333333333
+  so 28.333333% is width of our gallery items.
+  */
+  
+  #gallery li {
+    width: 28.3333%;
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear:left;
+  }
+  
+  /**********************
+  PAGE: ABOUT
+  **********************/
+  
+  .profile-photo {
+    float:left;
+    margin: 0 5% 80px 0;  
+  }
+}
+
+/**********************
+LAPTOPS
+**********************/
+
+@media screen and (min-width: 660px) {
+  /**********************
+  HEADER
+  **********************/
+  
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+    font-size:2.5em;
+  }
+  
+  h2 {
+    font-size: 0.925em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 60px;
+  }
+      
+}
