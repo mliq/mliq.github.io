@@ -3,7 +3,7 @@
 # redcarpet:
 #   extensions: ["tables"]
 
-pygments:         true
+highlighter:      pygments
 
 ## Setup
 title:            "Michael Liquori - Developer"
@@ -15,7 +15,7 @@ author:
   name:           'Michael Liquori'
   url:            https://twitter.com/mliq
 
-paginate:         1
+# paginate:         1
 
 # pages_list:       
 #   About: '/about'
