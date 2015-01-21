@@ -1,0 +1,23 @@
+# Dependencies
+# markdown:         redcarpet
+# redcarpet:
+#   extensions: ["tables"]
+
+pygments:         true
+
+## Setup
+title:            "Michael Liquori - Developer"
+tagline:          ''
+description:      ''
+url:              http://mliq.github.io
+
+author:
+  name:           'Michael Liquori'
+  url:            https://twitter.com/mliq
+
+paginate:         1
+
+# pages_list:       
+#   About: '/about'
+#   Archive: '/archive'
+#   Feed: '/atom.xml'
