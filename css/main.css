@@ -277,10 +277,11 @@ COLORS
 a.resumeLink {
   color: #4DA2E1;
 }
+
 /*green header*/
 header {
-  background: #6ab47b;
-  border-color: #599a68;
+  background: #B8BECA;
+  border-color: #91A0B2;
 }
 
 /* logo text*/
@@ -290,7 +291,7 @@ header {
 
 /*nav background*/
 nav {
-  background: #599a68;
+  background: #4DA2E1;
 }
 
 /*nav link*/
