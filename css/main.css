@@ -150,17 +150,19 @@ h4.resumehead {
 }
 
 .meter {
-  float: left;
-  width: 80px;
+  /*float: left;*/
+  width: 200px;
   height: 10px;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 0px 0px 0px;
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(0,0,0,.2);
+  border-color: #000000;
 }
 
 .greenMeter {
-  background-color:#13b4ff;
+  background-color:#29CB2D;
+  width: 180px;
+  height: 10px;
 }
 
 
