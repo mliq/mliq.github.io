@@ -192,6 +192,9 @@ PAGE: CONTACT
   background-image: url('../img/twitter.png');
 }
 
+.contact-info li.snailmail {
+  background-image: url('../img/mail.png');
+}
 
 /**********************
 COLORS
