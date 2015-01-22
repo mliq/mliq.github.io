@@ -117,13 +117,13 @@ PAGE: RESUME / CV
 
 /*resumebody*/
 .resumebody {
-  color: #75715E;
+  color: #272821;
   font-family: 'Bitter', serif;
+  margin: 3px;
 }
 
 /*resume headers*/
 .resumehead {
-  color: #272821;
   font-size: 1.4em;
   /*font-family: 'Open Sans', sans-serif;*/
 }
@@ -148,6 +148,21 @@ h4.resumehead {
 .resumeHeader {
   margin-bottom: 10px;
 }
+
+.meter {
+  float: left;
+  width: 80px;
+  height: 10px;
+  margin: 5px 5px 5px 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0,0,0,.2);
+}
+
+.greenMeter {
+  background-color:#13b4ff;
+}
+
 
 /**********************
 PAGE: PORTFOLIO
