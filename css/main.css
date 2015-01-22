@@ -46,6 +46,7 @@ header {
 #logo {
   text-align: center;
   margin: 0;
+  color:#fff;
 }
 
 h1 {
@@ -110,7 +111,31 @@ footer {
   margin: 0 5px;
 }
 
+/**********************
+PAGE: RESUME / CV
+**********************/
 
+/*resumebody*/
+.resumebody {
+  color: #75715E;
+  font-family: 'Bitter', serif;
+}
+
+/*resume headers*/
+.resumehead {
+  color: #272821;
+  font-size: 1.4em;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+h3.resumehead {
+  margin: 0px 0px 15px 0px;
+}
+
+h4.resumehead {
+  font-size: 1em;
+  margin: 10px 0px 0px 0px;
+}
 
 /**********************
 PAGE: PORTFOLIO
@@ -155,7 +180,7 @@ PAGE: ABOUT
   /*clear: both;
   display: block;*/
   float: right;
-  margin: 16px auto 30px;
+  margin: 0px auto 30px;
   max-width: 110px;
   border-radius: 100%;
 }
@@ -207,9 +232,9 @@ header {
 }
 
 /* logo text*/
-h1,h2 {
+/*h1,h2 {
   color:#fff;
-}
+}*/
 
 /*nav background*/
 nav {
@@ -230,12 +255,6 @@ nav a.selected, nav a:hover {
 body {
   background-color: #fff;
   color: #999;
-}
-
-/*resume headers*/
-.resumehead {
-  color: #2d4733;
-  font-size: 1.7em;
 }
 
 /*gallery link*/

@@ -8,12 +8,22 @@ TABLETS
   TWO COLUMN LAYOUT
   **********************/
   #primary {
-    width:50%;
+    width: 50%;
     float: left;
   }
   
   #secondary {
     width: 40%;
+    float: right;
+  }
+
+  #resumeLeft {
+    width: 30%;
+    float: left;
+  }
+  
+  #resumeRight {
+    width: 60%;
     float: right;
   }
 
@@ -87,7 +97,7 @@ LAPTOPS
   
   header {
     border-bottom: 5px solid #599a68;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
       
 }
