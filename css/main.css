@@ -169,6 +169,21 @@ h4.resumehead {
   /*line-height:130%;*/
 }
 
+li {
+  margin: 0px 0px 10px;
+}
+
+ul.dash {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+ul.dash li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
 
 /**********************
 PAGE: PORTFOLIO
@@ -258,6 +273,10 @@ PAGE: CONTACT
 COLORS
 **********************/
 
+/*resume link*/
+a.resumeLink {
+  color: #4DA2E1;
+}
 /*green header*/
 header {
   background: #6ab47b;
