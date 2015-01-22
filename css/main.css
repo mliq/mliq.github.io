@@ -128,13 +128,25 @@ PAGE: RESUME / CV
   /*font-family: 'Open Sans', sans-serif;*/
 }
 
+.darkText {
+  color: #272821;
+}
+
+.greyText {
+  color: #75715E;
+}
+
 h3.resumehead {
-  margin: 0px 0px 15px 0px;
+  margin: 30px 0px 15px 0px;
 }
 
 h4.resumehead {
   font-size: 1em;
   margin: 10px 0px 0px 0px;
+}
+
+.resumeHeader {
+  margin-bottom: 10px;
 }
 
 /**********************
