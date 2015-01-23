@@ -5,10 +5,16 @@ IPHONE PORTRAIT MODE (300PX)
 
 @media screen and (max-width: 479px) {
   
+  /*Hide some things*/
+
+  #street {
+    display:none;
+  }
+
   /*ONE COLUMN LAYOUT, CENTER TEXT*/
   
   #resumeLeft {
-    width: 80%;
+    width: 90%;
     margin: auto auto auto auto;
   }
   
@@ -17,6 +23,22 @@ IPHONE PORTRAIT MODE (300PX)
     margin: auto;
   }
 
+  .contact {
+    /*width:90%;*/
+    display:inline-block;
+    float:right;
+    width:50%;
+  }
+
+  div.contact {
+    border-width: 3px;
+    border-style: dotted;
+    border-color: #8CA0BE;
+
+  }
+  .contact-info {
+
+  }
   .contact-info li {
     display: inline-block;
     /*margin: 0 2px 0;*/
@@ -41,7 +63,7 @@ IPHONE PORTRAIT MODE (300PX)
   }
 
   .skills ul {
-    width: 90%;
+    width: 100%;
     list-style: none;
     margin: 0;
   }
@@ -49,7 +71,7 @@ IPHONE PORTRAIT MODE (300PX)
   .skills li {
     display: inline-block;
     margin: auto 5px auto 0;
-    width: 38%;
+    width: 30%;
   }
 
 .meter {
