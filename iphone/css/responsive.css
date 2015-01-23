@@ -23,12 +23,7 @@ IPHONE PORTRAIT MODE (300PX)
     margin: auto;
   }
 
-  .contact h3 {
-    font-size: 130%;
-    text-align:center;
-  }
-
-  .skills h3 {
+  h3.resumehead {
     font-size: 130%;
     text-align:center;
   }
