@@ -26,8 +26,13 @@ IPHONE PORTRAIT MODE (300PX)
   .contact {
     /*width:90%;*/
     display:inline-block;
-    float:right;
-    width:50%;
+    /*float:right;*/
+    width:100%;
+  }
+
+  .contact h3 {
+    font-size: 130%;
+    float:left;
   }
 
   div.contact {
@@ -36,22 +41,25 @@ IPHONE PORTRAIT MODE (300PX)
     border-color: #8CA0BE;
 
   }
-  .contact-info {
+  ul.contact-info {
+    float:right;
+    width:50%;
+    display:inline-block;
 
   }
   .contact-info li {
-    display: inline-block;
+    /*display: inline-block;*/
     /*margin: 0 2px 0;*/
   }
 
-  .contact-info a{
+/*  .contact-info a{
     /*display: inline;*/
     min-height: 0px;
     background-repeat: no-repeat;
     background-size: 20px 20px;
     padding: 0 0 0 30px;
     margin: 0 0 0;
-  }
+  }*/
 
   .skills {
     /*display: none;*/
