@@ -3,19 +3,44 @@
 IPHONE PORTRAIT MODE (300PX)
 **********************/
 
-@media screen and (min-width: 0px) {
-  #wrapper{
-    width: 100%;
+@media screen and (max-width: 479px) {
+  
+  /*ONE COLUMN LAYOUT, CENTER TEXT*/
+  
+  #resumeLeft {
+    width: 80%;
+    margin: auto;
+  }
+  
+  #resumeRight {
+    width: 80%;
+    margin: auto;
   }
   
   body {
     font-size: 135%;
+    /*margin: 0 auto;*/
   }
   
   header{
     /*margin: 0;*/
     /*padding: 0;*/
   }
+
+  nav {
+    padding: 10px 0 5px;
+    margin: 20px 0 0;
+  }
+
+  h3.resumehead {
+    margin: 0px 0px 15px 0px;
+  }
+
+  h4.resumehead {
+    font-size: 1em;
+    margin: 10px 0px 0px 0px;
+  }
+
 }
 /**********************
 TABLETS
