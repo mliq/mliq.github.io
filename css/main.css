@@ -280,7 +280,7 @@ a.resumeLink {
 
 /*header*/
 header {
-  background: #91A0B2;
+  background: #272822;
   border-color: #91A0B2;
 }
 
@@ -289,9 +289,9 @@ header {
   color:#fff;
 }*/
 
-/*nav background*/
+/*nav background in MOBILE site*/
 nav {
-  background: #2D84FA;
+  background: #91A0B2;
 }
 
 /*nav link*/
@@ -301,7 +301,7 @@ nav a, nav a:visited {
 
 /*selected nav link*/
 nav a.selected, nav a:hover {
- color: #333; 
+ color: #2D84FA; 
 }
 
 /*body*/
