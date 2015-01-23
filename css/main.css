@@ -160,7 +160,7 @@ h4.resumehead {
 }
 
 .greenMeter {
-  background-color:#4DA2E1;
+  background-color:#2D84FA;
   /*width: 180px;*/
   height: 10px;
 }
@@ -280,7 +280,7 @@ a.resumeLink {
 
 /*header*/
 header {
-  background: #272822;
+  background: #333;
   border-color: #91A0B2;
 }
 
