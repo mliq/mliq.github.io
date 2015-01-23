@@ -165,10 +165,6 @@ h4.resumehead {
   height: 10px;
 }
 
-.skills {
-  /*line-height:130%;*/
-}
-
 li {
   margin: 0px 0px 10px;
 }
@@ -293,11 +289,6 @@ header {
   background: #91A0B2;
   border-color: #777;
 }
-
-/* logo text*/
-/*h1,h2 {
-  color:#fff;
-}*/
 
 /*nav background in MOBILE site*/
 nav {

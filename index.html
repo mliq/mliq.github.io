@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="resumeHeader">
-      <a href="index.html" id="logo" class="logo">
+      <a href="index.html" id="logo">
         <h1>Michael Liquori</h1>
         <h2>Developer</h2>
       </a>
@@ -31,87 +31,96 @@
 
         <!-- <h1>Michael Liquori</h1> -->
         <!-- <img src="img/LinkedInSquare.jpg" alt="Photograph of Michael Liquori" class="resume-photo">-->
-        <h3 class="resumehead">Get In Touch!</h3>
-        <ul class="contact-info">
-          <li class="phone"><a href="tel:+1-352-870-1905">+1 352-870-1905</a></li>
-          <li class="mail"><a href="mailto:liquori@gmail.com">liquori@gmail.com</a></li>
-          <li class="mail"><a href="https://goo.gl/maps/vcFdY">301 Oak Grove Street<br />
-        Unit 514<br />
-        Minneapolis, MN 55403</a></li>
-        </ul>
-        
+        <div class="contact">
+          <h3 class="resumehead">Get In Touch!</h3>
+          <ul class="contact-info">
+            <li class="phone"><a href="tel:+1-352-870-1905">+1 352-870-1905</a></li>
+            <li class="mail"><a href="mailto:liquori@gmail.com">liquori@gmail.com</a></li>
+            <li class="mail" id="street"><a href="https://goo.gl/maps/vcFdY">301 Oak Grove Street<br />
+          Unit 514<br />
+          Minneapolis, MN 55403</a></li>
+          </ul>
+        </div>
+
         <!-- SKILLS -->
         
-        <h3 class="resumehead">Skills</h3>
         <div class="skills">
+        <h3 class="resumehead">Skills</h3>
+          <ul>
+            <li>Excel / VBA<br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 95%"></div>
+            </div></li>
+          
+            <li>R / Data Science<br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 90%"></div>
+            </div></li>
+          
+            <li>Git
+            <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 75%"></div>
+            </div></li>
 
-          Excel / VBA<br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 95%"></div>
-          </div> <br>
-        
-          R / Data Science<br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 90%"></div>
-          </div> <br>
-        
-          Git
-          <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 75%"></div>
-          </div> <br>
+            <li>HTML / CSS <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 70%"></div>
+            </div></li>   
 
-          HTML / CSS <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 70%"></div>
-          </div> <br>        
+            <li>STATA <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 70%"></div>
+            </div> </li>
 
-          STATA <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 70%"></div>
-          </div> <br>
+            <li>Spanish 
+            <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 60%"></div>
+            </div></li>
 
-          Spanish 
-          <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 60%"></div>
-          </div> <br>
+            <li>Bash
+            <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 55%"></div>
+            </div></li>
 
-          Bash & Regex
-          <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 55%"></div>
-          </div> <br>
+            <li>Regex
+            <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 55%"></div>
+            </div></li>
 
-          Javascript <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 35%"></div>
-          </div> <br>
+            <li>Javascript <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 35%"></div>
+            </div></li>
 
-          MATLAB <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 35%"></div>
-          </div> <br>
+            <li>MATLAB <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 35%"></div>
+            </div> </li>
 
-          Objective-C<br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 35%"></div>
-          </div> <br>
+            <li>Objective-C<br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 35%"></div>
+            </div> </li>
 
-          Ruby / Rails<br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 25%"></div>
-          </div> <br>
+            <li>Ruby / Rails<br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 25%"></div>
+            </div> </li>
 
-          Python <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 20%"></div>
-          </div> <br>
+            <li>Python <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 20%"></div>
+            </div> </li>
 
-          C++ <br>
-          <div class="meter">
-            <div class="greenMeter" style="width: 20%"></div>
-          </div> <br>
+            <li>C++ <br>
+            <div class="meter">
+              <div class="greenMeter" style="width: 20%"></div>
+            </div> </li>
+          </ul>
         </div>
       </section>
 
@@ -123,7 +132,7 @@
           <h4 class="resumehead">3M, Infection Prevention Division</h4>
 
           <ul class="dash">
-            <li>Launched and managed <a href=https://mliq.shinyapps.io/HealthMap/>HealthMap</a>, a secure Shiny web app, for IPD's International $1 Billion Sales Challenge, which processes an Excel file of per-region financial results, calculates rankings of different contests, turns it into a web app with tooltip/hoverable chloropleth map and a sortable data-table. <br>(<em>Link is a demonstration version using open-source data switchable by year instead of by contest</em>)</li>
+            <li>Launched and managed <a href=https://mliq.shinyapps.io/HealthMap/>HealthMap</a>, a secure Shiny web app, for IPD's International $1 Billion Sales Challenge, which processes an Excel file of per-region financial results, calculates rankings of different contests, turns it into a web app with tooltip/hoverable chloropleth map and a sortable data-table. <br>(<em>Link is a demonstration version using open-source data</em>)</li>
             <li>Developed internal calendar tool <a href=https://github.com/mliq/Calendar-Excel>Calendar-Excel</a> in Excel / VBA, which takes event data and outputs a visually-pleasing calendar for ultra-fast, cross-platform editing, sharing and printing.</li>
           </ul>
         
