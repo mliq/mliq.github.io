@@ -56,8 +56,9 @@ IPHONE PORTRAIT MODE (300PX)
 
   .skills li {
     display: inline-block;
+    text-align: center;
     /*margin: 0 5% 0 0;*/
-    width: 33%;
+    width: 30%;
     /*padding:0 2% 0;*/
   }
 
@@ -65,7 +66,7 @@ IPHONE PORTRAIT MODE (300PX)
   /*display: inline-block;*/
   width: 4em;
   height: 10px;
-  /*margin: 0 21% 0;*/
+  margin: 2% 18% 2%;
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
