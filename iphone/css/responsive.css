@@ -42,32 +42,35 @@ IPHONE PORTRAIT MODE (300PX)
 
   .skills ul {
     list-style: none;
-    margin: 0 0 0 -15px;
+    margin: 0 0 0 -31px;
 
   }
 
   .skills li {
     /*border-style:solid;*/
-    width:25%;
+    width: 45%;
     display: inline-block;
-    padding: 0 10px 0;
-    text-align: center;
-    font-size: 80%;
+    /*padding: 0 10px 0;*/
+    /*text-align: center;*/
+    font-size: 95%;
   }
 
   .meter {
-    width: 4em;
-    height: 10px;
-    margin: 2% 18% 2%;
-    border-width: 1px;
+    /*float: left;*/
+    display:inline-block;
+    height:7px;
+    margin: 0;
+/*    width:  3.5em;
+    margin: 0 0 0 0;*/
+/*    border-width: 1px;
     border-style: solid;
-    border-color: #000000;
+    border-color: #000000;*/
   }
 
   .greenMeter {
     background-color:#2D84FA;
     /*width: 180px;*/
-    height: 10px;
+    height: 7px;
   }
 
   body {
