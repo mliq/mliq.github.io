@@ -281,6 +281,13 @@ COLORS
   color: #333;
 }
 
+#about a, #about a:visited {
+  color: #2D84FA;
+}
+#about a:hover {
+  color: #333;
+}
+
 /*header*/
 header {
   background: #91A0B2;
