@@ -24,29 +24,25 @@ IPHONE PORTRAIT MODE (300PX)
   }
 
   .contact {
-    /*width:90%;*/
-    display:inline-block;
-    /*float:right;*/
-    width:100%;
+    /*display:inline-block;*/
+    /*width:80%;*/
   }
 
   .contact h3 {
     font-size: 130%;
-    float:left;
   }
 
   div.contact {
-    border-width: 3px;
+    margin: 0 15% 0;
+ /*   border-width: 3px;
     border-style: dotted;
-    border-color: #8CA0BE;
+    border-color: #8CA0BE;*/
 
   }
   ul.contact-info {
-    float:right;
-    width:50%;
-    display:inline-block;
-
+    /*width:50%;*/
   }
+
   .contact-info li {
     /*display: inline-block;*/
     /*margin: 0 2px 0;*/
