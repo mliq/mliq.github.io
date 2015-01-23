@@ -30,10 +30,6 @@ IPHONE PORTRAIT MODE (300PX)
 
   div.contact {
     margin: 0 25% 0;
- /*   border-width: 3px;
-    border-style: dotted;
-    border-color: #8CA0BE;*/
-
   }
 
   div.skills {
@@ -50,28 +46,27 @@ IPHONE PORTRAIT MODE (300PX)
   }
 
   .skills li {
+    /*border-style:solid;*/
+    width:25%;
     display: inline-block;
+    padding: 0 10px 0;
     text-align: center;
-    /*margin: 0 5% 0 0;*/
-    width: 30%;
-    /*padding:0 2% 0;*/
   }
 
-.meter {
-  /*display: inline-block;*/
-  width: 4em;
-  height: 10px;
-  margin: 2% 18% 2%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
-}
+  .meter {
+    width: 4em;
+    height: 10px;
+    margin: 2% 18% 2%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+  }
 
-.greenMeter {
-  background-color:#2D84FA;
-  /*width: 180px;*/
-  height: 10px;
-}
+  .greenMeter {
+    background-color:#2D84FA;
+    /*width: 180px;*/
+    height: 10px;
+  }
 
   body {
     /*font-size: 135%;*/
