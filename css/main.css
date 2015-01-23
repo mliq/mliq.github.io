@@ -160,7 +160,7 @@ h4.resumehead {
 }
 
 .greenMeter {
-  background-color:#2D84FA;
+  background-color:#4DA2E1;
   /*width: 180px;*/
   height: 10px;
 }
@@ -275,13 +275,13 @@ COLORS
 
 /*resume link*/
 a.resumeLink {
-  color: #2D84FA;
+  color: #4DA2E1;
 }
 
 /*header*/
 header {
-  background: #CCC;
-  border-color: #4B6DA7;
+  background: #91A0B2;
+  border-color: #91A0B2;
 }
 
 /* logo text*/
@@ -289,7 +289,7 @@ header {
   color:#fff;
 }*/
 
-/*nav background in Mobile version*/
+/*nav background*/
 nav {
   background: #2D84FA;
 }
