@@ -274,8 +274,11 @@ COLORS
 **********************/
 
 /*resume link*/
-a.resumeLink {
+#resumeRight a,#resumeRight a:visited {
   color: #2D84FA;
+}
+#resumeRight a:hover {
+  color: #333;
 }
 
 /*header*/
