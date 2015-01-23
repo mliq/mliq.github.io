@@ -42,7 +42,7 @@ IPHONE PORTRAIT MODE (300PX)
 
   .skills ul {
     list-style: none;
-    margin: 0 0 0 -31px;
+    margin: 0 0 0 5px;
 
   }
 
@@ -53,6 +53,7 @@ IPHONE PORTRAIT MODE (300PX)
     /*padding: 0 10px 0;*/
     /*text-align: center;*/
     font-size: 95%;
+    z-index: 2;
   }
 
   .meter {
@@ -67,6 +68,7 @@ IPHONE PORTRAIT MODE (300PX)
     border-style: solid;
     border-color: #000000;*/
     z-index: 1;
+    float:block;
   }
 
   .greenMeter {
