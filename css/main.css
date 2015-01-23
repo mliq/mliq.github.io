@@ -137,11 +137,12 @@ PAGE: RESUME / CV
 }
 
 h3.resumehead {
+  font-size:145%;
   margin: 30px 0px 15px 0px;
 }
 
 h4.resumehead {
-  font-size: 1em;
+  font-size: 100%;
   margin: 10px 0px 0px 0px;
 }
 
@@ -150,7 +151,7 @@ h4.resumehead {
 }
 
 .meter {
-  /*float: left;*/
+  width: 9em;
   height: 10px;
   margin: 5px 0px -10px 0px;
   border-width: 1px;
@@ -165,6 +166,7 @@ h4.resumehead {
 }
 
 .skills {
+  font-size:100%;
   /*line-height:130%;*/
 }
 
