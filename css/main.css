@@ -102,7 +102,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #BBB;
+  color: #ccc;
 }
 
 .social-icon {
@@ -278,9 +278,9 @@ a.resumeLink {
   color: #4DA2E1;
 }
 
-/*header*/
+/*green header*/
 header {
-  background: #4B6DA7;
+  background: #B8BECA;
   border-color: #91A0B2;
 }
 
@@ -301,13 +301,13 @@ nav a, nav a:visited {
 
 /*selected nav link*/
 nav a.selected, nav a:hover {
- color: #333; 
+ color: #2d4733; 
 }
 
 /*body*/
 body {
   background-color: #fff;
-  color: #444;
+  color: #999;
 }
 
 /*gallery link*/
@@ -322,7 +322,7 @@ body {
 
 /*contact link*/
 .contact-info a, .contact-info a:visited {
-  color: #375079;
+  color: #32673f;
 }
 
 /*selected contact link*/
