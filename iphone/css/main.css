@@ -124,7 +124,7 @@ PAGE: RESUME / CV
 
 /*resume headers*/
 .resumehead {
-  font-size: 140%;
+  font-size: 1.4em;
   /*font-family: 'Open Sans', sans-serif;*/
 }
 
@@ -151,8 +151,8 @@ h4.resumehead {
 
 .meter {
   /*float: left;*/
-  width: 60%;
-  height: 10%;
+  width: 100px;
+  height: 10px;
   margin: 5px 0px -10px 0px;
   border-width: 1px;
   border-style: solid;
@@ -162,7 +162,7 @@ h4.resumehead {
 .greenMeter {
   background-color:#2D84FA;
   /*width: 180px;*/
-  height: .5em;
+  height: 10px;
 }
 
 .skills {
@@ -241,16 +241,16 @@ PAGE: CONTACT
   list-style:none;
   padding:0;
   margin:0;
-  font-size: 70%;
+  font-size: 0.9em;
 }
 
 .contact-info a{
   display: block;
-  /*min-height: 20px;*/
+  min-height: 20px;
   background-repeat: no-repeat;
-  background-size: 1.2em 1.2em;
-  padding: 0 0 0 1.4em;
-  margin: 0 0 10%;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
 }
 
 .contact-info li.phone a {

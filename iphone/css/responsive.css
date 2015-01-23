@@ -3,7 +3,7 @@
 IPHONE PORTRAIT MODE (300PX)
 **********************/
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 0px) {
   #wrapper{
     width: 100%;
   }
@@ -16,33 +16,6 @@ IPHONE PORTRAIT MODE (300PX)
     /*margin: 0;*/
     /*padding: 0;*/
   }
-
-  nav {
-    padding: 10px 0 5px;
-  }
-
-  /**********************
-  TWO COLUMN LAYOUT
-  **********************/
-/*  #primary {
-    width: 50%;
-    float: left;
-  }
-  
-  #secondary {
-    width: 40%;
-    float: right;
-  }
-*/
-  #resumeLeft {
-    width: 10%;
-    float: left;
-  }
-  
-  #resumeRight {
-    width: 90%;
-    float: right;
-  }
 }
 /**********************
 TABLETS
@@ -50,10 +23,6 @@ TABLETS
 
 @media screen and (min-width: 480px) {
   
-  nav {
-    padding: 10px 0 5px;
-  }
-
   /**********************
   TWO COLUMN LAYOUT
   **********************/
