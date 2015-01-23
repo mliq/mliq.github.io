@@ -48,12 +48,13 @@ IPHONE PORTRAIT MODE (300PX)
 
   .skills li {
     display: inline-block;
-    margin: auto auto;
+    margin: auto 5px auto 0;
+    width: 38%;
   }
 
 .meter {
   display: inline-block;
-  width: 50px;
+  width: 38%;
   height: 10px;
   margin: 0 5px 0 0;
   border-width: 1px;
@@ -103,7 +104,7 @@ TABLETS
     margin: 20px 0 0;
   }
 
-  
+
 
   /**********************
   TWO COLUMN LAYOUT
