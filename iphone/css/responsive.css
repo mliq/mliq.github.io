@@ -9,17 +9,64 @@ IPHONE PORTRAIT MODE (300PX)
   
   #resumeLeft {
     width: 80%;
-    margin: auto;
+    margin: auto auto auto auto;
   }
   
   #resumeRight {
     width: 80%;
     margin: auto;
   }
-  
+
+  .contact-info li {
+    display: inline-block;
+    /*margin: 0 2px 0;*/
+  }
+
+  .contact-info a{
+    /*display: inline;*/
+    min-height: 0px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 0;
+  }
+
   .skills {
+    /*display: none;*/
+    margin: auto;
+  }
+
+  .skills br {
     display: none;
   }
+
+  .skills ul {
+    width: 90%;
+    list-style: none;
+    margin: 0;
+  }
+
+  .skills li {
+    display: inline-block;
+    margin: auto auto;
+  }
+
+.meter {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  margin: 0 5px 0 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.greenMeter {
+  background-color:#2D84FA;
+  /*width: 180px;*/
+  height: 10px;
+}
+
   body {
     /*font-size: 135%;*/
     /*margin: 0 auto;*/
@@ -51,6 +98,13 @@ TABLETS
 
 @media screen and (min-width: 480px) {
   
+  nav {
+    padding: 10px 0 5px;
+    margin: 20px 0 0;
+  }
+
+  
+
   /**********************
   TWO COLUMN LAYOUT
   **********************/
