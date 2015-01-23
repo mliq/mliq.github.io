@@ -124,7 +124,7 @@ PAGE: RESUME / CV
 
 /*resume headers*/
 .resumehead {
-  font-size: 1.4em;
+  font-size: 140%;
   /*font-family: 'Open Sans', sans-serif;*/
 }
 
@@ -151,8 +151,8 @@ h4.resumehead {
 
 .meter {
   /*float: left;*/
-  width: 100px;
-  height: 10px;
+  width: 60%;
+  height: 10%;
   margin: 5px 0px -10px 0px;
   border-width: 1px;
   border-style: solid;
@@ -162,7 +162,7 @@ h4.resumehead {
 .greenMeter {
   background-color:#2D84FA;
   /*width: 180px;*/
-  height: 10px;
+  height: .5em;
 }
 
 .skills {
