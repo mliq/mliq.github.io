@@ -275,7 +275,7 @@ COLORS
 
 /*resume link*/
 a.resumeLink {
-  color: #4DA2E1;
+  color: #2D84FA;
 }
 
 /*header*/
@@ -322,7 +322,7 @@ body {
 
 /*contact link*/
 .contact-info a, .contact-info a:visited {
-  color: #375079;
+  color: #2D84FA;
 }
 
 /*selected contact link*/
