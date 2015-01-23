@@ -17,8 +17,11 @@ IPHONE PORTRAIT MODE (300PX)
     margin: auto;
   }
   
+  .skills {
+    display: none;
+  }
   body {
-    font-size: 135%;
+    /*font-size: 135%;*/
     /*margin: 0 auto;*/
   }
   
