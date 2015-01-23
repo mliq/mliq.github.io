@@ -114,7 +114,11 @@ TABLETS
     margin: 20px 0 0;
   }
 
-
+  .skills ul {
+    list-style: none;
+    /*margin-left: -20%;*/
+    margin: 20px 0px 15px -13px;
+  }
 
   /**********************
   TWO COLUMN LAYOUT
