@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Liquori | Developer</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://mliq.github.io/</link>
+    <atom:link href="http://mliq.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 28 Jan 2015 13:05:03 -0600</pubDate>
+    <lastBuildDate>Wed, 28 Jan 2015 13:05:03 -0600</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>How This Blog Was Made</title>
+        <description>&lt;p&gt;test&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jan 2015 05:33:00 -0600</pubDate>
+        <link>http://mliq.github.io/blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html</link>
+        <guid isPermaLink="true">http://mliq.github.io/blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html</guid>
+        
+        
+        <category>meta</category>
+        
+        <category>html</category>
+        
+        <category>jekyll</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to my blog!</title>
+        <description>&lt;p&gt;Hi, and welcome to my blog!&lt;/p&gt;
+
+&lt;p&gt;In this post, I will note the motivation for creating this blog, and a little about who I am.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;/blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html&quot;&gt;next post&lt;/a&gt;, I will go over the steps I followed to create this site.&lt;/p&gt;
+
+&lt;p&gt;I have recently embarked on a journey to become a professional software developer. Currently, the majority of my expertise is in data science (statistics and finance, R and Excel / VBA). I am excited to be expanding my knowledge in visual and user experience (UX) aspects of design. I love to make things that are streamlined and elegant to the senses, while of course also providing great, error-free and efficient functionality under the hood.&lt;/p&gt;
+
+&lt;p&gt;So, this blog will be focused on issues related to web development as I progress in this journey, and I hope that what I share here might help others on a similar path.&lt;/p&gt;
+
+&lt;p&gt;Many times throughout my life I have experienced a concept that I am really not able to wrap my head around, until I arrive to an explanation that is put in just a certain way that makes it seem so simple and easy.  After that, a wall is often broken down, and one can often return to previously unintelligible explanations with a huge boost in understanding. I hope I might return the infinite favors the web has bestowed upon me over the years by possibly providing an explanation that allows others to achieve a similar breakthrough moment.&lt;/p&gt;
+
+&lt;p&gt;Finally, writing this blog will also no doubt help me, as writing and teaching a concept to others is a great way to explore and cement new concepts in your mind, even if that someone else is an imaginary reader.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 28 Jan 2015 05:33:00 -0600</pubDate>
+        <link>http://mliq.github.io/blog/meta/2015/01/28/welcome-to-my-blog.html</link>
+        <guid isPermaLink="true">http://mliq.github.io/blog/meta/2015/01/28/welcome-to-my-blog.html</guid>
+        
+        
+        <category>meta</category>
+        
+      </item>
+    
+  </channel>
+</rss>
