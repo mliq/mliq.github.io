@@ -5,6 +5,10 @@ IPHONE PORTRAIT MODE (300PX)
 
 @media screen and (max-width: 479px) {
   
+  .post-list {
+    margin-left:-25px;
+  }
+
   /*Hide some things*/
 
   #street {
