@@ -660,6 +660,9 @@ JEKYLL
  * Wrapper see responsive.css
  */
 
+.wrapper {
+  margin-top:7em;
+}
 
 /**
  * Code formatting

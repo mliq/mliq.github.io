@@ -120,6 +120,13 @@ TABLETS
     padding-left: 15px; 
   }
 
+  .post-wrapper {
+    max-width: -webkit-calc(800px - (30px));
+    max-width: calc(800px - (30px));
+    padding-right: 15px;
+    padding-left: 15px; 
+  }
+
   .skills li {
     margin: 1.3em 0 0 0;
   }
@@ -207,6 +214,14 @@ LAPTOPS
     padding-left: 30px; 
   }
 
+  .post-wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px; 
+  }
   /**********************
   HEADER
   **********************/
