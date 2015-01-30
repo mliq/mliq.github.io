@@ -4,10 +4,10 @@
     <title>Michael Liquori | Developer</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://mliq.github.io/Jekyll//</link>
-    <atom:link href="http://mliq.github.io/Jekyll//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 28 Jan 2015 14:48:23 -0600</pubDate>
-    <lastBuildDate>Wed, 28 Jan 2015 14:48:23 -0600</lastBuildDate>
+    <link>http://mliq.github.io/</link>
+    <atom:link href="http://mliq.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 29 Jan 2015 20:31:38 -0600</pubDate>
+    <lastBuildDate>Thu, 29 Jan 2015 20:31:38 -0600</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -15,8 +15,8 @@
         <description>&lt;p&gt;Coming soon.&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Jan 2015 05:33:00 -0600</pubDate>
-        <link>http://mliq.github.io/Jekyll//blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html</link>
-        <guid isPermaLink="true">http://mliq.github.io/Jekyll//blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html</guid>
+        <link>http://mliq.github.io/blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html</link>
+        <guid isPermaLink="true">http://mliq.github.io/blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html</guid>
         
         
         <category>meta</category>
@@ -46,8 +46,8 @@
 &lt;p&gt;In the &lt;a href=&quot;/blog/meta/html/jekyll/2015/01/29/how-this-blog-was-made.html&quot;&gt;next post&lt;/a&gt;, I will go over the steps I followed to create this site.&lt;/p&gt;
 </description>
         <pubDate>Wed, 28 Jan 2015 05:33:00 -0600</pubDate>
-        <link>http://mliq.github.io/Jekyll//blog/meta/2015/01/28/welcome-to-my-blog.html</link>
-        <guid isPermaLink="true">http://mliq.github.io/Jekyll//blog/meta/2015/01/28/welcome-to-my-blog.html</guid>
+        <link>http://mliq.github.io/blog/meta/2015/01/28/welcome-to-my-blog.html</link>
+        <guid isPermaLink="true">http://mliq.github.io/blog/meta/2015/01/28/welcome-to-my-blog.html</guid>
         
         
         <category>meta</category>

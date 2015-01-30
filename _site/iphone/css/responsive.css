@@ -1,0 +1,223 @@
+
+/**********************
+IPHONE PORTRAIT MODE (300PX)
+**********************/
+
+@media screen and (max-width: 479px) {
+  
+  /*Hide some things*/
+
+  #street {
+    display:none;
+  }
+
+  /*ONE COLUMN LAYOUT, CENTER TEXT*/
+  
+  #resumeLeft {
+    width: 100%;
+    margin: auto;
+  }
+  
+  #resumeRight {
+    width: 100%;
+    margin: auto;
+  }
+
+  h3.resumehead {
+    font-size: 130%;
+    text-align:center;
+  }
+
+  div.contact {
+    margin: 0 25% 1em;
+  }
+
+  div.skills {
+    margin: 0 0 1em;
+  }
+
+  .skills br {
+    display: none;
+  }
+
+  .skills ul {
+    list-style: none;
+    margin: 0 0 0 5px;
+
+  }
+
+  .skills li {
+    /*border-style:solid;*/
+    width: 45%;
+    display: inline-block;
+    /*padding: 0 10px 0;*/
+    /*text-align: center;*/
+    font-size: 95%;
+    /*z-index: 2;*/
+    margin: 0 0 0 0;
+  }
+
+  .meter {
+    /*float: left;*/
+    width:60%;
+    display:inline-block;
+    height:7px;
+    margin: 0 40% 0 0;
+/*    width:  3.5em;
+    margin: 0 0 0 0;*/
+/*    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;*/
+    /*z-index: 1;*/
+    float:block;
+  }
+
+  .greenMeter {
+    background-color:#2D84FA;
+    /*width: 180px;*/
+    height: 7px;
+  }
+
+  body {
+    /*font-size: 135%;*/
+    /*margin: 0 auto;*/
+  }
+  
+  header{
+    /*margin: 0;*/
+    /*padding: 0;*/
+  }
+
+  nav {
+    padding: 10px 0 5px;
+    margin: 20px 0 0;
+  }
+
+  h3.resumehead {
+    margin: 0px 0px 15px 0px;
+  }
+
+  h4.resumehead {
+    font-size: 1em;
+    margin: 10px 0px 0px 0px;
+  }
+
+}
+/**********************
+TABLETS
+**********************/
+
+@media screen and (min-width: 480px) {
+  
+  .skills li {
+    margin: 1.3em 0 0 0;
+  }
+
+  nav {
+    padding: 10px 0 5px;
+    margin: 20px 0 0;
+  }
+
+  .skills ul {
+    list-style: none;
+    /*margin-left: -20%;*/
+    margin: -.4em 0px 15px -39px;
+  }
+
+  /**********************
+  TWO COLUMN LAYOUT
+  **********************/
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+
+  #resumeLeft {
+    width: 30%;
+    float: left;
+  }
+  
+  #resumeRight {
+    width: 60%;
+    float: right;
+  }
+
+  /**********************
+  PAGE: PORTFOLIO
+  **********************/
+  
+  /*
+  MATH:
+  we know we want 3 elements side by side.
+  total width of each element is 5 because of margin 2.5 all sides.
+  3 * 5 = 15
+  So 15% is the total margin.
+  100% - 15% = 85%
+  Leaving 85% for our items.
+  85/3 = 28.3333333333
+  so 28.333333% is width of our gallery items.
+  */
+  
+  #gallery li {
+    width: 28.3333%;
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear:left;
+  }
+  
+  /**********************
+  PAGE: ABOUT
+  **********************/
+  
+  .profile-photo {
+    float:left;
+    margin: 0 5% 80px 0;  
+  }
+}
+
+/**********************
+LAPTOPS
+**********************/
+
+@media screen and (min-width: 660px) {
+  /**********************
+  HEADER
+  **********************/
+  
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 45%;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+    font-size:2.5em;
+  }
+  
+  h2 {
+    font-size: 0.925em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #2D84FA;
+    margin-bottom: 60px;
+  }
+      
+}
