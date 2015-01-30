@@ -369,6 +369,22 @@ JEKYLL
   color: #333;
 }
 
+.rss-subscribe {
+  font-size:1em;
+  /*margin: 0px auto 0px 38%;*/
+  text-align: center;
+  clear: both;
+}
+
+.rss-subscribe a {
+  color: #BBB;
+  margin: 0 5px;
+}
+
+.rss-subscribe a:hover {
+  color: #1846A5;
+}
+
 /*DEFAULT*/
 
 /**
@@ -608,7 +624,14 @@ JEKYLL
   padding: 30px 0; }
 
 .page-heading {
-  font-size: 20px; }
+  
+  /*font-size: 20px;*/
+/*  margin-left: 5em;*/
+  }
+
+.home {
+  
+}
 
 .post-list {
   margin-left: 0;
