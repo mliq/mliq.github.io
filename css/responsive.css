@@ -5,6 +5,10 @@ IPHONE PORTRAIT MODE (300PX)
 
 @media screen and (max-width: 479px) {
   
+  .wrapper {
+    padding-left: 0px;
+  }
+
   /*Hide some things*/
 
   #street {
@@ -109,6 +113,13 @@ TABLETS
 
 @media screen and (min-width: 480px) {
   
+  .wrapper {
+    max-width: -webkit-calc(800px - (30px));
+    max-width: calc(800px - (30px));
+    padding-right: 15px;
+    padding-left: 15px; 
+  }
+
   .skills li {
     margin: 1.3em 0 0 0;
   }
@@ -186,6 +197,16 @@ LAPTOPS
 **********************/
 
 @media screen and (min-width: 660px) {
+ 
+  .wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px; 
+  }
+
   /**********************
   HEADER
   **********************/

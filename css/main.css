@@ -623,16 +623,6 @@ JEKYLL
 .page-content {
   padding: 30px 0; }
 
-.page-heading {
-  
-  /*font-size: 20px;*/
-/*  margin-left: 5em;*/
-  }
-
-.home {
-  
-}
-
 .post-list {
   margin-left: 0;
   list-style: none; }
@@ -667,21 +657,9 @@ JEKYLL
     fill: #828282; }
 
 /**
- * Wrapper
+ * Wrapper see responsive.css
  */
-.wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 15px;
-      padding-left: 15px; } }
+
 
 /**
  * Code formatting
