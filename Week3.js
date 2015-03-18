@@ -1,3 +1,5 @@
 function test(x){
-  return 2;
+  return x;
 }
+
+console.log(test(3));
