@@ -9,7 +9,7 @@ twitter_username: mliq
 github_username:  mliq
 
 # Time & Site setup
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /
 url: "http://mliq.github.io" # the base hostname & protocol for your site
 TZ: 'America/Chicago'
 
@@ -18,4 +18,4 @@ markdown: kramdown
 excerpt_separator: <!--more-->
 
 # put in blog subdirectory
-permalink: /blog/:categories/:year/:month/:day/:title.html
+permalink: /:categories/:year/:month/:day/:title.html

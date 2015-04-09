@@ -1,4 +1,4 @@
-[Jekyll Blog for Michael Liquori](http://mliq.github.io/blog) 
+[Jekyll Blog for Michael Liquori](http://mliq.github.io) 
 
 ## Reference of useful Jekyll URLS:
 [http://jekyllrb.com/docs/structure/](http://jekyllrb.com/docs/structure/)
