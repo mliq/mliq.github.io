@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Prime First Week Review"
+date:   2015-04-20 20:13:00
+categories: Prime
+excerpt: "First week of the first (“Beta”) Cohort of Prime is over, and it has been quite a week!"
+---
+
+First week of the first (“Beta”) Cohort of Prime is over, and it has been quite a week! 
+
+One of the biggest takeaways from the first week is that Prime is going to be really amazing. All of the individuals in my cohort (19 + me) are really impressive people. We all come from diverse and mostly non-coding backgrounds, but everyone learns amazingly fast and is extremely engaged and motivated, and extremely friendly and helpful to each other, making for a fantastic learning environment. 
+
+<p>Prime has a teaching goal of sorts posted above the main whiteboard: </p>
+
+<h3>//READ.WRITE.SPEAK </h3>
+What this means is that, while one can quite possibly teach oneself to write code using online resources and working alone, this is only a part of the skillset needed to succeed on a modern development team. Being able to speak about code with others, and to quickly read their code to understand and debug it, are really vital skills. 
+
+We have done a lot of work this week to exercise the READing and SPEAKing of code, from working in constantly changing teams, to having to quickly read other's code and wager on its result, all without using our computers to test. This has been a great exercise both in reading and cementing understanding of how the code works without relying on the computer and debugging, and also a great exercise in teamwork, communication, and understanding how other people think differently about the same code or problem.
+
+On Day 1 we had 
+Toastmasters, Nonviolent Communication (NVC), Empathy Skills, Pair Programming

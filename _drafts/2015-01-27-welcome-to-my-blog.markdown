@@ -19,5 +19,3 @@ This Blog:
 Not infrequently, we can run into a concept that we are just unable to really grasp, until we arrive to a singular explanation that seems to have been made especially for our brains, which hoists us over the mental wall and allows us to keep moving. One aim of this blog is to return a few of the infinite favors the web has bestowed upon me over the years, by providing clear explanations that might allow others to achieve a similar breakthrough moment.
 
 Secondarily, writing this blog will no doubt help me, as writing and teaching a concept to others is a great way to explore and cement new concepts in your mind, even if that someone else is an imaginary reader.
-
-In the [next post]({% post_url 2015-01-29-how-this-blog-was-made %}), I will go over the steps I followed to create this site.

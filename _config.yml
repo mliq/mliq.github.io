@@ -19,3 +19,6 @@ excerpt_separator: <!--more-->
 
 # put in blog subdirectory
 permalink: /:categories/:year/:month/:day/:title.html
+
+source: .
+destination: ./_site
