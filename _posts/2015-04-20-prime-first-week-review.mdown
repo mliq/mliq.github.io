@@ -6,7 +6,7 @@ categories: Prime
 excerpt: "First week of the first (“Beta”) Cohort of Prime is over, and it has been quite a week!"
 ---
 
-First week of the first (“Beta”) Cohort of Prime is over, and it has been quite a week! 
+First week of the first (“beta”) cohort of Prime is over, and it has been quite a week! 
 
 <p>
 One of the biggest takeaways from the first week is that Prime is going to be really amazing. All of the individuals in my cohort (20 total) are really impressive people. We all come from diverse and mostly non-coding backgrounds, but everyone learns amazingly fast and is extremely engaged and motivated, and extremely friendly and helpful to each other, making for a fantastic learning environment. 

@@ -1,20 +1,70 @@
+/**********************
+TYPEKIT!
+**********************/
+
+body {
+   padding: 50px 0;
+   font-size: 16px;
+   line-height: 25.875px;
+   font-family: "acuta";
+   font-weight: 400;
+   font-style: normal;
+}
+
+
+h1 {
+   font-size: 106px;
+   line-height: 108px;
+   margin-bottom: 54px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+h2 {
+   font-size: 29px;
+   line-height: 27px;
+   margin-bottom: 27px;
+}
+
+p.intro {
+   margin-bottom: 64px;
+   font-size: 28px;
+   border-top: 1px;
+   border-bottom: 1px;
+   padding: 30px;
+   text-align: center;
+   line-height: 38px;
+   border-style: solid;
+}
+
+p {
+   font-size: 18px;
+   line-height: 30px;
+   color: rgba(51, 51, 51, 0.80);
+   margin-bottom: 30px;
+}
+
+article {
+   margin: 0 auto;
+   width: 800px;
+}
 
 /**********************
 GENERAL
 **********************/
 
-body {
+/*body {*/
   /*font-family: 'Open Sans', sans-serif;*/
-  font-family: "Avenir W02", Avenir, Futura, "Gill Sans", Calibri, "Century Gothic", "AppleGothic", Helvetica, Arial, sans-serif;
+  /*font-family: "Avenir W02", Avenir, Futura, "Gill Sans", Calibri, "Century Gothic", "AppleGothic", Helvetica, Arial, sans-serif;*/
   /*font-weight: 400;*/
   /*line-height: 1.4;*/
-  font-size: 1.3em;
-  color: #515151;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  /*font-size: 1.3em;*/
+  /*color: #515151;*/
+  /*background-color: #fff;*/
+  /*-webkit-text-size-adjust: 100%;*/
+      /*-ms-text-size-adjust: 100%;*/
   /*margin-top:1em;*/
-}
+/*}*/
 
 #wrapper {
   max-width: 940px;
@@ -328,12 +378,20 @@ nav {
 
 /*nav link*/
 nav a, nav a:visited {
-  color: #fff;
+  /*color: #fff;*/
+  color: #0B2F69;
 }
 
 /*selected nav link*/
-nav a.selected, nav a:hover {
- color: #2D84FA; 
+nav a.selected {
+ /*color: #2D84FA; */
+ /*color: #0B2F69;*/
+ color:white;
+}
+
+nav a:hover {
+  /*color: #2D84FA;*/
+  color: white;
 }
 
 /*body*/
@@ -694,8 +752,15 @@ JEKYLL
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #828282; 
+  /*margin-bottom: 250px;*/
+  }
 
+#postListLink{
+  margin-top: 8px;
+  font-size:1.2em;
+  margin-bottom: 0px;
+}
 .post-link {
   display: block;
   font-size: 24px; }
