@@ -10,7 +10,7 @@ Hi, and welcome to my blog!
 In this post, I will note the motivation for creating this blog, and a little about me.
 
 <h2>Me:</h2>
-I have always loved computers, logic, problem-solving, and, of course, the Internet and all the amazing doors it opens. But, I did not choose to pursue a CS degree in college, probably because I did not really have any idea at that time what I wanted to do for the rest of my life, and a liberal arts degree just seemed to leave more options open. 
+I have always loved computers, logic, problem-solving, and, of course, the Internet. But, I did not choose to pursue a CS degree in college, probably because I did not really have any idea at that time what I wanted to do for the rest of my life, and a liberal arts degree just seemed to leave more options open. 
 
 After working as a journalist, then in as a daytrader, I have decided I really want to become a software developer. Fortunately, it seems that world needs more of them, and some amazing opportunities for making this career switch have appeared: 2-3 month highly-intensive educational programs usually called “coding bootcamps.”
 

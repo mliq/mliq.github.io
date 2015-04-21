@@ -4,8 +4,9 @@ GENERAL
 **********************/
 
 body {
-  font-family: 'Khula', 'Open Sans', sans-serif;
-  font-weight: 400;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Avenir W02", Avenir, Futura, "Gill Sans", Calibri, "Century Gothic", "AppleGothic", Helvetica, Arial, sans-serif;
+  /*font-weight: 400;*/
   /*line-height: 1.4;*/
   font-size: 1.3em;
   color: #515151;
@@ -107,6 +108,7 @@ nav li {
 }
 
 nav a {
+  font-family: 'Khula';
   font-weight: 800;
   font-size: 110%;
 /*  padding: 15px 10px;*/
@@ -394,15 +396,16 @@ JEKYLL
   margin: 8px 0px 15px 0px;
 */}
 .post-content a:visited {
-    font-size: 32px; 
+  color: #23263C;
+  /*font-size: 32px; 
   font-size: 1.5em;
   margin: -5px 0 0;
   font-weight: bold;
   text-shadow: 0 1px 0 rgb(204,204,204), 2px 2px 0 rgb(201,201,201);
-    color: 1846A5; 
+    color: 1846A5; */
 }
 .post-list a:hover {
-  color: #2D84FA;
+  color: #0B2F69;
   /*color: #333;*/
 }
 
@@ -724,6 +727,7 @@ JEKYLL
   max-width: calc(800px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
+  margin-top: 8.5%;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {

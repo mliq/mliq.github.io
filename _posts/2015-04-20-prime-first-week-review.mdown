@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prime First Week Review"
+title:  "Prime first week review"
 date:   2015-04-20 20:13:00
 categories: Prime
 excerpt: "First week of the first (“Beta”) Cohort of Prime is over, and it has been quite a week!"
@@ -8,7 +8,8 @@ excerpt: "First week of the first (“Beta”) Cohort of Prime is over, and it h
 
 First week of the first (“Beta”) Cohort of Prime is over, and it has been quite a week! 
 
-One of the biggest takeaways from the first week is that Prime is going to be really amazing. All of the individuals in my cohort (19 + me) are really impressive people. We all come from diverse and mostly non-coding backgrounds, but everyone learns amazingly fast and is extremely engaged and motivated, and extremely friendly and helpful to each other, making for a fantastic learning environment. 
+<p>
+One of the biggest takeaways from the first week is that Prime is going to be really amazing. All of the individuals in my cohort (20 total) are really impressive people. We all come from diverse and mostly non-coding backgrounds, but everyone learns amazingly fast and is extremely engaged and motivated, and extremely friendly and helpful to each other, making for a fantastic learning environment. 
 
 <p>Prime has a teaching goal of sorts posted above the main whiteboard: </p>
 
