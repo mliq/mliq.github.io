@@ -4,11 +4,15 @@ GENERAL
 **********************/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Khula', 'Open Sans', sans-serif;
+  font-weight: 400;
+  /*line-height: 1.4;*/
+  font-size: 1.3em;
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  /*margin-top:1em;*/
 }
 
 #wrapper {
@@ -50,17 +54,22 @@ header {
 }
 
 h1 {
-  font-family: 'Changa One', sans-serif;
+  font-family: Khula;
+  font-weight: 900;
+  text-shadow: 1px 1px 0 rgb(204,204,204);
+  /*, 2px 2px 0 rgb(201,201,201);*/
+  /*font-family: 'Changa One', sans-serif;*/
   margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
+  /*font-size: 1.75em;*/
+  /*font-weight: bold;*/
   line-height: 0.8em;
 }
 
 h2 {
   font-size: 1em;
   margin: -5px 0 0;
-  font-weight: normal;
+  font-weight: 900;
+  font-family: Lato;
   /*, 0 3px 0 rgb(185,185,185), 0 2px 5px rgba(155,155,155,0.2); */
 }
 
@@ -366,7 +375,8 @@ JEKYLL
   font-size: 1.5em;
   margin: -5px 0 0;
   font-weight: bold;
-  text-shadow: 0 1px 0 rgb(204,204,204), 2px 2px 0 rgb(201,201,201);
+  text-shadow: 0 1px 0 rgb(204,204,204);
+  /*, 2px 2px 0 rgb(201,201,201);*/
     color: #F92772;  
 /*color: #2D84FA;
   font-size: 1.5em;
@@ -552,12 +562,15 @@ JEKYLL
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 2.2em;
-  letter-spacing: -1px;
+  font-size: 2em;
+  /*letter-spacing: -1px;*/
   line-height: 1; 
+  font-family: Lato;
+  font-weight: 900;
   margin-top: 3em;
-  font-family: 'Changa One';
-  text-shadow: 0 1px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201), 0 3px 0 rgb(185,185,185);
+/*  font-family: 'Changa One';*/
+  text-shadow: 0 1px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201);
+  /*, 0 3px 0 rgb(185,185,185);*/
   /*, 0 2px 5px rgba(155,155,155,0.2); */
   /*  , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039)  , 0 5px 10px rgba(0,0,0,0.247059) ,  0 20px 20px rgba(0,0,0,0.14902) ;*/
   color: #F92772;
