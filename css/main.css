@@ -61,6 +61,7 @@ h2 {
   font-size: 1em;
   margin: -5px 0 0;
   font-weight: normal;
+  /*, 0 3px 0 rgb(185,185,185), 0 2px 5px rgba(155,155,155,0.2); */
 }
 
 
@@ -353,20 +354,36 @@ JEKYLL
 
 /*Links*/
 .post-content a,.post-content a:visited {
-  color: #2D84FA;
+  color: 1846A5;
+  /*color: #2D84FA;*/
 }
 .post-content a:hover {
   color: #333;
 }
 
-.post-list a,.post-content a:visited {
-  color: #2D84FA;
+.post-list a{
+  font-size: 32px; 
+  font-size: 1.5em;
+  margin: -5px 0 0;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgb(204,204,204), 2px 2px 0 rgb(201,201,201);
+    color: #F92772;  
+/*color: #2D84FA;
   font-size: 1.5em;
   font-family: 'Bitter', serif;
   margin: 8px 0px 15px 0px;
+*/}
+.post-content a:visited {
+    font-size: 32px; 
+  font-size: 1.5em;
+  margin: -5px 0 0;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgb(204,204,204), 2px 2px 0 rgb(201,201,201);
+    color: 1846A5; 
 }
 .post-list a:hover {
-  color: #333;
+  color: #2D84FA;
+  /*color: #333;*/
 }
 
 .rss-subscribe {
@@ -540,7 +557,8 @@ JEKYLL
   line-height: 1; 
   margin-top: 3em;
   font-family: 'Changa One';
-  text-shadow: 0 1px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201), 0 3px 0 rgb(185,185,185), 0 2px 5px rgba(155,155,155,0.2); 
+  text-shadow: 0 1px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201), 0 3px 0 rgb(185,185,185);
+  /*, 0 2px 5px rgba(155,155,155,0.2); */
   /*  , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039)  , 0 5px 10px rgba(0,0,0,0.247059) ,  0 20px 20px rgba(0,0,0,0.14902) ;*/
   color: #F92772;
   /*font-style: italic;*/
@@ -552,7 +570,13 @@ JEKYLL
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {
-    font-size: 32px; }
+    font-size: 32px; 
+  font-size: 1.5em;
+  margin: -5px 0 0;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgb(204,204,204), 2px 2px 0 rgb(201,201,201);
+  /*, 0 3px 0 rgb(185,185,185), 0 2px 5px rgba(155,155,155,0.2); */
+  }
     @media screen and (max-width: 800px) {
       .post-content h2 {
         font-size: 28px; } }
