@@ -69,10 +69,20 @@ h2 {
   font-size: 1em;
   margin: -5px 0 0;
   font-weight: 900;
-  font-family: Lato;
+  font-family: Khula;
+  text-shadow: 1px 1px 0 rgb(204,204,204);
   /*, 0 3px 0 rgb(185,185,185), 0 2px 5px rgba(155,155,155,0.2); */
 }
 
+#dev {
+  font-size: 1em;
+  margin: -10px 0 5px 0px;
+  font-weight: 700;
+  font-family: Khula;
+  text-shadow: none;
+  color=grey;
+  /*, 0 3px 0 rgb(185,185,185), 0 2px 5px rgba(155,155,155,0.2); */
+}
 
 /**********************
 NAVIGATION
