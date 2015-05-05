@@ -1,1 +1,3 @@
 _site/**
+.idea
+.ds_store

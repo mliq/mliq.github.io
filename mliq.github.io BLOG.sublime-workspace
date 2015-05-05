@@ -11,7 +11,39 @@
 			"file": "_posts/2015-04-20-welcome-to-my-blog.markdown",
 			"settings":
 			{
-				"buffer_size": 2032,
+				"buffer_size": 2334,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "contact.html",
+			"settings":
+			{
+				"buffer_size": 2554,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "about.html",
+			"settings":
+			{
+				"buffer_size": 2584,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 1952,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 507,
 				"line_ending": "Unix"
 			}
 		},
@@ -19,7 +51,31 @@
 			"file": "_posts/2015-04-20-Prime-First-Week-Review.mdown",
 			"settings":
 			{
-				"buffer_size": 651,
+				"buffer_size": 1753,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 468,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 367,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 15255,
 				"line_ending": "Unix"
 			}
 		}
@@ -81,8 +137,16 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io",
+		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io/_includes",
+		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io/_layouts",
+		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io/css"
+	],
 	"file_history":
 	[
+		"/Users/mliq/Desktop/W1/prime_weekend_challenge-master/app.js",
 		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io/_posts/2015-04-20-welcome-to-my-blog.markdown",
 		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io/_posts/2015-01-27-welcome-to-my-blog.markdown",
 		"/Users/mliq/Documents/Box Sync/Code/mliq.github.io/Gemfile.lock",
@@ -172,7 +236,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -186,6 +250,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".getv",
+			"hover",
+			"font-fam",
+			"font-",
+			"wrapper",
+			"hover",
+			"changa",
+			"post-title",
+			"size",
+			"changa",
+			"h2",
 			"h3",
 			"resumehe",
 			".post-list",
@@ -234,7 +309,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -243,15 +318,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2032,
+						"buffer_size": 2334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								245,
-								249
+								523,
+								523
 							]
 						],
 						"settings":
@@ -265,24 +340,156 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_posts/2015-04-20-Prime-First-Week-Review.mdown",
+					"file": "contact.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 651,
+						"buffer_size": 2554,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								199,
-								199
+								1302,
+								1302
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "d93a2e04",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1252,
+								1243
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "b3367b0f",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 331.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1176,
+								1042
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "1a6ebf6a",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 372.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								207
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "33478f86",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/2015-04-20-Prime-First-Week-Review.mdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
 							]
 						],
 						"settings":
@@ -294,6 +501,129 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "55b86c27",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_layouts/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 367,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "html",
+							"buffer_scroll_name": "2fd188ad",
+							"spell_check": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15255,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										6646,
+										6646
+									],
+									[
+										6987,
+										6987
+									],
+									[
+										10140,
+										10140
+									],
+									[
+										10977,
+										10830
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								749,
+								749
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "css",
+							"buffer_scroll_name": "4c1594c9",
+							"spell_check": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3206.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -434,7 +764,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 179.0,
 	"status_bar_visible": true,
 	"template_settings":
