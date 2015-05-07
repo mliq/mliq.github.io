@@ -11,9 +11,13 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                // Start and end files
-                src: 'client/scripts/app.js',
-                dest: 'server/public/assets/scripts/app.min.js'
+                files: [{
+                    expand: true,
+                    src: '**/*.js',
+                    dest: 'server/public/assets/',
+                    cwd: 'client/',
+                    ext: '.min.js'
+                }]
             }
         },
         copy: {
