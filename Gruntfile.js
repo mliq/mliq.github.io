@@ -11,17 +11,13 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                files: [{
-                    expand: true,
-                    src: '**/*.js',
-                    dest: 'server/routes/',
-                    cwd: 'client/',
-                    ext: '.min.js'
-                }]
+                files: {
+                    "server/public/index.min.js" : "client/index.js",
+                    "server/public/scripts/app.min.js" : "client/assets/scripts/app.js"}
             }
         },
         copy: {
-            main: {
+            vendor: {
                 expand: true,
                 // Current working directory
                 cwd: "node_modules/",
@@ -38,15 +34,15 @@ module.exports = function(grunt) {
                 ],
                 "dest": "server/public/vendor/"
             },
-            main: {
+            css: {
                 expand: true,
                 // Current working directory
                 cwd: "client/",
                 // Copies this info and writes it to the 'dest' without uglifying (since it's already minified!)
                 // And, CSS cannot be minified because it would affect the html...
-                src: "styles/stylesheet.css",
+                src: "assets/styles/stylesheet.css",
                 "dest": "server/public/"
-            },
+            }
 
 
         }
