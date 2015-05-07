@@ -1,0 +1,30 @@
+{
+  "name": "mliq.github.io",
+  "version": "1.0.0",
+  "description": "My personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js",
+    "ss": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mliq/mliq.github.io.git"
+  },
+  "author": "Michael Liquori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mliq/mliq.github.io/issues"
+  },
+  "homepage": "https://github.com/mliq/mliq.github.io",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "express": "^4.12.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "jquery": "^2.1.4",
+    "path": "^0.11.14"
+  }
+}
