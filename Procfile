@@ -1,1 +1,1 @@
-web: node server/routes/index.min.js
+web: node server/index.js
