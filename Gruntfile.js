@@ -12,7 +12,6 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    "server/public/index.min.js" : "client/index.js",
                     "server/public/scripts/app.min.js" : "client/assets/scripts/app.js"}
             }
         },
@@ -27,7 +26,7 @@ module.exports = function(grunt) {
                     //"angular/angular.min.js",
                     //"angular/angular.min.js.map",
                     //"angular/angular-csp.css",
-                    "bootstrap/dist/css/bootstrap.min.css",
+                    "../client/assets/scripts/bootstrap.min.css",
                     "bootstrap/dist/css/bootstrap.css.map",
                     "bootstrap/dist/js/bootstrap.min.js",
                     "jquery/dist/jquery.min.js"
