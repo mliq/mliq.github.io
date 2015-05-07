@@ -10,7 +10,7 @@ app.get('/*', function (req, res) {
     // If a request has a first parameter, get that file, otherwise index
     var file = req.params[0] || 'views/index.html';
     // Send the file located at current dir/public/file
-    res.sendFile(path.join(__dirname, 'public', file));
+    res.sendFile(path.join(__dirname, file));
 });
 
 app.listen(app.get('port'), function () {
