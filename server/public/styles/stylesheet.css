@@ -25,12 +25,20 @@ body {
     font-size: 220%;
 }
 
+.projects:hover {
+    color: #ff992f;
+}
+
 .contact {
     padding: 0 0 0 25px;
     font-family: "droid-sans",sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 220%;
+}
+
+.contact:hover {
+    color: #2571ff;
 }
 
 .nav2{
@@ -58,9 +66,20 @@ body {
 }
 
 .contacts {
+    padding: 5px;
+}
+
+.showoff {
+    padding: 2px;
+    margin: 0 0 0 20px;
+}
+
+img {
+    padding: 15px;
+}
+
+.row {
     clear: both;
-
-
 }
 
 ul {
