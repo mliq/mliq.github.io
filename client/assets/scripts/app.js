@@ -1,19 +1,19 @@
 $(document).ready(function(){
 
     $('.contact').on('click', function(){
-       $('.contacts').show();
+       $('.contacts').slideDown();
     });
 
     $('.closebutton').on('click',function(){
-        $(this).parent().hide();
+        $(this).parent().slideUp();
     });
 
     $('.projects').on('click', function(){
-        $('.nav2').show();
+        $('.nav2').slideDown();
     });
 
     $('.project1').on('click', function(){
-        $('.showoff').show();
+        $('.showoff').slideDown();
     });
 
 });
