@@ -122,6 +122,17 @@ ul {
     height: 20px;
 }
 
+.closebutton:hover {
+    color: red;
+}
+
+@media only screen and (max-width: 500px) {
+
+    body { font-size: .8em; }
+    .showoff {width: 50%;}
+
+}
+
 .test {
     /*border: solid 2px black;*/
 }
