@@ -21,6 +21,7 @@
             ga('send', 'pageview');
         </script>
         <!-- Scripts-->
+        <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="scripts/app.min.js"></script>
         <!-- CSS, Bootstrap-->
         <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
@@ -28,24 +29,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- FONT -->
         <script src="//use.typekit.net/mds7daz.js"></script>
-        <script>try{Typekit.load();}catch(e){}</script>
+        <script>try {
+            Typekit.load();
+        } catch (e) {
+        }</script>
     </head>
     <body>
         <div class="container">
-            <div class="col-xs-6 col-sm-6 col-md-6 nav">
+            <div class="col-xs-6 col-sm-6 col-md-6 nav test">
                 <div class="name">Michael Liquori</div>
             </div>
         </div>
         <div class="container">
-            <div class="col-xs-6 col-sm-4 col-md-4 nav">
+            <div class="col-xs-6 col-sm-4 col-md-4 nav test">
                 <div class="projects">projects</div>
                 <div class="contact">contact</div>
             </div>
-        <!--</div>-->
-        <!--<div class="container">-->
-            <div class="col-xs-5 col-sm-5 col-md-5 nav2">
+            <!-- Projects subnav-->
+            <div class="col-xs-5 col-sm-5 col-md-5 nav2 test">
                 <div class="project1">
                     Fruit Stand
+                </div>
+                <div class="project2">
+                    Other cool project
+                </div>
+            </div>
+            <!-- glyphicon glyphicon-remove-->
+            <!-- Contact subnav -->
+            <div class="container">
+                <div class="contacts test col-xs-5">
+                <ul>
+                    <li class="mail">E-mailz</li>
+                    <li class="tweet">Tweetz</li>
+                    <li class="lnkd">Linky</li>
+                    <li class="fbook">Facey</li>
+                    <li class="git">Gitt</li>
+                </ul>
                 </div>
             </div>
         </div>

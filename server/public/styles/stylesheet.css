@@ -1,46 +1,72 @@
+body {
+    font-family: "droid-sans",sans-serif;
+}
+
 .nav{
     background-color: white;
     color: black;
     margin: 15px auto 0;
-    border: solid 2px black;
+    /*border: solid 2px black;*/
 }
 
 .name {
     padding: 0 0 0 10px;
-    font-family: "source-code-pro",sans-serif;
+    font-family: "droid-sans",sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 220%;
+    font-weight: 700;
+    font-size: 290%;
 }
 
 .projects {
     padding: 0 0 0 25px;
-    font-family: "source-code-pro",sans-serif;
+    font-family: "droid-sans",sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 220%;
 }
 
 .contact {
     padding: 0 0 0 25px;
-    font-family: "source-code-pro",sans-serif;
+    font-family: "droid-sans",sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 220%;
 }
 
 .nav2{
     background-color: white;
     color: black;
-    margin: 3px 8% 0 0;
-    border: solid 2px black;
+    margin: 3px auto;
+    /*border: solid 2px black;*/
+    white-space: nowrap;
 }
 
 .project1 {
     padding: 0 0 0 25px;
-    font-family: "source-code-pro",sans-serif;
+    font-family: "droid-sans",sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 220%;
-    /*border: solid 2px black;*/
+}
+
+.project2 {
+    padding: 0 0 0 25px;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220%;
+}
+
+.contacts {
+    clear: both;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+.test {
+    border: solid 2px black;
 }
