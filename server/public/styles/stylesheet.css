@@ -1,5 +1,4 @@
 body {
-    padding: 0 0 0 25px;
     font-family: "droid-sans",sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -7,16 +6,18 @@ body {
 }
 
 .nav{
+    padding: 0 0 0 20px;
     background-color: white;
     color: black;
-    margin: 27px auto 0;
+    margin: 40px 0 0 20px;
     font-size: 145%;
     /*border: solid 2px black;*/
 }
 
 .name {
-    padding: 0 0 0 10px;
-    font-size: 150%;
+    margin: 0 0 0 0;
+    font-size: 200%;
+    float:left;
 }
 
 .projects:hover {
@@ -30,7 +31,7 @@ body {
 .nav2{
     background-color: white;
     color: black;
-    margin: 3px 5px;
+    margin: 11px 0 0 20px;
     display: none;
     font-size: 125%;
 }
@@ -48,12 +49,13 @@ body {
 }
 
 .contacts {
-    padding: 5px;
+    margin: 10px 0 0 45px;
+    /*padding: 5px;*/
     display: none;
 }
 
 .showoff {
-    /*margin: 0 0 0 20px;*/
+    margin: 25px 0 0 45px;
     background-image: url("../img/mary_fruit_stand.jpeg");
     width: auto;
     height: 472px;
@@ -81,7 +83,7 @@ body {
 
 ul {
     list-style: none;
-
+    padding-left:0;
 }
 
 .closebutton {
@@ -103,9 +105,12 @@ ul {
         height: 236px;
         width: 315px;
         background-image: url("../img/mary_fruit_stand_sm.jpeg");
+        margin-left: 10px;
     }
     .projectCopy {font-size: 200%;}
     li { display: inline; }
+    .nav {margin: 35px 0 0 20px;}
+    .nav2 {margin-top: 10px;}
 
 }
 
