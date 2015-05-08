@@ -1,3 +1,15 @@
 $(document).ready(function(){
-   console.log('yay jquery');
+
+    $('.contact').on('click', function(){
+       $('.contacts').show();
+    });
+
+    $('.closebutton').on('click',function(){
+        $(this).parent().hide();
+    });
+
+    $('.projects').on('click', function(){
+        $('.nav2').show();
+    });
+
 });

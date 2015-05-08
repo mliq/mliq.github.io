@@ -37,10 +37,10 @@ module.exports = function(grunt) {
             css: {
                 expand: true,
                 // Current working directory
-                cwd: "client/",
+                cwd: "client/assets/",
                 // Copies this info and writes it to the 'dest' without uglifying (since it's already minified!)
                 // And, CSS cannot be minified because it would affect the html...
-                src: "assets/styles/stylesheet.css",
+                src: "styles/stylesheet.css",
                 "dest": "server/public/"
             }
 

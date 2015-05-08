@@ -1,0 +1,113 @@
+body {
+    font-family: "droid-sans",sans-serif;
+}
+
+.nav{
+    background-color: white;
+    color: black;
+    margin: 15px auto 0;
+    /*border: solid 2px black;*/
+}
+
+.name {
+    padding: 0 0 0 10px;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 290%;
+}
+
+.projects {
+    padding: 0 0 0 25px;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220%;
+}
+
+.projects:hover {
+    color: #ff992f;
+}
+
+.contact {
+    padding: 0 0 0 25px;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220%;
+}
+
+.contact:hover {
+    color: #2571ff;
+}
+
+.nav2{
+    background-color: white;
+    color: black;
+    margin: 3px auto;
+    /*border: solid 2px black;*/
+    white-space: nowrap;
+    display: none;
+}
+
+.project1 {
+    margin-top: -10px;
+    padding: 0 0 0 25px;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220%;
+}
+
+.project2 {
+    padding: 0 0 0 25px;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220%;
+}
+
+.contacts {
+    padding: 5px;
+    display: none;
+}
+
+.showoff {
+    margin: 0 0 0 20px;
+    background-image: url("../img/mary_fruit_stand.jpg");
+    width: 630px;
+    height: 472px;
+}
+
+.projectCopy {
+    padding: 2%;
+    /*border: dotted 2px black;*/
+    margin: 10px 0 0 20%;
+    font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 280%;
+    color: #2f4eff;
+    width: 350px;
+    /*white-space: nowrap;*/
+}
+
+img {
+    padding: 15px;
+}
+
+.row {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+.closebutton {
+    display: block;
+}
+
+.test {
+    border: solid 2px black;
+}
