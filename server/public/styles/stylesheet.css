@@ -1,40 +1,26 @@
 body {
+    padding: 0 0 0 25px;
     font-family: "droid-sans",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 220%;
 }
 
 .nav{
     background-color: white;
     color: black;
-    margin: 15px auto 0;
+    margin: 27px auto 0;
+    font-size: 145%;
     /*border: solid 2px black;*/
 }
 
 .name {
     padding: 0 0 0 10px;
-    font-family: "droid-sans",sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 290%;
-}
-
-.projects {
-    padding: 0 0 0 25px;
-    font-family: "droid-sans",sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 220%;
+    font-size: 150%;
 }
 
 .projects:hover {
     color: #ff992f;
-}
-
-.contact {
-    padding: 0 0 0 25px;
-    font-family: "droid-sans",sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 220%;
 }
 
 .contact:hover {
@@ -44,31 +30,17 @@ body {
 .nav2{
     background-color: white;
     color: black;
-    margin: 3px auto;
-    /*border: solid 2px black;*/
-    white-space: nowrap;
+    margin: 3px 5px;
     display: none;
+    font-size: 125%;
 }
 
 .project1 {
     margin-top: -10px;
-    padding: 0 0 0 25px;
-    font-family: "droid-sans",sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 220%;
 }
 
 .project1:hover {
     color: #46fc0f;
-}
-
-.project2 {
-    padding: 0 0 0 25px;
-    font-family: "droid-sans",sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 220%;
 }
 
 .project2:hover {
@@ -81,18 +53,15 @@ body {
 }
 
 .showoff {
-    margin: 0 0 0 20px;
-    background-image: url("../img/mary_fruit_stand.jpg");
-    width: 630px;
+    /*margin: 0 0 0 20px;*/
+    background-image: url("../img/mary_fruit_stand.jpeg");
+    width: auto;
     height: 472px;
     display: none;
     white-space: nowrap;
     /*position: relative;*/
 }
 
-.showoff .closebutton{
-    margin: 0 0 0 -13px;
-}
 .projectCopy {
     padding: 2%;
     /*border: dotted 2px black;*/
@@ -101,11 +70,9 @@ body {
     font-family: "droid-sans",sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 380%;
+    font-size: 220%;
     color: #2f4eff;
     background-color: black;
-    /*width: 350px;*/
-    /*white-space: nowrap;*/
 }
 
 .row {
@@ -114,22 +81,31 @@ body {
 
 ul {
     list-style: none;
+
 }
 
 .closebutton {
     display: block;
     width: 20px;
     height: 20px;
+    font-size: 1.3rem;
+    margin: 0 0 0 -13px;
 }
 
 .closebutton:hover {
     color: red;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 
-    body { font-size: .8em; }
-    .showoff {width: 50%;}
+    body { font-size: 150%; }
+    .showoff {
+        height: 236px;
+        width: 315px;
+        background-image: url("../img/mary_fruit_stand_sm.jpeg");
+    }
+    .projectCopy {font-size: 200%;}
+    li { display: inline; }
 
 }
 
