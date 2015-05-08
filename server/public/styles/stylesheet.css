@@ -2,7 +2,7 @@ body {
     font-family: "droid-sans",sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 220%;
+    font-size: 22px;
 }
 
 .nav{
@@ -53,7 +53,7 @@ body {
 }
 
 .contacts {
-    margin: 10px 0 0 45px;
+    margin: 10px 0 0 20px;
     /*padding: 5px;*/
     display: none;
 }
@@ -102,9 +102,9 @@ ul {
     color: red;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 770px) {
 
-    body { font-size: 150%; }
+    body { font-size: 15px; }
     .showoff {
         height: 236px;
         width: 315px;

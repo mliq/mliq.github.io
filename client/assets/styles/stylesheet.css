@@ -6,7 +6,7 @@ body {
 }
 
 .nav{
-    padding: 0 0 0 20px;
+    /*padding: 0 0 0 20px;*/
     background-color: white;
     color: black;
     margin: 40px 0 0 20px;
@@ -18,6 +18,10 @@ body {
     margin: 0 0 0 0;
     font-size: 200%;
     float:left;
+}
+
+.topbar {
+    border: solid 2px black;
 }
 
 .projects:hover {
@@ -115,5 +119,5 @@ ul {
 }
 
 .test {
-    /*border: solid 2px black;*/
+    border: solid 2px black;
 }
