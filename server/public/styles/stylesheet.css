@@ -2,7 +2,7 @@
     background-color: white;
     color: black;
     margin: 15px auto 0;
-    /*border: solid 2px black;*/
+    border: solid 2px black;
 }
 
 .name {
@@ -32,8 +32,8 @@
 .nav2{
     background-color: white;
     color: black;
-    margin: 15px auto 0;
-    /*border: solid 2px black;*/
+    margin: 3px 8% 0 0;
+    border: solid 2px black;
 }
 
 .project1 {
