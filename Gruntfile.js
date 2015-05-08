@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    //"server/public/index.min.js" : "client/index.js",
+                    //"server/public/index.min.js" : "client/app.js",
                     "server/public/scripts/app.min.js" : "client/assets/scripts/app.js"}
             }
         },
