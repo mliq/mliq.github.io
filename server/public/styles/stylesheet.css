@@ -1,9 +1,30 @@
 .nav{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin: 15px auto;
+    border: solid 2px black;
 }
 
 .name {
-    margin:
+    padding: 0 0 0 10px;
+    font-family: "source-code-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 220%;
+}
+
+.projects {
+    padding: 0 0 0 25px;
+    font-family: "source-code-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 220%;
+}
+
+.contact {
+    padding: 0 0 0 25px;
+    font-family: "source-code-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 220%;
 }
