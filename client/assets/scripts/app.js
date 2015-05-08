@@ -12,4 +12,8 @@ $(document).ready(function(){
         $('.nav2').show();
     });
 
+    $('.project1').on('click', function(){
+        $('.showoff').show();
+    });
+
 });
