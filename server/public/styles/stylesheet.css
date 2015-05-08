@@ -1,8 +1,8 @@
 .nav{
     background-color: white;
     color: black;
-    margin: 15px;
-    border: solid 2px black;
+    margin: 15px auto 0;
+    /*border: solid 2px black;*/
 }
 
 .name {
@@ -27,4 +27,20 @@
     font-style: normal;
     font-weight: 600;
     font-size: 220%;
+}
+
+.nav2{
+    background-color: white;
+    color: black;
+    margin: 15px auto 0;
+    /*border: solid 2px black;*/
+}
+
+.project1 {
+    padding: 0 0 0 25px;
+    font-family: "source-code-pro",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 220%;
+    /*border: solid 2px black;*/
 }
