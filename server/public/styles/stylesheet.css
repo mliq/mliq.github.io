@@ -62,9 +62,9 @@ body {
     margin: 25px 0 0 45px;
     background-image: url("../img/mary_fruit_stand.jpeg");
     background-repeat:no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-position:center;
-    width: auto;
+    /*width: auto;*/
     height: 472px;
     display: none;
     white-space: nowrap;
@@ -74,7 +74,7 @@ body {
 .projectCopy {
     padding: 2%;
     /*border: dotted 2px black;*/
-    margin: 50% 0 0 25%;
+    margin: 0 0 0 0;
     display: inline-block;
     font-family: "droid-sans",sans-serif;
     font-style: normal;
@@ -122,5 +122,5 @@ ul {
 }
 
 .test {
-    /*border: solid 2px black;*/
+    border: solid 2px black;
 }
