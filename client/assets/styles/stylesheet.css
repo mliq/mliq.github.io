@@ -87,12 +87,14 @@ body {
     height: 472px;
     display: none;
     white-space: nowrap;
+    position: relative;
 }
 
 .projectCopy {
     padding: 2%;
     /*border: dotted 2px black;*/
-    margin: 10px 0 0 20%;
+    margin: 50% 0 0 25%;
+    display: inline-block;
     font-family: "droid-sans",sans-serif;
     font-style: normal;
     font-weight: 700;
