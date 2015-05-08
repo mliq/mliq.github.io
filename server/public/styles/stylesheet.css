@@ -61,6 +61,9 @@ body {
 .showoff {
     margin: 25px 0 0 45px;
     background-image: url("../img/mary_fruit_stand.jpeg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
     width: auto;
     height: 472px;
     display: none;
@@ -108,16 +111,16 @@ ul {
     .showoff {
         height: 236px;
         width: 315px;
-        background-image: url("../img/mary_fruit_stand_sm.jpeg");
+        /*background-image: url("../img/mary_fruit_stand_sm.jpeg");*/
         margin-left: 10px;
     }
     .projectCopy {font-size: 200%;}
-    li { display: inline; }
+    /*li { display: inline; }*/
     .nav {margin: 35px 0 0 20px;}
     .nav2 {margin-top: 10px;}
 
 }
 
 .test {
-    border: solid 2px black;
+    /*border: solid 2px black;*/
 }
