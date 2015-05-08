@@ -87,6 +87,7 @@ body {
     height: 472px;
     display: none;
     white-space: nowrap;
+    /*position: relative;*/
 }
 
 .projectCopy {
