@@ -1,5 +1,5 @@
 
-var contact, projects;
+var contact, projects, project1;
 
 $.ajax({
     url: 'contact',
@@ -12,6 +12,13 @@ $.ajax({
     url: 'projects',
     success: function (res) {
         projects = res;
+    }
+});
+
+$.ajax({
+    url: 'project1',
+    success: function (res) {
+        project1 = res;
     }
 });
 
@@ -38,6 +45,7 @@ $(document).ready(function(){
 
     $('body').on('click', '.project1',function(){
         console.log('works');
+        $('.band2').append(project1);
         $('.showoff').slideDown();
     });
 
