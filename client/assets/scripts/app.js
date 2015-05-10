@@ -1,11 +1,17 @@
 
-var contact;
+var contact, projects;
 
 $.ajax({
     url: 'contact',
     success: function (res) {
         contact = res;
-        console.log(res);
+    }
+});
+
+$.ajax({
+    url: 'projects',
+    success: function (res) {
+        projects = res;
     }
 });
 
@@ -21,6 +27,11 @@ $(document).ready(function(){
 
     $('body').on('click', '.contact', function(){
         $('.menuHere').empty().append(contact);
+        $('.menuHere').slideDown();
+        //$('.contacts').slideDown();
+    });
+    $('body').on('click', '.projects', function(){
+        $('.menuHere').empty().append(projects);
         $('.menuHere').slideDown();
         //$('.contacts').slideDown();
     });

@@ -13,6 +13,13 @@ app.get('/contact', function (req, res) {
     res.sendFile(path.join(__dirname, 'public', file));
 });
 
+app.get('/projects', function (req, res) {
+    // If a request has a first parameter, get that file, otherwise index
+    var file = req.params[0] || '../views/projects.html';
+    // Send the file located at current dir/public/file
+    res.sendFile(path.join(__dirname, 'public', file));
+});
+
 app.get('/*', function (req, res) {
     // If a request has a first parameter, get that file, otherwise index
     var file = req.params[0] || '../views/index.html';

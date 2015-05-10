@@ -53,14 +53,8 @@ body {
     border-radius: 5px;
 }
 
-.sticky {
-    border-top: solid black 4px;
-}
 .topbar {
-    border: solid 2px black;
-    /*width: 100%;*/
-    background-color: black;
-    /*margin: -100px 0 0 0;*/
+    border-top: solid black 4px;
 }
 
 .projects {
@@ -86,7 +80,6 @@ body {
     background-color: white;
     color: black;
     margin: 41px 0 0 350px;
-    display: none;
     font-size: 125%;
 }
 
@@ -105,7 +98,6 @@ body {
 .contacts {
     margin: 10px 0 0 20px;
     /*padding: 5px;*/
-    display: none;
 }
 
 .showoff {
