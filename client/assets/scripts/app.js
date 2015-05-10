@@ -1,5 +1,5 @@
 
-var contact, projects, project1;
+var contact, projects, project1, projectNumber = 0;
 
 $.ajax({
     url: 'contact',
@@ -23,7 +23,7 @@ $.ajax({
 });
 
 $(window).scroll(function(){
-    if ( $window.scrollTop() > 250 ) {
+    if ( $window.scrollTop() > 80 ) {
         $('topbar').addClass('sticky');
     } else {
         $('topbar').removeClass('sticky');
@@ -45,12 +45,13 @@ $(document).ready(function(){
 
     $('body').on('click', '.project1',function(){
         console.log('works');
-        $('.band2').append(project1);
+        $('.band2').empty().append(project1);
         $('.showoff').slideDown();
+        projectNumber = 1;
     });
 
     $('body').on('click','.closebutton',function(){
-        $(this).parent().slideUp();
+        $(this).parent().parent().slideUp();
     });
 
 });
