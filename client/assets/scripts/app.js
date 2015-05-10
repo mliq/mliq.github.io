@@ -1,15 +1,15 @@
 
-var resume;
+var contact;
 
 $.ajax({
-    url: 'resume',
+    url: 'contact',
     success: function (res) {
-        resume = res;
+        contact = res;
         console.log(res);
     }
 });
 
-$window.scroll(function(){
+$(window).scroll(function(){
     if ( $window.scrollTop() > 250 ) {
         $('topbar').addClass('sticky');
     } else {
@@ -19,8 +19,10 @@ $window.scroll(function(){
 
 $(document).ready(function(){
 
-    $('.contact').on('click', function(){
-       $('.contacts').slideDown();
+    $('body').on('click', '.contact', function(){
+        $('.menuHere').empty().append(contact);
+        $('.menuHere').slideDown();
+        //$('.contacts').slideDown();
     });
 
     $('.closebutton').on('click',function(){

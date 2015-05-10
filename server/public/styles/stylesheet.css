@@ -29,7 +29,7 @@ body {
     /*max-width:220px;*/
     /*background-color: lightgray;*/
     /*padding: 20px;*/
-    margin: -5px 0px 0 15px;
+    margin: -5px 0px -18px 15px;
     padding: 7px;
     border-radius: 5px;
     min-width: 250px;
@@ -105,7 +105,7 @@ body {
 .contacts {
     margin: 10px 0 0 20px;
     /*padding: 5px;*/
-    display: none;
+    /*display: none;*/
 }
 
 .showoff {

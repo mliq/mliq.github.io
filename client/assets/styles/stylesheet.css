@@ -11,10 +11,11 @@ body {
     background-color: white;
     color: black;
     /*margin: 40px 0 0 20px;*/
-    font-size: 120%;
+    font-size: 110%;
     /*border: solid 2px black;*/
-    white-space: nowrap;
-    border-radius: 5px;
+    /*white-space: nowrap;*/
+    /*border-radius: 0 0 5px 5px;*/
+    /*border: */
 }
 
 .band0 {
@@ -28,23 +29,22 @@ body {
     /*max-width:220px;*/
     /*background-color: lightgray;*/
     /*padding: 20px;*/
-    margin: 5px 0px 0 15px;
+    margin: -5px 0px -18px 15px;
     padding: 7px;
     border-radius: 5px;
     min-width: 250px;
 }
 
 .band0:hover {
-    background-color: blue;
     border-radius: 5px;
 }
 .band1:hover {
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
 .band2 {
     background-color: #ffff4e;
-    margin: 250px 50px;
+    /*margin: 0px 50px;*/
 }
 .name {
     /*margin: 0 10px;*/
@@ -53,30 +53,39 @@ body {
     border-radius: 5px;
 }
 
-.name:hover{
-    color:white;
-    background-color: black;
+.sticky {
+    border-top: solid black 4px;
 }
-
 .topbar {
     border: solid 2px black;
+    /*width: 100%;*/
+    background-color: black;
+    /*margin: -100px 0 0 0;*/
 }
 
 .projects {
-    margin: 0 10px;
+    margin: 0 5px;
+    padding: 5px;
 }
 .projects:hover {
-    color: #ff992f;
+    color: white;
+    background-color: #ff992f;
+    padding: 5px;
 }
 
+.contact {
+    padding: 5px;
+}
 .contact:hover {
-    color: #2571ff;
+    color: white;
+    background-color: #2571ff;
+    padding: 5px;
 }
 
 .nav2{
     background-color: white;
     color: black;
-    margin: 11px 0 0 20px;
+    margin: 41px 0 0 350px;
     display: none;
     font-size: 125%;
 }
@@ -132,6 +141,10 @@ body {
 ul {
     list-style: none;
     padding-left:0;
+}
+
+li {
+    display: inline;
 }
 
 .closebutton {
