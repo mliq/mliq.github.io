@@ -17,14 +17,29 @@ body {
     border-radius: 5px;
 }
 
+.band0 {
+    margin: 0px 0 0 10px;
+    padding: 7px;
+    border-radius: 5px;
+    max-width: 364px;
+}
+
 .band1 {
     /*max-width:220px;*/
-    background-color: lightgray;
+    /*background-color: lightgray;*/
     /*padding: 20px;*/
-    margin: 10px 0px;
+    margin: 5px 0px 0 15px;
     padding: 7px;
     border-radius: 5px;
     min-width: 250px;
+}
+
+.band0:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+.band1:hover {
+    background-color: pink;
 }
 
 .band2 {
@@ -32,9 +47,15 @@ body {
     margin: 250px 50px;
 }
 .name {
-    margin: 0 0 0 0;
+    /*margin: 0 10px;*/
     font-size: 200%;
-    float:left;
+    max-width: 360px;
+    border-radius: 5px;
+}
+
+.name:hover{
+    color:white;
+    background-color: black;
 }
 
 .topbar {
@@ -124,7 +145,6 @@ ul {
 .closebutton:hover {
     color: red;
 }
-
 
 .sticky {
     position: fixed;
