@@ -9,7 +9,7 @@ body {
     /*padding: 0 0 0 20px;*/
     background-color: white;
     color: black;
-    margin: 40px 0 0 20px;
+    /*margin: 40px 0 0 20px;*/
     font-size: 145%;
     /*border: solid 2px black;*/
 }
@@ -103,6 +103,25 @@ ul {
 
 .closebutton:hover {
     color: red;
+}
+
+.band1 {
+    background-color: lightgray;
+    /*padding: 20px;*/
+    margin: 0 30px;
+}
+
+.band2 {
+    background-color: #ffff4e;
+    margin: 250px 50px;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index:1001;
+    background-color: white;
 }
 
 @media only screen and (max-width: 770px) {

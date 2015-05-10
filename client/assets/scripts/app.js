@@ -9,6 +9,14 @@ $.ajax({
     }
 });
 
+$window.scroll(function(){
+    if ( $window.scrollTop() > 250 ) {
+        $('topbar').addClass('sticky');
+    } else {
+        $('topbar').removeClass('sticky');
+    }
+});
+
 $(document).ready(function(){
 
     $('.contact').on('click', function(){
@@ -26,5 +34,6 @@ $(document).ready(function(){
     $('.project1').on('click', function(){
         $('.showoff').slideDown();
     });
+
 
 });
