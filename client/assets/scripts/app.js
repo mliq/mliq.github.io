@@ -26,27 +26,23 @@ $(window).scroll(function(){
 $(document).ready(function(){
 
     $('body').on('click', '.contact', function(){
-        $('.menuHere').empty().append(contact);
+        $('.menuHere').empty().hide().append(contact);
         $('.menuHere').slideDown();
         //$('.contacts').slideDown();
     });
     $('body').on('click', '.projects', function(){
-        $('.menuHere').empty().append(projects);
+        $('.menuHere').empty().hide().append(projects);
         $('.menuHere').slideDown();
         //$('.contacts').slideDown();
     });
 
-    $('.closebutton').on('click',function(){
-        $(this).parent().slideUp();
-    });
-
-    $('.projects').on('click', function(){
-        $('.nav2').slideDown();
-    });
-
-    $('.project1').on('click', function(){
+    $('body').on('click', '.project1',function(){
+        console.log('works');
         $('.showoff').slideDown();
     });
 
+    $('body').on('click','.closebutton',function(){
+        $(this).parent().slideUp();
+    });
 
 });

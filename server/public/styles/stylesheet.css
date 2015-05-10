@@ -76,11 +76,12 @@ body {
     padding: 5px;
 }
 
-.nav2{
-    background-color: white;
-    color: black;
-    margin: 41px 0 0 350px;
-    font-size: 125%;
+.projectList{
+    margin: 10px 0 0 20px;
+    /*background-color: white;*/
+    /*color: black;*/
+    /*margin: 41px 0 0 350px;*/
+    /*font-size: 125%;*/
 }
 
 .project1 {

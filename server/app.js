@@ -6,6 +6,13 @@ var path = require('path');
 // We don't set if heroku has set it in .env
 app.set('port', (process.env.PORT || 5000));
 
+app.get('img/mary_fruit_stand.jpeg', function (req, res) {
+    // If a request has a first parameter, get that file, otherwise index
+    var file = req.params[0] || 'img/mary_fruit_stand.jpeg';
+    // Send the file located at current dir/public/file
+    res.sendFile(path.join(__dirname, 'public', file));
+});
+
 app.get('/contact', function (req, res) {
     // If a request has a first parameter, get that file, otherwise index
     var file = req.params[0] || '../views/contact.html';
