@@ -13,8 +13,9 @@ body {
     /*margin: 40px 0 0 20px;*/
     font-size: 110%;
     /*border: solid 2px black;*/
-    white-space: nowrap;
-    border-radius: 5px;
+    /*white-space: nowrap;*/
+    /*border-radius: 0 0 5px 5px;*/
+    /*border: */
 }
 
 .band0 {
@@ -35,11 +36,10 @@ body {
 }
 
 .band0:hover {
-    background-color: blue;
     border-radius: 5px;
 }
 .band1:hover {
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
 .band2 {
@@ -53,24 +53,33 @@ body {
     border-radius: 5px;
 }
 
-.name:hover{
-    color:white;
-    background-color: black;
+.sticky {
+    border-top: solid black 4px;
 }
-
 .topbar {
     border: solid 2px black;
+    /*width: 100%;*/
+    background-color: black;
+    /*margin: -100px 0 0 0;*/
 }
 
 .projects {
-    margin: 0 10px;
+    margin: 0 5px;
+    padding: 5px;
 }
 .projects:hover {
-    color: #ff992f;
+    color: white;
+    background-color: #ff992f;
+    padding: 5px;
 }
 
+.contact {
+    padding: 5px;
+}
 .contact:hover {
-    color: #2571ff;
+    color: white;
+    background-color: #2571ff;
+    padding: 5px;
 }
 
 .nav2{
@@ -178,5 +187,5 @@ li {
 }
 
 .test {
-    border: solid 2px black;
+    /*border: solid 2px black;*/
 }
