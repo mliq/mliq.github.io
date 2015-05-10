@@ -22,15 +22,15 @@ $.ajax({
     }
 });
 
-$(window).scroll(function(){
-    if ( $window.scrollTop() > 80 ) {
-        $('topbar').addClass('sticky');
-    } else {
-        $('topbar').removeClass('sticky');
-    }
-});
-
 $(document).ready(function(){
+//
+//$(window).scroll(function(){
+//    if ( $window.scrollTop() > 80 ) {
+//        $('topbar').addClass('sticky');
+//    } else {
+//        $('topbar').removeClass('sticky');
+//    }
+//});
 
     $('body').on('click', '.contact', function(){
         $('.menuHere').empty().hide().append(contact);

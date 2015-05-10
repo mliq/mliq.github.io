@@ -120,7 +120,7 @@ body {
 
 .projectCopy {
     padding: 2%;
-    position: relative;
+    position: absolute;
     /*border: dotted 2px black;*/
     margin: 50% 0 0 25%;
     display: inline-block;
@@ -171,8 +171,9 @@ li {
     background-color: #ff6d94;
     float: right;
     height: 90%;
-    white-space: normal;
+    /*white-space: normal;*/
 }
+
 
 @media only screen and (max-width: 770px) {
 
