@@ -34,7 +34,9 @@ function showProj(projNum) {
                     $('.header').empty().append(project1.header);
                     $('.longText').empty().append(project1.copy);
                     $('.projectCopy').empty().append(project1.imgCopy);
-                    $('.projectImage').css('background-image', 'url("../img/'+project1.img+'"');
+                    var imageUrl = '../img/'+project1.img;
+                    $('.projectImage').css('background-image', 'url(' + imageUrl + ')');
+                    //$('.projectImage').css('background-image', 'url("../img/'+project1.img+'"');
                     $('.projectHere').slideDown();
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
