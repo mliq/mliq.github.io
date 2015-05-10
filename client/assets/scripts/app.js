@@ -1,3 +1,14 @@
+
+var resume;
+
+$.ajax({
+    url: 'resume',
+    success: function (res) {
+        resume = res;
+        console.log(res);
+    }
+});
+
 $(document).ready(function(){
 
     $('.contact').on('click', function(){
