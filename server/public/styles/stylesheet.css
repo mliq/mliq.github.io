@@ -116,13 +116,12 @@ body {
     /*margin: 25px 0 0 45px;*/
     width: auto;
     height: 472px;
-    display: none;
+    /*display: none;*/
     white-space: nowrap;
     /*position: relative;*/
 }
 
 .projectImage {
-    background-image: url("../img/mary_fruit_stand.jpeg");
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;

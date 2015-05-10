@@ -1,5 +1,5 @@
 
-var contact, projects, project1, projectNumber = 0;
+var contact, projects, project1, projectTemplate, projectNumber = 0;
 
 $.ajax({
     url: 'contact',
@@ -15,22 +15,39 @@ $.ajax({
     }
 });
 
-$.ajax({
-    url: 'project1',
-    success: function (res) {
-        project1 = res;
-    }
-});
+
+function showProj(projNum) {
+    var dataFile = 'project'+projNum+'.json';
+
+    $.ajax({
+        url: 'projectTemplate',
+        success: function (res) {
+            projectTemplate = res;
+
+            $('.projectHere').empty().slideUp().append(projectTemplate);
+
+            $.ajax({
+                url: "project1.json",
+                success: function (res) {
+                    console.log("worky");
+                    project1 = res;
+                    $('.header').empty().append(project1.header);
+                    $('.longText').empty().append(project1.copy);
+                    $('.projectCopy').empty().append(project1.imgCopy);
+                    $('.projectImage').css('background-image', 'url("../img/'+project1.img+'"');
+                    $('.projectHere').slideDown();
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            });
+        }
+    });
+}
+
 
 $(document).ready(function(){
-//
-//$(window).scroll(function(){
-//    if ( $window.scrollTop() > 80 ) {
-//        $('topbar').addClass('sticky');
-//    } else {
-//        $('topbar').removeClass('sticky');
-//    }
-//});
 
     $('body').on('click', '.contact', function(){
         $('.menuHere').empty().hide().append(contact);
@@ -44,8 +61,7 @@ $(document).ready(function(){
     });
 
     $('body').on('click', '.project1',function(){
-        console.log('works');
-        $('.band2').empty().append(project1);
+        showProj("1");
         $('.showoff').slideDown();
         projectNumber = 1;
     });

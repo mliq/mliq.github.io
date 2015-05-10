@@ -42,7 +42,17 @@ body {
     /*background-color: pink;*/
 }
 
+.longText {
+    font-size: 70%;
+    overflow: scroll;
+    height: 85%;
+}
+
+.header {
+    padding: 10px 0;
+}
 .band2 {
+    margin: 80px 0 0;
     background-image: url("../img/yel_black_stripe.png");
     /*background-color: #ffff4e;*/
     /*margin: 0px 50px;*/
@@ -103,31 +113,33 @@ body {
 }
 
 .showoff {
-    margin: 25px 0 0 45px;
+    /*margin: 25px 0 0 45px;*/
     width: auto;
     height: 472px;
-    display: none;
+    /*display: none;*/
     white-space: nowrap;
     /*position: relative;*/
 }
 
 .projectImage {
-    background-image: url("../img/mary_fruit_stand.jpeg");
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
+    height: 400px;
+    margin-top: 20px;
 }
 
 .projectCopy {
     padding: 2%;
     position: absolute;
     /*border: dotted 2px black;*/
-    margin: 50% 0 0 25%;
-    display: inline-block;
+    /*margin: 40% 0 0 15%;*/
+    /*display: inline-block;*/
+    margin: 15% 0 0 15%;
     font-family: "droid-sans",sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 220%;
+    font-size: 180%;
     color: #2f4eff;
     background-color: black;
     z-index: 999;
@@ -151,7 +163,7 @@ li {
     width: 20px;
     height: 20px;
     font-size: 4rem;
-    margin: 0 0 0 -50px;
+    margin: 0 0 0 -27px;
     color: dimgrey;
 }
 
@@ -171,9 +183,9 @@ li {
     background-color: #ff6d94;
     float: right;
     height: 90%;
-    /*white-space: normal;*/
+    white-space: normal;
+    margin-top: 20px;
 }
-
 
 @media only screen and (max-width: 770px) {
 
