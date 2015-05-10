@@ -6,14 +6,31 @@ body {
 }
 
 .nav{
+    /*max-width: 180px;*/
     /*padding: 0 0 0 20px;*/
     background-color: white;
     color: black;
     /*margin: 40px 0 0 20px;*/
-    font-size: 145%;
+    font-size: 120%;
     /*border: solid 2px black;*/
+    white-space: nowrap;
+    border-radius: 5px;
 }
 
+.band1 {
+    /*max-width:220px;*/
+    background-color: lightgray;
+    /*padding: 20px;*/
+    margin: 10px 0px;
+    padding: 7px;
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.band2 {
+    background-color: #ffff4e;
+    margin: 250px 50px;
+}
 .name {
     margin: 0 0 0 0;
     font-size: 200%;
@@ -24,6 +41,9 @@ body {
     border: solid 2px black;
 }
 
+.projects {
+    margin: 0 10px;
+}
 .projects:hover {
     color: #ff992f;
 }
@@ -105,16 +125,6 @@ ul {
     color: red;
 }
 
-.band1 {
-    background-color: lightgray;
-    /*padding: 20px;*/
-    margin: 0 30px;
-}
-
-.band2 {
-    background-color: #ffff4e;
-    margin: 250px 50px;
-}
 
 .sticky {
     position: fixed;
@@ -135,8 +145,11 @@ ul {
     }
     .projectCopy {font-size: 200%;}
     /*li { display: inline; }*/
-    .nav {margin: 35px 0 0 20px;}
-    .nav2 {margin-top: 10px;}
+    .nav {
+        font-size: 100%;
+        /*margin: 35px 0 0 20px;*/
+    }
+    /*.nav2 {margin-top: 10px;}*/
 
 }
 
