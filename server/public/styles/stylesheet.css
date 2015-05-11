@@ -187,21 +187,21 @@ li {
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
 
-    body { font-size: 15px; }
-    .showoff {
-        height: 236px;
-        width: 315px;
-        /*background-image: url("../img/mary_fruit_stand_sm.jpeg");*/
-        margin-left: 10px;
-    }
-    .projectCopy {font-size: 200%;}
-    /*li { display: inline; }*/
-    .nav {
-        font-size: 100%;
-        /*margin: 35px 0 0 20px;*/
-    }
+    body { font-size: 13px; }
+    /*.showoff {*/
+        /*height: 236px;*/
+        /*width: 315px;*/
+        /*/!*background-image: url("../img/mary_fruit_stand_sm.jpeg");*!/*/
+        /*margin-left: 10px;*/
+    /*}*/
+    /*.projectCopy {font-size: 200%;}*/
+    /*/!*li { display: inline; }*!/*/
+    /*.nav {*/
+        /*font-size: 100%;*/
+        /*/!*margin: 35px 0 0 20px;*!/*/
+    /*}*/
     /*.nav2 {margin-top: 10px;}*/
 
 }
