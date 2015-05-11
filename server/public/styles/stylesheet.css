@@ -74,6 +74,10 @@ body {
     /*min-width: 360px;*/
 }
 
+.wf-active {
+    border-top: solid black 4px;
+}
+
 .topbar {
     border-top: solid black 4px;
 }
@@ -249,6 +253,10 @@ li {
 }
 
 @media only screen and (max-width: 750px) {
+    .topbar {
+        border-top: none;
+    }
+
     body {
         font-size: 16px;
     }
