@@ -219,7 +219,7 @@ li {
     }
 
     /*.sticky {*/
-        /*display: inline;*/
+    /*display: inline;*/
     /*}*/
 
     .band1 {
@@ -257,9 +257,20 @@ li {
         margin-top: -15px;
     }
 
+    .band2 {
+        margin: 11px 0 0 0;
+        height: 1000px;
+        display: none;
+    }
+
     .sticky {
         position: static;
     }
+
+    ul {
+        margin: -5px 0 10px 0;
+    }
+
 }
 
 .test {

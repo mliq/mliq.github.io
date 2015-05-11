@@ -66,8 +66,9 @@ $(document).ready(function () {
     });
 
     $('body').on('click', '.closebutton', function () {
-        $(this).parent().parent().slideUp();
+        $(this).parents('.band2').slideUp();
     });
+
     $('body').on('click', '.name', function () {
         $.ajax({
             url: 'patterns',

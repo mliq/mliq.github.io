@@ -1,11 +1,11 @@
 body {
-    font-family: "droid-sans",sans-serif;
+    font-family: "droid-sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
 }
 
-.nav{
+.nav {
     /*max-width: 180px;*/
     /*padding: 0 0 0 20px;*/
     background-color: white;
@@ -38,6 +38,7 @@ body {
 .band0:hover {
     border-radius: 5px;
 }
+
 .band1:hover {
     /*background-color: pink;*/
 }
@@ -51,17 +52,26 @@ body {
 .header {
     padding: 10px 0;
 }
+
 .band2 {
     margin: 80px 0 0;
     background-image: url("../img/yel_black_stripe.png");
     /*background-color: #ffff4e;*/
     /*margin: 0px 50px;*/
 }
+
 .name {
     /*margin: 0 10px;*/
     font-size: 200%;
     max-width: 360px;
     border-radius: 5px;
+}
+
+.menuHere {
+    padding: 0;
+    font-size: 90%;
+    /*max-width: 360px;*/
+    /*min-width: 360px;*/
 }
 
 .topbar {
@@ -72,6 +82,7 @@ body {
     margin: 0 5px;
     padding: 5px;
 }
+
 .projects:hover {
     color: white;
     background-color: #ff992f;
@@ -81,14 +92,15 @@ body {
 .contact {
     padding: 5px;
 }
+
 .contact:hover {
     color: white;
     background-color: #2571ff;
     padding: 5px;
 }
 
-.projectList{
-    margin: 10px 0 0 20px;
+.projectList {
+    margin: 7px 0 0 0px;
     /*background-color: white;*/
     /*color: black;*/
     /*margin: 41px 0 0 350px;*/
@@ -108,8 +120,9 @@ body {
 }
 
 .contacts {
-    margin: 10px 0 0 20px;
+    margin: 7px 0 0 0px;
     /*padding: 5px;*/
+    font-size: 80%;
 }
 
 .showoff {
@@ -122,9 +135,9 @@ body {
 }
 
 .projectImage {
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     height: 400px;
     margin-top: 20px;
 }
@@ -136,7 +149,7 @@ body {
     /*margin: 40% 0 0 15%;*/
     /*display: inline-block;*/
     margin: 15% 0 0 15%;
-    font-family: "droid-sans",sans-serif;
+    font-family: "droid-sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 180%;
@@ -151,7 +164,7 @@ body {
 
 ul {
     list-style: none;
-    padding-left:0;
+    padding-left: 0;
 }
 
 li {
@@ -175,7 +188,7 @@ li {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index:1001;
+    z-index: 1001;
     background-color: white;
 }
 
@@ -187,23 +200,76 @@ li {
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 770px) {
-
-    body { font-size: 15px; }
-
-    .showoff {
-        height: 236px;
-        width: 315px;
-        /*background-image: url("../img/mary_fruit_stand_sm.jpeg");*/
-        margin-left: 10px;
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 20px;
     }
-    .projectCopy {font-size: 200%;}
-    /*li { display: inline; }*/
-    .nav {
-        font-size: 100%;
-        /*margin: 35px 0 0 20px;*/
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        /*font-size: 16px;*/
     }
+}
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        /*font-size: 13px;*/
+    }
+
+    /*.sticky {*/
+    /*display: inline;*/
+    /*}*/
+
+    .band1 {
+        max-width: 360px;
+    }
+
+    .menuHere {
+        /*text-align: center;*/
+        /*max-width: 360px;*/
+        /*min-width: 360px;*/
+    }
+
+    /*.showoff {*/
+    /*height: 236px;*/
+    /*width: 315px;*/
+    /*/!*background-image: url("../img/mary_fruit_stand_sm.jpeg");*!/*/
+    /*margin-left: 10px;*/
+    /*}*/
+    /*.projectCopy {font-size: 200%;}*/
+    /*/!*li { display: inline; }*!/*/
+    /*.nav {*/
+    /*font-size: 100%;*/
+    /*/!*margin: 35px 0 0 20px;*!/*/
+    /*}*/
     /*.nav2 {margin-top: 10px;}*/
+
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        font-size: 16px;
+    }
+
+    .band1 {
+        margin-top: -15px;
+    }
+
+    .band2 {
+        margin: 30px 0 0 0;
+        height: 1000px;
+        display: none;
+    }
+
+    .sticky {
+        position: static;
+    }
+
+    ul {
+        margin: -15px 0 10px 0;
+    }
 
 }
 
