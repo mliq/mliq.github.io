@@ -1,4 +1,3 @@
-
 var contact, projects, project1, projectTemplate, projectNumber = 0;
 
 $.ajax({
@@ -17,7 +16,7 @@ $.ajax({
 
 
 function showProj(projNum) {
-    var dataFile = 'project'+projNum+'.json';
+    var dataFile = 'project' + projNum + '.json';
 
     $.ajax({
         url: 'projectTemplate',
@@ -29,14 +28,12 @@ function showProj(projNum) {
             $.ajax({
                 url: "project1.json",
                 success: function (res) {
-                    console.log("worky");
                     project1 = res;
                     $('.header').empty().append(project1.header);
                     $('.longText').empty().append(project1.copy);
                     $('.projectCopy').empty().append(project1.imgCopy);
-                    var imageUrl = '../img/'+project1.img;
+                    var imageUrl = '../p/' + project1.img;
                     $('.projectImage').css('background-image', 'url(' + imageUrl + ')');
-                    //$('.projectImage').css('background-image', 'url("../img/'+project1.img+'"');
                     $('.projectHere').slideDown();
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
@@ -49,27 +46,35 @@ function showProj(projNum) {
 }
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('body').on('click', '.contact', function(){
+    $('body').on('click', '.contact', function () {
         $('.menuHere').empty().hide().append(contact);
         $('.menuHere').slideDown();
         //$('.contacts').slideDown();
     });
-    $('body').on('click', '.projects', function(){
+    $('body').on('click', '.projects', function () {
         $('.menuHere').empty().hide().append(projects);
         $('.menuHere').slideDown();
         //$('.contacts').slideDown();
     });
 
-    $('body').on('click', '.project1',function(){
+    $('body').on('click', '.project1', function () {
         showProj("1");
         $('.showoff').slideDown();
         projectNumber = 1;
     });
 
-    $('body').on('click','.closebutton',function(){
+    $('body').on('click', '.closebutton', function () {
         $(this).parent().parent().slideUp();
     });
-
+    $('body').on('click', '.name', function () {
+        $.ajax({
+            url: 'patterns',
+            success: function (res) {
+                var imageUrl = '../img/' + res;
+                $('.band2').css('background-image', 'url(' + imageUrl + ')');
+            }
+        });
+    });
 });
