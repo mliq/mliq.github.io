@@ -54,26 +54,18 @@ header {
 /* line 55, ../sass/custom.scss */
 .derby {
   overflow: auto;
-  width: 100%;
-  height: 100%;
-  display: table;
-  background: no-repeat 10%;
 }
 
-/* line 70, ../sass/custom.scss */
+/* line 59, ../sass/custom.scss */
 .section-image-left {
-  float: left;
-}
-
-/* line 74, ../sass/custom.scss */
-.section-text-right {
-  float: right;
-  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 85, ../sass/custom.scss */
+  /* line 77, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }

@@ -54,26 +54,18 @@ header {
 
 .derby {
   overflow: auto;
-  width: 100%;
-  height: 100%;
-  display: table;
-  //background-color: rgba(255, 65, 54, .1);
-  //overflow: auto;
-  background: no-repeat 10%;
-  //background-size: contain;
-  //opacity: 1;
-  //transform: matrix(1, 0, 0, 1, 0, 0);
-  //background-image: url('http://placehold.it/150x150');
-  //min-height: 6em;
 }
 
 .section-image-left{
-  float: left;
+  //float: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .section-text-right{
-  float: right;
-  text-align: right;
+  //float: right;
+  //text-align: right;
 }
 
 // ============
