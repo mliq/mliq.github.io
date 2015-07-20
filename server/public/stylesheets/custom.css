@@ -7,18 +7,19 @@ a {
 /* line 24, ../sass/custom.scss */
 a:link,
 a:visited {
-  color: #265C83;
+  color: #003b62;
 }
 
 /* line 26, ../sass/custom.scss */
 a:hover {
-  color: #7FDBFF;
+  color: #0074D9;
+  text-decoration: none;
 }
 
 /* line 27, ../sass/custom.scss */
 a:active {
   transition: color .3s;
-  color: #007BE6;
+  color: black;
 }
 
 /* line 32, ../sass/custom.scss */
@@ -42,11 +43,6 @@ header {
 /* line 46, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
-}
-
-/* line 50, ../sass/custom.scss */
-.heading-title {
-  border-bottom: 1px solid #0074D9;
 }
 
 /* line 55, ../sass/custom.scss */
