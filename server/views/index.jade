@@ -18,8 +18,9 @@ html(lang="en")
                     i.fa.fa-phone
                     a.icon-text(href='tel:13528701905') +1 (352) 870 1905
                     span.tab
-        h2.heading2.text-center
-            span.heading-title Portfolio
+        h1.heading2.text-center
+                .heading-title
+                    span Work
         section.band.derby.text-xs-center
             .section-image.col-xs-12.col-sm-3.col-sm-offset-2
                 img.animated.bounceInLeft(src='../public/img/3mhorses/horse_and_flag.png')
@@ -29,7 +30,8 @@ html(lang="en")
                     .section-body.col-xs-offset-1.col-xs-10.col-sm-offset-0
                         h5
                             a(href='https://ipd3m.herokuapp.com/') Demo  (Login & Password = 'Damo')
-                        a(href='') Github
+                        h5
+                            a(href='') Github
                         h5 An animated dashboard that injects adrenaline to a sales incentive challenge.
                         h6 Technologies: AngularJS, Node.js, MongoDB, Passport.js, Jade, Sass, bcrypt, RESTful API design & consumption, xlsx-to-json
         h3.section-break.text-center
@@ -40,12 +42,12 @@ html(lang="en")
                 img(src='../public/img/predictor/biden.png')
             .section-content.col-xs-12.col-sm-7
                 h3.section-title Predictor!
-                h5.section-text Capstone Project, Johns Hopkins Data Science
+                h5.section-subtitle Capstone Project, Johns Hopkins Data Science
                 h5
                     a(href='https://mliq.shinyapps.io/Predictor') Demo
-                    span ,
-                    a(href='http://rpubs.com/mliq/49105')  Final Slide Presentation
-                    span ,
+                h5
+                    a(href='http://rpubs.com/mliq/49105')  Final Presentation
+                h5
                     a(href='http://rpubs.com/mliq/Milestone1')  Data Visualizations
                 h5 Predictive-text web app built from big data, achieving competitive rates of next-word prediction accuracy (15%) while maintaining a < 2 seconds response time and a memory footprint of < 10 MB by testing > 20 algorithms.
                 h6 Technologies: R, Shiny, Amazon Web Services, Regex
@@ -54,13 +56,13 @@ html(lang="en")
             i.fa.fa-angle-left
         section.band.healthmap.text-xs-center
             .section-image.healthmap.col-xs-12.col-sm-3.col-sm-offset-2
-                img(src='../public/img/predictor/biden.png')
+                img(src='../public/img/healthmap/map.png')
             .section-content.col-xs-12.col-sm-7
                 h3.section-title HealthMap
+                h5.section-subtitle Client: 3M Health, Infection Prevention Division
                     h5
                         a(href='https://mliq.shinyapps.io/HealthMap') Demo
-                        span  -
+                    h5
                         a(href='https://github.com/mliq/HealthMap')  GitHub
-                h5.section-text Client: 3M Health, Infection Prevention Division
                 h5 Demo version uses open World Bank data, a branded version was used by 3M for their 2014 International $1 Billion Challenge.
                 h6 Technologies: R, Shiny, Google Maps API, Regex
