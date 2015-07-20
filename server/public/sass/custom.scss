@@ -8,6 +8,14 @@ body {
   margin: .5em;
 }
 
+ul{
+    text-align:left;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 a {
   color: $navy;
   &:visited {
@@ -77,7 +85,7 @@ footer {
 }
 
 .section-break {
-  margin: 0 0 .4em;
+  margin: 0 0 .2em;
   color: $navy;
 }
 

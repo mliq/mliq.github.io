@@ -4,99 +4,110 @@
 }
 
 /* line 11, ../sass/custom.scss */
+ul {
+  text-align: left;
+}
+
+/* line 15, ../sass/custom.scss */
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 19, ../sass/custom.scss */
 a {
   color: #245276;
 }
-/* line 13, ../sass/custom.scss */
+/* line 21, ../sass/custom.scss */
 a:visited {
   color: #245276;
 }
-/* line 16, ../sass/custom.scss */
+/* line 24, ../sass/custom.scss */
 a:hover {
   color: #0446d9;
   text-decoration: none;
   transition: color .3s;
 }
-/* line 21, ../sass/custom.scss */
+/* line 29, ../sass/custom.scss */
 a:active {
   transition: color .3s;
   color: black;
 }
 
-/* line 27, ../sass/custom.scss */
+/* line 35, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
 
-/* line 33, ../sass/custom.scss */
+/* line 41, ../sass/custom.scss */
 footer {
   border-top: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
-/* line 37, ../sass/custom.scss */
+/* line 45, ../sass/custom.scss */
 footer a {
   padding: 0 .3em;
 }
 
-/* line 42, ../sass/custom.scss */
+/* line 50, ../sass/custom.scss */
 .heading {
   padding: 0;
   margin: 0;
 }
 
-/* line 47, ../sass/custom.scss */
+/* line 55, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
 }
 
-/* line 55, ../sass/custom.scss */
+/* line 63, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 60, ../sass/custom.scss */
+/* line 68, ../sass/custom.scss */
 .contact {
   margin: 0 20px 5px 0;
 }
 
-/* line 64, ../sass/custom.scss */
+/* line 72, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 68, ../sass/custom.scss */
+/* line 76, ../sass/custom.scss */
 .band {
   overflow: auto;
 }
 
-/* line 79, ../sass/custom.scss */
+/* line 87, ../sass/custom.scss */
 .section-break {
-  margin: 0 0 .4em;
+  margin: 0 0 .2em;
   color: #245276;
 }
 
-/* line 84, ../sass/custom.scss */
+/* line 92, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
-/* line 88, ../sass/custom.scss */
+/* line 96, ../sass/custom.scss */
 .section-subtitle {
   margin: .2em 0 0;
 }
 
-/* line 92, ../sass/custom.scss */
+/* line 100, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 102, ../sass/custom.scss */
+  /* line 110, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
