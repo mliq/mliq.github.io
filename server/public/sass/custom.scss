@@ -3,8 +3,8 @@ body {
 }
 
 header {
-  border-bottom: 1px solid lightgrey
-  
+  border-bottom: 1px solid lightgrey;
+  margin: 5px 0 0;
 }
 
 .heading {
@@ -13,7 +13,7 @@ header {
 }
 
 .subheading1 {
-  margin: 0 0 0;
+  margin: 0;
 }
 
 .contact {
@@ -22,7 +22,20 @@ header {
 
 .icon-text {
   margin: 0 15px 0;
-
 }
 
+// ============
+// MEDIA QUERIES
+// ============
+
+/* Less than Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+
+// ====================
+// Testing black border
+// ====================
 //* {  border: 2px solid black; }

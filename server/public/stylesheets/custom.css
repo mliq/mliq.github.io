@@ -1,6 +1,7 @@
 /* line 5, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
+  margin: 5px 0 0;
 }
 
 /* line 10, ../sass/custom.scss */
@@ -11,7 +12,7 @@ header {
 
 /* line 15, ../sass/custom.scss */
 .subheading1 {
-  margin: 0 0 0;
+  margin: 0;
 }
 
 /* line 19, ../sass/custom.scss */
@@ -22,4 +23,12 @@ header {
 /* line 23, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
+}
+
+/* Less than Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  /* line 33, ../sass/custom.scss */
+  .text-xs-center {
+    text-align: center;
+  }
 }
