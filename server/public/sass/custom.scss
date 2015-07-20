@@ -79,13 +79,15 @@ footer {
 
 .section-image {
   //margin-top: 1.5em;
-  &.predictor {
-    //margin-top: 2em;
-  }
+}
+
+.section-content {
+  //border-left: 2px solid #585858;
+  //border-right: 2px solid #585858;
 }
 
 .section-break {
-  margin: 0 0 .2em;
+  margin: .1em 0 .3em;
   color: $navy;
 }
 

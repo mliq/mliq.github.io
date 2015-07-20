@@ -84,30 +84,30 @@ footer a {
   overflow: auto;
 }
 
-/* line 87, ../sass/custom.scss */
+/* line 89, ../sass/custom.scss */
 .section-break {
-  margin: 0 0 .2em;
+  margin: .1em 0 .3em;
   color: #245276;
 }
 
-/* line 92, ../sass/custom.scss */
+/* line 94, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
-/* line 96, ../sass/custom.scss */
+/* line 98, ../sass/custom.scss */
 .section-subtitle {
   margin: .2em 0 0;
 }
 
-/* line 100, ../sass/custom.scss */
+/* line 102, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 110, ../sass/custom.scss */
+  /* line 112, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
