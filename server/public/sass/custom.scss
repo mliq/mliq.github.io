@@ -7,6 +7,7 @@ body {
 .tab {
   margin: .5em;
 }
+
 a {
   color: $navy;
   &:visited {
@@ -29,6 +30,15 @@ header {
   padding: 0 0 3px 0;
 }
 
+footer {
+  border-top: 1px solid lightgrey;
+  margin: 5px 0 0;
+  padding: 0 0 3px 0;
+  & a{
+    padding: 0 .3em;
+  }
+}
+
 .heading {
   padding: 0;
   margin: 0;
@@ -38,7 +48,7 @@ header {
   margin: .3em 0 .5em;
 }
 
-.heading-title{
+.heading-title {
 
 }
 
@@ -70,17 +80,19 @@ header {
   margin: 0 0 .4em;
   color: $navy;
 }
+
 .section-title {
   margin: 0;
 }
 
-.section-subtitle{
+.section-subtitle {
   margin: .2em 0 0;
 }
 
 .section-body {
   padding: 0;
 }
+
 // ============
 // MEDIA QUERIES
 // ============

@@ -22,23 +22,23 @@ html(lang="en")
                 .heading-title
                     span Work
         section.band.derby.text-xs-center
-            .section-image.col-xs-12.col-sm-3.col-sm-offset-2
+            .section-image.col-xs-12.col-sm-3.col-sm-offset-1.col-md-offset-2
                 img.animated.bounceInLeft(src='../public/img/3mhorses/horse_and_flag.png')
             .section-content.col-xs-12.col-sm-7
                 h3.section-title International Sales Derby
                 h5.section-subtitle Client: 3M Health, Infection Prevention Division
                     .section-body.col-xs-offset-1.col-xs-10.col-sm-offset-0
                         h5
-                            a(href='https://ipd3m.herokuapp.com/') Demo  (Login & Password = 'Damo')
+                            a(href='https://ipd3m.herokuapp.com/') Demo (L / P = 'Damo')
                         h5
-                            a(href='') Github
+                            a(href='https://github.com/mliq/prime_solo_project') Github
                         h5 An animated dashboard that injects adrenaline to a sales incentive challenge.
                         h6 Technologies: AngularJS, Node.js, MongoDB, Passport.js, Jade, Sass, bcrypt, RESTful API design & consumption, xlsx-to-json
         h3.section-break.text-center
             i.fa.fa-angle-right
             i.fa.fa-angle-left
         section.band.predictor.text-xs-center
-            .section-image.predictor.col-xs-12.col-sm-3.col-sm-offset-2
+            .section-image.predictor.col-xs-12.col-sm-3.col-sm-offset-1.col-md-offset-2
                 img(src='../public/img/predictor/biden.png')
             .section-content.col-xs-12.col-sm-7
                 h3.section-title Predictor!
@@ -46,16 +46,18 @@ html(lang="en")
                 h5
                     a(href='https://mliq.shinyapps.io/Predictor') Demo
                 h5
-                    a(href='http://rpubs.com/mliq/49105')  Final Presentation
+                    a(href='http://rpubs.com/mliq/49105') Final Presentation
                 h5
-                    a(href='http://rpubs.com/mliq/Milestone1')  Data Visualizations
-                h5 Predictive-text web app built from big data, achieving competitive rates of next-word prediction accuracy (15%) while maintaining a < 2 seconds response time and a memory footprint of < 10 MB by testing > 20 algorithms.
-                h6 Technologies: R, Shiny, Amazon Web Services, Regex
+                    a(href='http://rpubs.com/mliq/Milestone1') Data Visualizations
+                h5
+                    a(href='https://github.com/mliq/Predictor') Github
+                h5 Predictive-text web app built from big data (over 4 million lines of messy webscraped text from Twitter and others) and intended to work on minimal spec mobile devices  - achieved competitive rates of next-word prediction accuracy (15%) while maintaining a < 2 seconds response time and a memory footprint of < 10 MB by testing > 20 algorithms.
+                h6 Technologies: R, Shiny, Amazon Web Services Elastic Cloud (EC2) virtual machines, Regex
         h3.section-break.text-center
             i.fa.fa-angle-right
             i.fa.fa-angle-left
         section.band.healthmap.text-xs-center
-            .section-image.healthmap.col-xs-12.col-sm-3.col-sm-offset-2
+            .section-image.healthmap.col-xs-12.col-sm-3.col-sm-offset-1.col-md-offset-2
                 img(src='../public/img/healthmap/map.png')
             .section-content.col-xs-12.col-sm-7
                 h3.section-title HealthMap
@@ -64,5 +66,17 @@ html(lang="en")
                         a(href='https://mliq.shinyapps.io/HealthMap') Demo
                     h5
                         a(href='https://github.com/mliq/HealthMap')  GitHub
-                h5 Demo version uses open World Bank data, a branded version was used by 3M for their 2014 International $1 Billion Challenge.
+                h5 Demo version uses open World Bank data - a modified version was used by 3M IPD for 2014 International $1 Billion Sales Challenge.
                 h6 Technologies: R, Shiny, Google Maps API, Regex
+        footer
+            h2.text-center.footer
+                a(href='https://github.com/mliq')
+                    i.fa.fa-github
+                a(href='http://stackexchange.com/users/2706904/mliqu?tab=accounts')
+                    i.fa.fa-stack-exchange
+                a(href='https://www.linkedin.com/in/liquori')
+                    i.fa.fa-linkedin-square
+                a(href='https://twitter.com/mliq')
+                    i.fa.fa-twitter
+                a(href='https://www.facebook.com/liquori')
+                    i.fa.fa-facebook

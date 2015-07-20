@@ -3,89 +3,100 @@
   margin: .5em;
 }
 
-/* line 10, ../sass/custom.scss */
+/* line 11, ../sass/custom.scss */
 a {
   color: #245276;
 }
-/* line 12, ../sass/custom.scss */
+/* line 13, ../sass/custom.scss */
 a:visited {
   color: #245276;
 }
-/* line 15, ../sass/custom.scss */
+/* line 16, ../sass/custom.scss */
 a:hover {
   color: #0446d9;
   text-decoration: none;
   transition: color .3s;
 }
-/* line 20, ../sass/custom.scss */
+/* line 21, ../sass/custom.scss */
 a:active {
   transition: color .3s;
   color: black;
 }
 
-/* line 26, ../sass/custom.scss */
+/* line 27, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
 
-/* line 32, ../sass/custom.scss */
+/* line 33, ../sass/custom.scss */
+footer {
+  border-top: 1px solid lightgrey;
+  margin: 5px 0 0;
+  padding: 0 0 3px 0;
+}
+/* line 37, ../sass/custom.scss */
+footer a {
+  padding: 0 .3em;
+}
+
+/* line 42, ../sass/custom.scss */
 .heading {
   padding: 0;
   margin: 0;
 }
 
-/* line 37, ../sass/custom.scss */
+/* line 47, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
 }
 
-/* line 45, ../sass/custom.scss */
+/* line 55, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 50, ../sass/custom.scss */
+/* line 60, ../sass/custom.scss */
 .contact {
   margin: 0 20px 5px 0;
 }
 
-/* line 54, ../sass/custom.scss */
+/* line 64, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 58, ../sass/custom.scss */
+/* line 68, ../sass/custom.scss */
 .band {
   overflow: auto;
 }
 
-/* line 69, ../sass/custom.scss */
+/* line 79, ../sass/custom.scss */
 .section-break {
   margin: 0 0 .4em;
   color: #245276;
 }
 
-/* line 73, ../sass/custom.scss */
+/* line 84, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
-/* line 77, ../sass/custom.scss */
+/* line 88, ../sass/custom.scss */
 .section-subtitle {
   margin: .2em 0 0;
 }
 
-/* line 81, ../sass/custom.scss */
+/* line 92, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 90, ../sass/custom.scss */
+  /* line 102, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
