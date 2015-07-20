@@ -1,77 +1,79 @@
-/* line 19, ../sass/custom.scss */
+/* line 7, ../sass/custom.scss */
 a {
-  transition: color .4s;
-  color: #265C83;
+  color: #042662;
 }
-
-/* line 24, ../sass/custom.scss */
-a:link,
+/* line 9, ../sass/custom.scss */
 a:visited {
-  color: #003b62;
+  color: #042662;
 }
-
-/* line 26, ../sass/custom.scss */
+/* line 12, ../sass/custom.scss */
 a:hover {
-  color: #0074D9;
+  color: #0446d9;
   text-decoration: none;
+  transition: color .3s;
 }
-
-/* line 27, ../sass/custom.scss */
+/* line 17, ../sass/custom.scss */
 a:active {
   transition: color .3s;
   color: black;
 }
 
-/* line 32, ../sass/custom.scss */
-.link {
-  text-decoration: none;
-}
-
-/* line 35, ../sass/custom.scss */
+/* line 23, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
   padding-bottom: 3px;
 }
 
-/* line 41, ../sass/custom.scss */
+/* line 29, ../sass/custom.scss */
 .heading {
   padding: 0;
   margin: 0;
 }
 
-/* line 46, ../sass/custom.scss */
+/* line 34, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
 }
 
-/* line 55, ../sass/custom.scss */
+/* line 43, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
 }
 
-/* line 59, ../sass/custom.scss */
+/* line 47, ../sass/custom.scss */
 .contact {
   margin: 0 0 5px;
 }
 
-/* line 63, ../sass/custom.scss */
+/* line 51, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 67, ../sass/custom.scss */
+/* line 55, ../sass/custom.scss */
 .derby {
+  overflow: auto;
   width: 100%;
   height: 100%;
   display: table;
   background: no-repeat 10%;
-  background-image: url("http://placehold.it/150x150");
+}
+
+/* line 70, ../sass/custom.scss */
+.section-image-left {
+  float: left;
+}
+
+/* line 74, ../sass/custom.scss */
+.section-text-right {
+  float: right;
+  text-align: right;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 87, ../sass/custom.scss */
+  /* line 85, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
