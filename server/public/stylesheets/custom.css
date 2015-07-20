@@ -1,16 +1,25 @@
-/* line 1, ../sass/custom.scss */
-body {
-  padding: 10px 20px;
-}
-
 /* line 5, ../sass/custom.scss */
-.subheading1 {
-  margin: 5px 4px;
-  padding: 5px;
-  border-right: 5px solid black;
+header {
+  border-bottom: 1px solid lightgrey;
 }
 
-/* line 11, ../sass/custom.scss */
+/* line 10, ../sass/custom.scss */
+.heading {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 15, ../sass/custom.scss */
+.subheading1 {
+  margin: 0 0 0;
+}
+
+/* line 19, ../sass/custom.scss */
 .contact {
-  margin: 5px;
+  margin: 0 0 5px;
+}
+
+/* line 23, ../sass/custom.scss */
+.icon-text {
+  margin: 0 15px 0;
 }
