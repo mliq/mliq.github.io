@@ -1,9 +1,12 @@
 $blue: #0446d9;
-$navy: #042662;
+$navy: #245276;
 
 body {
 }
 
+.tab {
+  margin: .5em;
+}
 a {
   color: $navy;
   &:visited {
@@ -23,7 +26,7 @@ a {
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
-  padding-bottom: 3px;
+  padding: 0 0 3px 0;
 }
 
 .heading {
@@ -37,18 +40,30 @@ header {
 
 .subheading1 {
   margin: 0;
+  padding: 0;
 }
 
 .contact {
-  margin: 0 0 5px;
+  margin: 0 20px 5px 0;
 }
 
 .icon-text {
   margin: 0 15px 0;
 }
 
-.derby {
+.band {
   overflow: auto;
+}
+
+.section-image {
+  //margin-top: 1.5em;
+  &.predictor {
+    //margin-top: 2em;
+  }
+}
+
+.section-title {
+  margin: 0;
 }
 
 // ============
