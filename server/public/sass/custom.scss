@@ -62,10 +62,21 @@ header {
   }
 }
 
+.section-break {
+  margin: 0 0 .4em;
+  color: $navy;
+}
 .section-title {
   margin: 0;
 }
 
+.section-subtitle{
+  margin: .2em 0 0;
+}
+
+.section-body {
+  padding: 0;
+}
 // ============
 // MEDIA QUERIES
 // ============

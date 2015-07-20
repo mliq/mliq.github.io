@@ -63,13 +63,29 @@ header {
 }
 
 /* line 65, ../sass/custom.scss */
+.section-break {
+  margin: 0 0 .4em;
+  color: #245276;
+}
+
+/* line 69, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
+/* line 73, ../sass/custom.scss */
+.section-subtitle {
+  margin: .2em 0 0;
+}
+
+/* line 77, ../sass/custom.scss */
+.section-body {
+  padding: 0;
+}
+
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 75, ../sass/custom.scss */
+  /* line 86, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
