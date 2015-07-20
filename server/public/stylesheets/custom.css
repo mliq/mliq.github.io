@@ -36,36 +36,29 @@ header {
   margin: .3em 0 .5em;
 }
 
-/* line 43, ../sass/custom.scss */
+/* line 38, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
 }
 
-/* line 47, ../sass/custom.scss */
+/* line 42, ../sass/custom.scss */
 .contact {
   margin: 0 0 5px;
 }
 
-/* line 51, ../sass/custom.scss */
+/* line 46, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 55, ../sass/custom.scss */
+/* line 50, ../sass/custom.scss */
 .derby {
   overflow: auto;
 }
 
-/* line 59, ../sass/custom.scss */
-.section-image-left {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 77, ../sass/custom.scss */
+  /* line 60, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
