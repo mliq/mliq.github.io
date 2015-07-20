@@ -1,0 +1,16 @@
+/* line 1, ../sass/custom.scss */
+body {
+  padding: 10px 20px;
+}
+
+/* line 5, ../sass/custom.scss */
+.subheading1 {
+  margin: 5px 4px;
+  padding: 5px;
+  border-right: 5px solid black;
+}
+
+/* line 11, ../sass/custom.scss */
+.contact {
+  margin: 5px;
+}

@@ -1,4 +1,4 @@
 //$(document).ready(function(){
-   window.location = 'https://github.com/mliq';
+//   window.location = 'https://github.com/mliq';
 //});
 
