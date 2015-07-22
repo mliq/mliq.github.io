@@ -105,9 +105,14 @@ footer a {
   padding: 0;
 }
 
+/* line 106, ../sass/custom.scss */
+.predictor img {
+  margin-bottom: 15px;
+}
+
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 112, ../sass/custom.scss */
+  /* line 117, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
