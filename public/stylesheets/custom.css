@@ -113,59 +113,59 @@ footer a {
 
 /* line 111, ../sass/custom.scss */
 .section-subtitle {
-  margin: .2em 0 0;
+  margin: .2em 0 .2em;
 }
 
-/* line 115, ../sass/custom.scss */
+/* line 116, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
-/* line 119, ../sass/custom.scss */
+/* line 120, ../sass/custom.scss */
 .predictor img {
   margin-bottom: 15px;
 }
 
-/* line 124, ../sass/custom.scss */
+/* line 125, ../sass/custom.scss */
 .demobox {
   font-size: 2.3rem;
   margin: .9em 0 0;
 }
-/* line 129, ../sass/custom.scss */
+/* line 130, ../sass/custom.scss */
 .demobox:hover .password {
   border: 2px dotted #CC4C46;
 }
-/* line 132, ../sass/custom.scss */
+/* line 133, ../sass/custom.scss */
 .demobox .fa-external-link {
   font-size: 2em;
 }
 
-/* line 138, ../sass/custom.scss */
+/* line 139, ../sass/custom.scss */
 .red {
   color: #CC4C46;
 }
 
-/* line 142, ../sass/custom.scss */
+/* line 143, ../sass/custom.scss */
 .smaller {
   font-size: .8em;
 }
 
-/* line 150, ../sass/custom.scss */
+/* line 151, ../sass/custom.scss */
 .git {
   margin: 1em 0 1em;
   font-size: 1.8rem;
 }
-/* line 153, ../sass/custom.scss */
+/* line 154, ../sass/custom.scss */
 .git .fa-github {
   font-size: 3rem;
 }
 
-/* line 158, ../sass/custom.scss */
+/* line 159, ../sass/custom.scss */
 .fa-laptop {
   font-size: 3rem;
 }
 
-/* line 161, ../sass/custom.scss */
+/* line 162, ../sass/custom.scss */
 .animated {
   display: block;
   margin-left: auto;
@@ -174,12 +174,12 @@ footer a {
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 172, ../sass/custom.scss */
+  /* line 173, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
 
-  /* line 175, ../sass/custom.scss */
+  /* line 176, ../sass/custom.scss */
   .tab-sm {
     margin: 0em;
   }
