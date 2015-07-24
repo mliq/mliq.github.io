@@ -122,16 +122,14 @@ footer {
 }
 
 .demobox {
-  margin-top: .5em;
   font-size: 2.3rem;
   & .fa-arrow-right {
-  margin: .5em .5em 0;
+  margin: 0 .5em 0;
 }
   &:hover .password {
     border: 2px dotted $red;
   }
 }
-
 
 .red {
   color:$red;
@@ -153,9 +151,10 @@ footer {
   }
 }
 
-.fa-laptop {
+.fa-external-link {
   font-size: 3rem;
 }
+
 .animated {
   display: block;
     margin-left: auto;
