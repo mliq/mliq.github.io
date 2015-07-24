@@ -128,48 +128,40 @@ footer a {
 
 /* line 124, ../sass/custom.scss */
 .demobox {
-  font-size: 2.3rem;
-}
-/* line 126, ../sass/custom.scss */
-.demobox .fa-arrow-right {
-  margin: 0 .5em 0;
+  font-size: 2.7rem;
+  margin: .9em 0 0;
 }
 /* line 129, ../sass/custom.scss */
 .demobox:hover .password {
   border: 2px dotted #CC4C46;
 }
 
-/* line 134, ../sass/custom.scss */
+/* line 137, ../sass/custom.scss */
 .red {
   color: #CC4C46;
 }
 
-/* line 138, ../sass/custom.scss */
+/* line 141, ../sass/custom.scss */
 .smaller {
   font-size: .8em;
 }
 
-/* line 142, ../sass/custom.scss */
-.one-line {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-/* line 147, ../sass/custom.scss */
+/* line 149, ../sass/custom.scss */
 .git {
+  margin: 1em 0 1em;
   font-size: 1.8rem;
 }
-/* line 149, ../sass/custom.scss */
+/* line 152, ../sass/custom.scss */
 .git .fa-github {
   font-size: 3rem;
 }
 
-/* line 154, ../sass/custom.scss */
+/* line 157, ../sass/custom.scss */
 .fa-external-link {
   font-size: 3rem;
 }
 
-/* line 158, ../sass/custom.scss */
+/* line 161, ../sass/custom.scss */
 .animated {
   display: block;
   margin-left: auto;
@@ -178,12 +170,12 @@ footer a {
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 169, ../sass/custom.scss */
+  /* line 172, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
 
-  /* line 172, ../sass/custom.scss */
+  /* line 175, ../sass/custom.scss */
   .tab-sm {
     margin: 0em;
   }

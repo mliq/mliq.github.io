@@ -122,12 +122,15 @@ footer {
 }
 
 .demobox {
-  font-size: 2.3rem;
-  & .fa-arrow-right {
-  margin: 0 .5em 0;
-}
+  font-size: 2.7rem;
+  // border: 1px solid $navy;
+  // padding: .2em;
+  margin: .9em 0 0;
   &:hover .password {
     border: 2px dotted $red;
+  }
+  & .fa-link {
+    // font-size: 1.2em;
   }
 }
 
@@ -140,11 +143,11 @@ footer {
 }
 
 .one-line {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  
 }
 
 .git {
+  margin: 1em 0 1em;
   font-size: 1.8rem;
   & .fa-github {
     font-size: 3rem;
