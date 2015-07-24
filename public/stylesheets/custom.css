@@ -128,12 +128,16 @@ footer a {
 
 /* line 124, ../sass/custom.scss */
 .demobox {
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   margin: .9em 0 0;
 }
 /* line 129, ../sass/custom.scss */
 .demobox:hover .password {
   border: 2px dotted #CC4C46;
+}
+/* line 132, ../sass/custom.scss */
+.demobox .fa-external-link {
+  font-size: 2em;
 }
 
 /* line 138, ../sass/custom.scss */

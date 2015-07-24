@@ -122,15 +122,15 @@ footer {
 }
 
 .demobox {
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   // border: 1px solid $navy;
   // padding: .2em;
   margin: .9em 0 0;
   &:hover .password {
     border: 2px dotted $red;
   }
-  & .fa-link {
-    // font-size: 1.2em;
+  & .fa-external-link {
+    font-size: 2em;
   }
 }
 
