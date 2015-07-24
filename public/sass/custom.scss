@@ -1,9 +1,6 @@
 $blue: #0446d9;
 $navy: #245276;
 
-body {
-}
-
 .tab {
   margin: .5em;
 }
@@ -117,6 +114,13 @@ footer {
   .text-xs-center {
     text-align: center;
   }
+}
+
+/* Vertically center images on larger screens */
+@media (min-width: 768px) {
+  // .section-image {
+  //   margin-top: 0em;
+  // }
 }
 
 // ====================

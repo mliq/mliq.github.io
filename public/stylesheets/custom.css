@@ -1,119 +1,120 @@
-/* line 7, ../sass/custom.scss */
+/* line 4, ../sass/custom.scss */
 .tab {
   margin: .5em;
 }
 
-/* line 11, ../sass/custom.scss */
+/* line 8, ../sass/custom.scss */
 ul {
   text-align: left;
 }
 
-/* line 15, ../sass/custom.scss */
+/* line 12, ../sass/custom.scss */
 .list {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 19, ../sass/custom.scss */
+/* line 16, ../sass/custom.scss */
 a {
   color: #245276;
 }
-/* line 21, ../sass/custom.scss */
+/* line 18, ../sass/custom.scss */
 a:visited {
   color: #245276;
 }
-/* line 24, ../sass/custom.scss */
+/* line 21, ../sass/custom.scss */
 a:hover {
   color: #0446d9;
   text-decoration: none;
   transition: color .3s;
 }
-/* line 29, ../sass/custom.scss */
+/* line 26, ../sass/custom.scss */
 a:active {
   transition: color .3s;
   color: black;
 }
 
-/* line 35, ../sass/custom.scss */
+/* line 32, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
 
-/* line 41, ../sass/custom.scss */
+/* line 38, ../sass/custom.scss */
 footer {
   border-top: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
-/* line 45, ../sass/custom.scss */
+/* line 42, ../sass/custom.scss */
 footer a {
   padding: 0 .3em;
 }
 
-/* line 50, ../sass/custom.scss */
+/* line 47, ../sass/custom.scss */
 .heading {
   padding: 0;
   margin: 0;
 }
 
-/* line 55, ../sass/custom.scss */
+/* line 52, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
 }
 
-/* line 63, ../sass/custom.scss */
+/* line 60, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 68, ../sass/custom.scss */
+/* line 65, ../sass/custom.scss */
 .contact {
   margin: 0 0 5px;
 }
 
-/* line 72, ../sass/custom.scss */
+/* line 69, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 76, ../sass/custom.scss */
+/* line 73, ../sass/custom.scss */
 .band {
   overflow: auto;
 }
 
-/* line 89, ../sass/custom.scss */
+/* line 86, ../sass/custom.scss */
 .section-break {
   margin: .1em 0 .3em;
   color: #245276;
 }
 
-/* line 94, ../sass/custom.scss */
+/* line 91, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
-/* line 98, ../sass/custom.scss */
+/* line 95, ../sass/custom.scss */
 .section-subtitle {
   margin: .2em 0 0;
 }
 
-/* line 102, ../sass/custom.scss */
+/* line 99, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
-/* line 106, ../sass/custom.scss */
+/* line 103, ../sass/custom.scss */
 .predictor img {
   margin-bottom: 15px;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 117, ../sass/custom.scss */
+  /* line 114, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
 }
+/* Vertically center images on larger screens */
