@@ -136,28 +136,28 @@ footer a {
   border: 2px dotted #CC4C46;
 }
 
-/* line 137, ../sass/custom.scss */
+/* line 138, ../sass/custom.scss */
 .red {
   color: #CC4C46;
 }
 
-/* line 141, ../sass/custom.scss */
+/* line 142, ../sass/custom.scss */
 .smaller {
   font-size: .8em;
 }
 
-/* line 149, ../sass/custom.scss */
+/* line 150, ../sass/custom.scss */
 .git {
   margin: 1em 0 1em;
   font-size: 1.8rem;
 }
-/* line 152, ../sass/custom.scss */
+/* line 153, ../sass/custom.scss */
 .git .fa-github {
   font-size: 3rem;
 }
 
-/* line 157, ../sass/custom.scss */
-.fa-external-link {
+/* line 158, ../sass/custom.scss */
+.fa-laptop {
   font-size: 3rem;
 }
 
