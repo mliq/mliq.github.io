@@ -26,19 +26,25 @@ html(lang="en")
             .section-image.col-xs-12.col-sm-3.col-sm-offset-1.col-md-offset-2
                 img.animated.bounceInLeft(src='public/img/3mhorses/horse_and_flag.png')
                 h4.list.text-center
-                        .demobox
+                        .demobox.one-line
+                            i.fa.fa-laptop
+                            br
                             a(href='https://ipd3m.herokuapp.com/')
-                                //- i.fa.fa-laptop
-                                span  Demo  
-                                //- br
                                 span.red
-                                    i.fa.fa-unlock-alt
-                                    br
-                                    span.password   L/P: Damo
-                            a(href='https://github.com/mliq/prime_solo_project') 
-                                //- i.fa.fa-github 
+                                    i.fa.fa-lock
+                                span  Demo  
                                 br
-                                span  Github
+                                //- span.red
+                                    //- br
+                                //-     i.fa.fa-unlock-alt
+                                span.red.smaller
+                                    span  L / P : 
+                                    span.password Damo
+                        .one-line.git
+                            a(href='https://github.com/mliq/prime_solo_project') 
+                                    i.fa.fa-github
+                                    br
+                                    span  Github
             .section-content.col-xs-12.col-sm-6
                 h3.section-title International Sales Derby
                 h5.section-subtitle Client: 3M Health, Infection Prevention Division

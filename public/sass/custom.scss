@@ -10,6 +10,7 @@ $red: #CC4C46;
 }
 .navy {
   color: $navy;
+  font-size: .8em;
 }
 // .section-image h4 {
 //   margin-left: 1em;
@@ -126,23 +127,40 @@ footer {
   & .fa-arrow-right {
   margin: .5em .5em 0;
 }
+  &:hover .password {
+    border: 2px dotted $red;
+  }
 }
 
-
-.demobox:hover > .red{
-    border: 1px dotted $red;
-}
 
 .red {
   color:$red;
-  font-size: .8em;
-    // margin: 0 0 .2em 2.2em;
 }
 
-.password {
-  margin: 0;
+.smaller {
+    font-size: .8em;
 }
 
+.one-line {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.git {
+  font-size: 1.8rem;
+  & .fa-github {
+    font-size: 3rem;
+  }
+}
+
+.fa-laptop {
+  font-size: 3rem;
+}
+.animated {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 // ============
 // MEDIA QUERIES
 // ============

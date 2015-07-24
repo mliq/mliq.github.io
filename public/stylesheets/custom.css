@@ -11,154 +11,180 @@
 /* line 11, ../sass/custom.scss */
 .navy {
   color: #245276;
+  font-size: .8em;
 }
 
-/* line 18, ../sass/custom.scss */
+/* line 19, ../sass/custom.scss */
 .section-image ul {
   margin-right: 2em;
 }
 
-/* line 22, ../sass/custom.scss */
+/* line 23, ../sass/custom.scss */
 .section-body ul {
   text-align: left;
 }
 
-/* line 26, ../sass/custom.scss */
+/* line 27, ../sass/custom.scss */
 .list {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 31, ../sass/custom.scss */
+/* line 32, ../sass/custom.scss */
 a {
   color: #245276;
 }
-/* line 33, ../sass/custom.scss */
+/* line 34, ../sass/custom.scss */
 a:visited {
   color: #245276;
 }
-/* line 36, ../sass/custom.scss */
+/* line 37, ../sass/custom.scss */
 a:hover {
   color: #0446d9;
   text-decoration: none;
   transition: color .3s;
 }
-/* line 41, ../sass/custom.scss */
+/* line 42, ../sass/custom.scss */
 a:active {
   transition: color .3s;
   color: black;
 }
 
-/* line 47, ../sass/custom.scss */
+/* line 48, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
 
-/* line 53, ../sass/custom.scss */
+/* line 54, ../sass/custom.scss */
 footer {
   border-top: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
-/* line 57, ../sass/custom.scss */
+/* line 58, ../sass/custom.scss */
 footer a {
   padding: 0 .3em;
 }
 
-/* line 62, ../sass/custom.scss */
+/* line 63, ../sass/custom.scss */
 .heading {
   padding: 0;
   margin: 0;
 }
 
-/* line 67, ../sass/custom.scss */
+/* line 68, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
 }
 
-/* line 75, ../sass/custom.scss */
+/* line 76, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 80, ../sass/custom.scss */
+/* line 81, ../sass/custom.scss */
 .contact {
   margin: 0 0 5px;
 }
 
-/* line 84, ../sass/custom.scss */
+/* line 85, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 88, ../sass/custom.scss */
+/* line 89, ../sass/custom.scss */
 .band {
   overflow: auto;
 }
 
-/* line 101, ../sass/custom.scss */
+/* line 102, ../sass/custom.scss */
 .section-break {
   margin: .1em 0 .3em;
   color: #245276;
 }
 
-/* line 106, ../sass/custom.scss */
+/* line 107, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
-/* line 110, ../sass/custom.scss */
+/* line 111, ../sass/custom.scss */
 .section-subtitle {
   margin: .2em 0 0;
 }
 
-/* line 114, ../sass/custom.scss */
+/* line 115, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
-/* line 118, ../sass/custom.scss */
+/* line 119, ../sass/custom.scss */
 .predictor img {
   margin-bottom: 15px;
 }
 
-/* line 123, ../sass/custom.scss */
+/* line 124, ../sass/custom.scss */
 .demobox {
   margin-top: .5em;
   font-size: 2.3rem;
 }
-/* line 126, ../sass/custom.scss */
+/* line 127, ../sass/custom.scss */
 .demobox .fa-arrow-right {
   margin: .5em .5em 0;
 }
-
-/* line 132, ../sass/custom.scss */
-.demobox:hover > .red {
-  border: 1px dotted #CC4C46;
+/* line 130, ../sass/custom.scss */
+.demobox:hover .password {
+  border: 2px dotted #CC4C46;
 }
 
 /* line 136, ../sass/custom.scss */
 .red {
   color: #CC4C46;
+}
+
+/* line 140, ../sass/custom.scss */
+.smaller {
   font-size: .8em;
 }
 
-/* line 142, ../sass/custom.scss */
-.password {
-  margin: 0;
+/* line 144, ../sass/custom.scss */
+.one-line {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 149, ../sass/custom.scss */
+.git {
+  font-size: 1.8rem;
+}
+/* line 151, ../sass/custom.scss */
+.git .fa-github {
+  font-size: 3rem;
+}
+
+/* line 156, ../sass/custom.scss */
+.fa-laptop {
+  font-size: 3rem;
+}
+
+/* line 159, ../sass/custom.scss */
+.animated {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 152, ../sass/custom.scss */
+  /* line 170, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
 
-  /* line 155, ../sass/custom.scss */
+  /* line 173, ../sass/custom.scss */
   .tab-sm {
     margin: 0em;
   }
