@@ -1,11 +1,25 @@
 $blue: #0446d9;
 $navy: #245276;
+$red: #CC4C46;
 
 .tab {
   margin: .5em;
 }
+.tab-sm {
+  margin: .5em;
+}
+.navy {
+  color: $navy;
+}
+// .section-image h4 {
+//   margin-left: 1em;
+// }
 
-ul{
+.section-image ul {
+  margin-right: 2em;
+}
+
+.section-body ul {
     text-align:left;
 }
 
@@ -13,6 +27,7 @@ ul{
   margin-top: 0;
   margin-bottom: 0;
 }
+
 a {
   color: $navy;
   &:visited {
@@ -105,6 +120,29 @@ footer {
   // margin-left: 40px;
 }
 
+.demobox {
+  margin-top: .5em;
+  font-size: 2.3rem;
+  & .fa-arrow-right {
+  margin: .5em .5em 0;
+}
+}
+
+
+.demobox:hover > .red{
+    border: 1px dotted $red;
+}
+
+.red {
+  color:$red;
+  font-size: .8em;
+    // margin: 0 0 .2em 2.2em;
+}
+
+.password {
+  margin: 0;
+}
+
 // ============
 // MEDIA QUERIES
 // ============
@@ -113,6 +151,9 @@ footer {
 @media (max-width: 768px) {
   .text-xs-center {
     text-align: center;
+  }
+  .tab-sm{
+    margin: 0em;
   }
 }
 
