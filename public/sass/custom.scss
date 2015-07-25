@@ -27,6 +27,14 @@ $red: #CC4C46;
 .list {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.linkbox {
+  padding-top: 1em;
+}
+.section-summary {
+  margin-bottom: 0;
 }
 
 a {
@@ -112,6 +120,13 @@ footer {
   margin: .2em 0 .2em;
 }
 
+.section-title-xs {
+  margin: 0;
+}
+
+.section-subtitle-xs {
+  margin: .2em 0 .2em;
+}
 
 .section-body {
   padding: 0;
@@ -124,8 +139,6 @@ footer {
 
 .demobox {
   font-size: 2.3rem;
-  // border: 1px solid $navy;
-  // padding: .2em;
   margin: .9em 0 0;
   &:hover .password {
     border: 2px dotted $red;
@@ -144,12 +157,8 @@ footer {
     font-size: .8em;
 }
 
-.one-line {
-  
-}
-
 .git {
-  margin: 1em 0 1em;
+  margin: 1em 0 0;
   font-size: 1.8rem;
   & .fa-github {
     font-size: 3rem;
@@ -164,6 +173,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
 // ============
 // MEDIA QUERIES
 // ============
@@ -176,13 +186,22 @@ footer {
   .tab-sm{
     margin: 0em;
   }
+  .section-content-sm {
+    display:none;
+  }
+  .demobox .fa-external-link {
+    margin-top:.2em;
+  }
+  h6.first {
+  margin-top:0;
+}
 }
 
 /* Vertically center images on larger screens */
 @media (min-width: 768px) {
-  // .section-image {
-  //   margin-top: 0em;
-  // }
+  .section-content-xs {
+    display: none;
+  }
 }
 
 // ====================

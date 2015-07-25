@@ -28,144 +28,165 @@
 .list {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 1em;
 }
 
-/* line 32, ../sass/custom.scss */
+/* line 33, ../sass/custom.scss */
+.linkbox {
+  padding-top: 1em;
+}
+
+/* line 36, ../sass/custom.scss */
+.section-summary {
+  margin-bottom: 0;
+}
+
+/* line 40, ../sass/custom.scss */
 a {
   color: #245276;
 }
-/* line 34, ../sass/custom.scss */
+/* line 42, ../sass/custom.scss */
 a:visited {
   color: #245276;
 }
-/* line 37, ../sass/custom.scss */
+/* line 45, ../sass/custom.scss */
 a:hover {
   color: #0446d9;
   text-decoration: none;
   transition: color .3s;
 }
-/* line 42, ../sass/custom.scss */
+/* line 50, ../sass/custom.scss */
 a:active {
   transition: color .3s;
   color: black;
 }
 
-/* line 48, ../sass/custom.scss */
+/* line 56, ../sass/custom.scss */
 header {
   border-bottom: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
 
-/* line 54, ../sass/custom.scss */
+/* line 62, ../sass/custom.scss */
 footer {
   border-top: 1px solid lightgrey;
   margin: 5px 0 0;
   padding: 0 0 3px 0;
 }
-/* line 58, ../sass/custom.scss */
+/* line 66, ../sass/custom.scss */
 footer a {
   padding: 0 .3em;
 }
 
-/* line 63, ../sass/custom.scss */
+/* line 71, ../sass/custom.scss */
 .heading {
   padding: 0;
   margin: 0;
 }
 
-/* line 68, ../sass/custom.scss */
+/* line 76, ../sass/custom.scss */
 .heading2 {
   margin: .3em 0 .5em;
 }
 
-/* line 76, ../sass/custom.scss */
+/* line 84, ../sass/custom.scss */
 .subheading1 {
   margin: 0;
   padding: 0;
 }
 
-/* line 81, ../sass/custom.scss */
+/* line 89, ../sass/custom.scss */
 .contact {
   margin: 0 0 5px;
 }
 
-/* line 85, ../sass/custom.scss */
+/* line 93, ../sass/custom.scss */
 .icon-text {
   margin: 0 15px 0;
 }
 
-/* line 89, ../sass/custom.scss */
+/* line 97, ../sass/custom.scss */
 .band {
   overflow: auto;
 }
 
-/* line 102, ../sass/custom.scss */
+/* line 110, ../sass/custom.scss */
 .section-break {
   margin: .1em 0 .3em;
   color: #245276;
 }
 
-/* line 107, ../sass/custom.scss */
+/* line 115, ../sass/custom.scss */
 .section-title {
   margin: 0;
 }
 
-/* line 111, ../sass/custom.scss */
+/* line 119, ../sass/custom.scss */
 .section-subtitle {
   margin: .2em 0 .2em;
 }
 
-/* line 116, ../sass/custom.scss */
+/* line 123, ../sass/custom.scss */
+.section-title-xs {
+  margin: 0;
+}
+
+/* line 127, ../sass/custom.scss */
+.section-subtitle-xs {
+  margin: .2em 0 .2em;
+}
+
+/* line 131, ../sass/custom.scss */
 .section-body {
   padding: 0;
 }
 
-/* line 120, ../sass/custom.scss */
+/* line 135, ../sass/custom.scss */
 .predictor img {
   margin-bottom: 15px;
 }
 
-/* line 125, ../sass/custom.scss */
+/* line 140, ../sass/custom.scss */
 .demobox {
   font-size: 2.3rem;
   margin: .9em 0 0;
 }
-/* line 130, ../sass/custom.scss */
+/* line 143, ../sass/custom.scss */
 .demobox:hover .password {
   border: 2px dotted #CC4C46;
 }
-/* line 133, ../sass/custom.scss */
+/* line 146, ../sass/custom.scss */
 .demobox .fa-external-link {
   font-size: 2em;
 }
 
-/* line 139, ../sass/custom.scss */
+/* line 152, ../sass/custom.scss */
 .red {
   color: #CC4C46;
 }
 
-/* line 143, ../sass/custom.scss */
+/* line 156, ../sass/custom.scss */
 .smaller {
   font-size: .8em;
 }
 
-/* line 151, ../sass/custom.scss */
+/* line 160, ../sass/custom.scss */
 .git {
-  margin: 1em 0 1em;
+  margin: 1em 0 0;
   font-size: 1.8rem;
 }
-/* line 154, ../sass/custom.scss */
+/* line 163, ../sass/custom.scss */
 .git .fa-github {
   font-size: 3rem;
 }
 
-/* line 159, ../sass/custom.scss */
+/* line 168, ../sass/custom.scss */
 .fa-laptop {
   font-size: 3rem;
 }
 
-/* line 162, ../sass/custom.scss */
+/* line 171, ../sass/custom.scss */
 .animated {
   display: block;
   margin-left: auto;
@@ -174,14 +195,35 @@ footer a {
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 173, ../sass/custom.scss */
+  /* line 183, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
 
-  /* line 176, ../sass/custom.scss */
+  /* line 186, ../sass/custom.scss */
   .tab-sm {
     margin: 0em;
   }
+
+  /* line 189, ../sass/custom.scss */
+  .section-content-sm {
+    display: none;
+  }
+
+  /* line 192, ../sass/custom.scss */
+  .demobox .fa-external-link {
+    margin-top: .2em;
+  }
+
+  /* line 195, ../sass/custom.scss */
+  h6.first {
+    margin-top: 0;
+  }
 }
 /* Vertically center images on larger screens */
+@media (min-width: 768px) {
+  /* line 202, ../sass/custom.scss */
+  .section-content-xs {
+    display: none;
+  }
+}
