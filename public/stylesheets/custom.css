@@ -147,51 +147,51 @@ footer a {
   margin-bottom: 15px;
 }
 
-/* line 140, ../sass/custom.scss */
+/* line 144, ../sass/custom.scss */
 .password {
   padding: 0 .3em;
 }
 
-/* line 144, ../sass/custom.scss */
+/* line 148, ../sass/custom.scss */
 .demobox {
   font-size: 2.3rem;
   margin: .9em 0 0;
 }
-/* line 147, ../sass/custom.scss */
+/* line 151, ../sass/custom.scss */
 .demobox:hover .password {
   border: 2px dotted #CC4C46;
 }
-/* line 150, ../sass/custom.scss */
+/* line 154, ../sass/custom.scss */
 .demobox .fa-external-link {
   font-size: 2em;
 }
 
-/* line 156, ../sass/custom.scss */
+/* line 160, ../sass/custom.scss */
 .red {
   color: #CC4C46;
 }
 
-/* line 160, ../sass/custom.scss */
+/* line 164, ../sass/custom.scss */
 .smaller {
   font-size: .8em;
 }
 
-/* line 164, ../sass/custom.scss */
+/* line 168, ../sass/custom.scss */
 .git {
   margin: 1em 0 0;
   font-size: 1.8rem;
 }
-/* line 167, ../sass/custom.scss */
+/* line 171, ../sass/custom.scss */
 .git .fa-github {
   font-size: 3rem;
 }
 
-/* line 172, ../sass/custom.scss */
+/* line 176, ../sass/custom.scss */
 .fa-laptop {
   font-size: 3rem;
 }
 
-/* line 175, ../sass/custom.scss */
+/* line 179, ../sass/custom.scss */
 .animated {
   display: block;
   margin-left: auto;
@@ -200,35 +200,41 @@ footer a {
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  /* line 187, ../sass/custom.scss */
+  /* line 191, ../sass/custom.scss */
   .text-xs-center {
     text-align: center;
   }
 
-  /* line 190, ../sass/custom.scss */
+  /* line 194, ../sass/custom.scss */
   .tab-sm {
     margin: 0em;
   }
 
-  /* line 193, ../sass/custom.scss */
+  /* line 197, ../sass/custom.scss */
   .section-content-sm {
     display: none;
   }
 
-  /* line 196, ../sass/custom.scss */
+  /* line 200, ../sass/custom.scss */
   .demobox .fa-external-link {
     margin-top: .2em;
   }
 
-  /* line 199, ../sass/custom.scss */
+  /* line 203, ../sass/custom.scss */
   h6.first {
     margin-top: 0;
   }
 }
 /* Vertically center images on larger screens */
 @media (min-width: 768px) {
-  /* line 206, ../sass/custom.scss */
+  /* line 211, ../sass/custom.scss */
   .section-content-xs {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 870px) {
+  /* line 215, ../sass/custom.scss */
+  .predictor img {
+    margin-left: -1em;
   }
 }

@@ -137,6 +137,10 @@ footer {
   // margin-left: 40px;
 }
 
+.section-content-sm {
+  // margin-left: 1em;
+}
+
 .password {
   padding: 0 .3em;
 }
@@ -199,6 +203,7 @@ footer {
   h6.first {
     margin-top:0;
   }
+
 }
 
 /* Vertically center images on larger screens */
@@ -206,7 +211,13 @@ footer {
   .section-content-xs {
     display: none;
   }
+  @media (max-width:870px) {
+    .predictor img {
+    margin-left: -1em;
+  }
 }
+}
+
 
 // ====================
 // Testing black border
