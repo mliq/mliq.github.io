@@ -211,6 +211,11 @@ footer {
   .section-content-xs {
     display: none;
   }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   @media (max-width:870px) {
     .predictor img {
     margin-left: -1em;

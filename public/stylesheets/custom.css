@@ -231,9 +231,16 @@ footer a {
   .section-content-xs {
     display: none;
   }
+
+  /* line 214, ../sass/custom.scss */
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 @media (min-width: 768px) and (max-width: 870px) {
-  /* line 215, ../sass/custom.scss */
+  /* line 220, ../sass/custom.scss */
   .predictor img {
     margin-left: -1em;
   }
