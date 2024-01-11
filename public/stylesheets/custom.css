@@ -1,17 +1,17 @@
 /* line 5, ../sass/custom.scss */
 .tab {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 /* line 8, ../sass/custom.scss */
 .tab-sm {
-  margin: .5em;
+  margin: 0.5em;
 }
 
 /* line 11, ../sass/custom.scss */
 .navy {
   color: #245276;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 /* line 19, ../sass/custom.scss */
@@ -53,11 +53,11 @@ a:visited {
 a:hover {
   color: #0446d9;
   text-decoration: none;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 /* line 50, ../sass/custom.scss */
 a:active {
-  transition: color .3s;
+  transition: color 0.3s;
   color: black;
 }
 
@@ -76,7 +76,7 @@ footer {
 }
 /* line 66, ../sass/custom.scss */
 footer a {
-  padding: 0 .3em;
+  padding: 0 0.3em;
 }
 
 /* line 71, ../sass/custom.scss */
@@ -87,7 +87,7 @@ footer a {
 
 /* line 76, ../sass/custom.scss */
 .heading2 {
-  margin: .3em 0 .5em;
+  margin: 0.3em 0 0.5em;
 }
 
 /* line 84, ../sass/custom.scss */
@@ -113,7 +113,7 @@ footer a {
 
 /* line 110, ../sass/custom.scss */
 .section-break {
-  margin: .1em 0 .3em;
+  margin: 0.1em 0 0.3em;
   color: #245276;
 }
 
@@ -124,7 +124,7 @@ footer a {
 
 /* line 119, ../sass/custom.scss */
 .section-subtitle {
-  margin: .2em 0 .2em;
+  margin: 0.2em 0 0.2em;
 }
 
 /* line 123, ../sass/custom.scss */
@@ -134,7 +134,7 @@ footer a {
 
 /* line 127, ../sass/custom.scss */
 .section-subtitle-xs {
-  margin: .2em 0 .2em;
+  margin: 0.2em 0 0.2em;
 }
 
 /* line 131, ../sass/custom.scss */
@@ -149,17 +149,17 @@ footer a {
 
 /* line 144, ../sass/custom.scss */
 .password {
-  padding: 0 .3em;
+  padding: 0 0.3em;
 }
 
 /* line 148, ../sass/custom.scss */
 .demobox {
   font-size: 2.3rem;
-  margin: .9em 0 0;
+  margin: 0.9em 0 0;
 }
 /* line 151, ../sass/custom.scss */
 .demobox:hover .password {
-  border: 2px dotted #CC4C46;
+  border: 2px dotted #cc4c46;
 }
 /* line 154, ../sass/custom.scss */
 .demobox .fa-external-link {
@@ -168,12 +168,12 @@ footer a {
 
 /* line 160, ../sass/custom.scss */
 .red {
-  color: #CC4C46;
+  color: #cc4c46;
 }
 
 /* line 164, ../sass/custom.scss */
 .smaller {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 /* line 168, ../sass/custom.scss */
@@ -217,7 +217,7 @@ footer a {
 
   /* line 200, ../sass/custom.scss */
   .demobox .fa-external-link {
-    margin-top: .2em;
+    margin-top: 0.2em;
   }
 
   /* line 203, ../sass/custom.scss */
@@ -244,4 +244,21 @@ footer a {
   .predictor img {
     margin-left: -1em;
   }
+}
+
+.alert-banner {
+  background-color: rgb(246, 230, 248);
+  border-radius: 7px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  line-height: 2em;
+  margin: 1em auto 0;
+  max-width: 80%;
+  padding: 0 2em;
+}
+
+.alert-banner > * {
+  font-size: 18px;
+  margin: 0.3em auto;
+  text-align: center;
 }
