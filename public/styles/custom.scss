@@ -199,26 +199,12 @@ footer {
   h6.first {
     margin-top:0;
   }
-
 }
 
-/* Vertically center images on larger screens */
-@media (min-width: 768px) {
-  .section-content-xs {
-    display: none;
+.grubhub-logo {
+    width: 18rem;
+    margin-bottom: 10px;
   }
-  img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  @media (max-width:870px) {
-    .predictor img {
-    margin-left: -1em;
-  }
-}
-}
-
 
 // ====================
 // Testing black border
