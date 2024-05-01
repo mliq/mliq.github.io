@@ -1,0 +1,198 @@
+.tab {
+  margin: 0.5em;
+}
+
+.tab-sm {
+  margin: 0.5em;
+}
+
+.navy {
+  color: #245276;
+  font-size: 0.8em;
+}
+
+.section-image ul {
+  margin-right: 2em;
+}
+
+.section-body ul {
+  text-align: left;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.linkbox {
+  padding-top: 1em;
+}
+
+.section-summary {
+  margin-bottom: 0;
+}
+
+a {
+  color: #245276;
+}
+a:visited {
+  color: #245276;
+}
+a:hover {
+  color: #0446d9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:active {
+  transition: color 0.3s;
+  color: black;
+}
+
+header {
+  border-bottom: 1px solid lightgrey;
+  margin: 5px 0 0;
+  padding: 0 0 3px 0;
+}
+
+footer {
+  border-top: 1px solid lightgrey;
+  margin: 5px 0 0;
+  padding: 0 0 3px 0;
+}
+footer a {
+  padding: 0 0.3em;
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
+}
+
+.heading2 {
+  margin: 0.3em 0 0.5em;
+}
+
+.subheading1 {
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  margin: 0 0 5px;
+}
+
+.icon-text {
+  margin: 0 15px 0;
+}
+
+.band {
+  overflow: auto;
+}
+
+.section-break {
+  margin: 0.1em 0 0.3em;
+  color: #245276;
+}
+
+.section-title {
+  margin: 0;
+}
+
+.section-subtitle {
+  margin: 0.2em 0 0.2em;
+}
+
+.section-title-xs {
+  margin: 0;
+}
+
+.section-subtitle-xs {
+  margin: 0.2em 0 0.2em;
+}
+
+.section-body {
+  padding: 0;
+}
+
+.predictor img {
+  margin-bottom: 15px;
+}
+
+.password {
+  padding: 0 0.3em;
+}
+
+.demobox {
+  font-size: 2.3rem;
+  margin: 0.9em 0 0;
+}
+.demobox:hover .password {
+  border: 2px dotted #CC4C46;
+}
+.demobox .fa-external-link {
+  font-size: 2em;
+}
+
+.red {
+  color: #CC4C46;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+.git {
+  margin: 1em 0 0;
+  font-size: 1.8rem;
+}
+.git .fa-github {
+  font-size: 3rem;
+}
+
+.fa-laptop {
+  font-size: 3rem;
+}
+
+.animated {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Less than Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .text-xs-center {
+    text-align: center;
+  }
+  .tab-sm {
+    margin: 0em;
+  }
+  .section-content-sm {
+    display: none;
+  }
+  .demobox .fa-external-link {
+    margin-top: 0.2em;
+  }
+  h6.first {
+    margin-top: 0;
+  }
+}
+/* Vertically center images on larger screens */
+@media (min-width: 768px) {
+  .section-content-xs {
+    display: none;
+  }
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 870px) {
+  .predictor img {
+    margin-left: -1em;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
