@@ -1,3 +1,16 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+}
+
 .tab {
   margin: 0.5em;
 }
@@ -160,8 +173,20 @@ footer a {
   margin-right: auto;
 }
 
+.grubhub-logo {
+  width: 18rem;
+  margin-bottom: 10px;
+}
+
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  .subheading1 {
+    margin-top: 5px;
+  }
+  .grubhub-logo {
+    margin-top: 5px;
+    width: 16rem;
+  }
   .text-xs-center {
     text-align: center;
   }
@@ -174,13 +199,12 @@ footer a {
   .demobox .fa-external-link {
     margin-top: 0.2em;
   }
+  h2 {
+    font-size: 28px;
+  }
   h6.first {
     margin-top: 0;
   }
-}
-.grubhub-logo {
-  width: 18rem;
-  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=custom.css.map */

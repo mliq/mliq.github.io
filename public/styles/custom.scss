@@ -2,159 +2,183 @@ $blue: #0446d9;
 $navy: #245276;
 $red: #CC4C46;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+
 .tab {
-  margin: .5em;
+    margin: .5em;
 }
+
 .tab-sm {
-  margin: .5em;
+    margin: .5em;
 }
+
 .navy {
-  color: $navy;
-  font-size: .8em;
+    color: $navy;
+    font-size: .8em;
 }
+
 // .section-image h4 {
 //   margin-left: 1em;
 // }
 
 .section-image ul {
-  margin-right: 2em;
+    margin-right: 2em;
 }
 
 .section-body ul {
-    text-align:left;
+    text-align: left;
 }
 
 .list {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1em;
 }
 
 .linkbox {
-  padding-top: 1em;
+    padding-top: 1em;
 }
+
 .section-summary {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 a {
-  color: $navy;
-  &:visited {
     color: $navy;
-  }
-  &:hover {
-    color: $blue;
-    text-decoration: none;
-    transition: color .3s;
-  }
-  &:active {
-    transition: color .3s;
-    color: black;
-  }
+
+    &:visited {
+        color: $navy;
+    }
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+        transition: color .3s;
+    }
+
+    &:active {
+        transition: color .3s;
+        color: black;
+    }
 }
 
 header {
-  border-bottom: 1px solid lightgrey;
-  margin: 5px 0 0;
-  padding: 0 0 3px 0;
+    border-bottom: 1px solid lightgrey;
+    margin: 5px 0 0;
+    padding: 0 0 3px 0;
 }
 
 footer {
-  border-top: 1px solid lightgrey;
-  margin: 5px 0 0;
-  padding: 0 0 3px 0;
-  & a{
-    padding: 0 .3em;
-  }
+    border-top: 1px solid lightgrey;
+    margin: 5px 0 0;
+    padding: 0 0 3px 0;
+
+    & a {
+        padding: 0 .3em;
+    }
 }
 
 .heading {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .heading2 {
-  margin: .3em 0 .5em;
+    margin: .3em 0 .5em;
 }
 
 .subheading1 {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .contact {
-  margin: 0 0 5px;
+    margin: 0 0 5px;
 }
 
 .icon-text {
-  margin: 0 15px 0;
+    margin: 0 15px 0;
 }
 
 .band {
-  overflow: auto;
+    overflow: auto;
 }
 
 .section-image {
-  //margin-top: 1.5em;
+    //margin-top: 1.5em;
 }
 
 .section-content {
-  //border-left: 2px solid #585858;
-  //border-right: 2px solid #585858;
+    //border-left: 2px solid #585858;
+    //border-right: 2px solid #585858;
 }
 
 .section-break {
-  margin: .1em 0 .3em;
-  color: $navy;
+    margin: .1em 0 .3em;
+    color: $navy;
 }
 
 .section-title {
-  margin: 0;
+    margin: 0;
 }
 
 .section-subtitle {
-  margin: .2em 0 .2em;
+    margin: .2em 0 .2em;
 }
 
 .section-title-xs {
-  margin: 0;
+    margin: 0;
 }
 
 .section-subtitle-xs {
-  margin: .2em 0 .2em;
+    margin: .2em 0 .2em;
 }
 
 .section-body {
-  padding: 0;
+    padding: 0;
 }
 
 .predictor img {
-  margin-bottom: 15px;
-  // margin-left: 40px;
+    margin-bottom: 15px;
+    // margin-left: 40px;
 }
 
 .section-content-sm {
-  // margin-left: 1em;
+    // margin-left: 1em;
 }
 
 .password {
-  padding: 0 .3em;
+    padding: 0 .3em;
 }
 
 .demobox {
-  font-size: 2.3rem;
-  margin: .9em 0 0;
-  &:hover .password {
-    border: 2px dotted $red;
-  }
-  & .fa-external-link {
-    font-size: 2em;
-  }
+    font-size: 2.3rem;
+    margin: .9em 0 0;
+
+    &:hover .password {
+        border: 2px dotted $red;
+    }
+
+    & .fa-external-link {
+        font-size: 2em;
+    }
 }
 
 
 .red {
-  color:$red;
+    color: $red;
 }
 
 .smaller {
@@ -162,20 +186,27 @@ footer {
 }
 
 .git {
-  margin: 1em 0 0;
-  font-size: 1.8rem;
-  & .fa-github {
-    font-size: 3rem;
-  }
+    margin: 1em 0 0;
+    font-size: 1.8rem;
+
+    & .fa-github {
+        font-size: 3rem;
+    }
 }
 
 .fa-laptop {
-  font-size: 3rem;
+    font-size: 3rem;
 }
+
 .animated {
-  display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.grubhub-logo {
+    width: 18rem;
+    margin-bottom: 10px;
 }
 
 // ============
@@ -184,27 +215,39 @@ footer {
 
 /* Less than Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  .text-xs-center {
-    text-align: center;
-  }
-  .tab-sm{
-    margin: 0em;
-  }
-  .section-content-sm {
-    display:none;
-  }
-  .demobox .fa-external-link {
-    margin-top:.2em;
-  }
-  h6.first {
-    margin-top:0;
-  }
-}
+    .subheading1 {
+        margin-top: 5px;
+    }
 
-.grubhub-logo {
-    width: 18rem;
-    margin-bottom: 10px;
-  }
+    .grubhub-logo {
+        margin-top: 5px;
+        width: 16rem;
+    }
+
+    .text-xs-center {
+        text-align: center;
+    }
+
+    .tab-sm {
+        margin: 0em;
+    }
+
+    .section-content-sm {
+        display: none;
+    }
+
+    .demobox .fa-external-link {
+        margin-top: .2em;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h6.first {
+        margin-top: 0;
+    }
+}
 
 // ====================
 // Testing black border
