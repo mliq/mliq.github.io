@@ -11,6 +11,29 @@ h2 {
   font-weight: 600;
 }
 
+.heading-title span {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.horse-anim {
+  animation: gentle-bounce 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .horse-anim {
+    animation: none;
+  }
+}
 .tab {
   margin: 0.5em;
 }
@@ -61,6 +84,10 @@ a:active {
   transition: color 0.3s;
   color: black;
 }
+a:focus-visible {
+  outline: 3px solid #0446d9;
+  outline-offset: 2px;
+}
 
 header {
   border-bottom: 1px solid lightgrey;
@@ -75,6 +102,14 @@ footer {
 }
 footer a {
   padding: 0 0.3em;
+}
+
+.contact-links a {
+  margin: 0 0.5em;
+}
+
+.tagline {
+  margin-top: 0.5em;
 }
 
 .heading {
@@ -106,6 +141,21 @@ footer a {
 
 .band {
   overflow: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  background: white;
+  color: black;
+  padding: 8px 12px;
+  border: 2px solid #0446d9;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 10px;
 }
 
 .section-break {
