@@ -16,6 +16,30 @@ h2 {
 }
 
 
+// Distinctive Work heading styling (use Raleway for the W/word)
+.heading-title {
+    span {
+        font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: .02em;
+        font-weight: 700;
+    }
+}
+
+// Subtle bounce for horse image, respecting reduced motion
+@keyframes gentle-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.horse-anim {
+    animation: gentle-bounce 2.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .horse-anim { animation: none; }
+}
+
+
 .tab {
     margin: .5em;
 }
@@ -72,6 +96,11 @@ a {
         transition: color .3s;
         color: black;
     }
+
+    &:focus-visible {
+        outline: 3px solid $blue;
+        outline-offset: 2px;
+    }
 }
 
 header {
@@ -118,6 +147,21 @@ footer {
 
 .band {
     overflow: auto;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border: 2px solid $blue;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
 }
 
 .section-image {

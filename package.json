@@ -14,10 +14,20 @@
     "jquery": "^2.1.4",
     "path": "^0.11.14"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "playwright": "^1.54.2"
+  },
   "scripts": {
     "build": "npx sass ./public/styles",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "playwright:install": "npx playwright install chromium",
+    "test:e2e": "npx playwright test",
+    "capture:petfinder": "PLAYWRIGHT_CAPTURE_URL='https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044' npx playwright test tests/petfinder.capture.spec.ts --project=chromium",
+    "capture:petfinder:mobile": "PLAYWRIGHT_CAPTURE_URL='https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044' npx playwright test tests/petfinder.capture.spec.ts --project=mobile-chrome",
+    "watch": "npx sass --watch public/styles",
+    "serve": "python3 -m http.server",
+    "gif:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf \"fps=12,scale=360:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse\" -loop 0 public/img/petfinder-demo/preview.gif"
   },
   "repository": {
     "type": "git",
