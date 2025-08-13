@@ -8,7 +8,7 @@ Purpose: Turn PRD into concrete, verifiable work. Tasks are grouped into workstr
 - Add project card system (image, title, subtitle, summary, actions). Acceptance: matches spacing in `public/styles/custom.scss`, mobile-first.
 - Restore subtle animation affordances (Animate.css or CSS keyframes) without motion sickness. Acceptance: reduced motion respects `prefers-reduced-motion`.
 - Create color scale tokens from $navy/$blue/$red; add accessible hover/focus states. Acceptance: AA contrast for text, focus outline visible.
-- Improve IA: reorder projects, add short intro sentence, link to resume.
+- Improve IA: reorder projects, add short intro sentence, and place resume link prominently (header or intro).
 
 Questions
 - Which font do you want for the “Work” W? Example options: Playfair Display, Libre Baskerville, or previous brand font (name?).
@@ -76,6 +76,7 @@ Acceptance Criteria
  - `public/img/social-card.png` generated (1200x630), referenced by meta tags.
 
 ## WS6 — Build, Tooling, and Quality Gates
+- Document existing build and tooling commands in README.
 - Add `npm run watch` for Sass: `sass --watch public/styles`.
 - Add simple local server script: `npm run serve` -> `python3 -m http.server`.
 - Optional: Add `@playwright/test` tasks: `npm run capture:petfinder`.
@@ -86,6 +87,7 @@ Acceptance Criteria
 
 ## WS7 — Accessibility & Performance
 - A11y: keyboard navigation for all actions, visible focus, headings outline, color contrast checks, reduce motion support, descriptive link text.
+- Verify skip link jumps to main content.
 - Perf: compress images (WebP where helpful), defer non-critical CSS, verify Lighthouse >= 95 on Mobile.
 
 ## Implementation Plan (suggested order)
