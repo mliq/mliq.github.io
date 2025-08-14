@@ -17,15 +17,15 @@
         <title>Michael Liquori — Portfolio</title>
         <link rel="stylesheet" href="public/styles/site.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Michael Liquori — Principal Front-End Engineer. Selected projects, UX demos, and resume.">
+        <meta name="description" content="Senior Staff Front‑End Engineer. Fast, accessible UIs; AI enablement; testing modernization; performance.">
         <meta property="og:title" content="Michael Liquori — Portfolio">
-        <meta property="og:description" content="Principal FE Engineer. Leadership, excellence, scale, impact.">
+        <meta property="og:description" content="Fast, accessible UIs; AI enablement; testing modernization; performance.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://mliq.github.io/">
         <meta property="og:image" content="public/img/social-card.png">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Michael Liquori — Portfolio">
-        <meta name="twitter:description" content="Leadership, excellence, scale, impact.">
+        <meta name="twitter:description" content="Fast, accessible UIs; AI enablement; testing modernization; performance.">
         <meta name="twitter:image" content="public/img/social-card.png">
     </head>
 
@@ -41,15 +41,21 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
+          <div class="hero-wrap">
           <section class="hero container">
             <div class="identity">
-              <img class="avatar" src="public/img/michael-headshot-header.webp" alt="Michael Liquori headshot" width="96" height="96"/>
+              <img class="avatar" src="public/img/avatar.webp" alt="Michael Liquori headshot" width="144" height="144"/>
               <div class="intro">
                 <h1>Hi, I'm <span class="highlight">Michael</span>.</h1>
-                <p class="subtitle">Principal Front‑End Engineer. Senior Staff Engineer @ Grubhub. I lead teams to ship accessible, high‑impact experiences at scale.</p>
+                <p class="subtitle">Principal Front‑End Engineer. I lead teams to ship fast, accessible, well‑tested web experiences at scale. AI enablement, design systems, and performance are my home turf.</p>
+                <div class="cta">
+                  <a class="btn primary" href="mailto:liquori@gmail.com">Email me</a>
+                  <a class="btn" href="https://www.linkedin.com/in/liquori/">LinkedIn</a>
+                </div>
               </div>
             </div>
           </section>
+          </div>
         </header>
 
         <main id="main">
@@ -61,18 +67,54 @@
               <h2 id="portfolio-title">Projects</h2>
               <div class="projects">
                 <article class="project-card">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <div class="project-content">
+                    <h3>AI Enablement at Grubhub</h3>
+                    <small class="year">2025</small>
+                    <p>Led MCP and Copilot pilots, built playbooks, guardrails, and usage telemetry. Saved thousands of developer hours across multiple teams.</p>
+                    <ul class="project-details">
+                      <li>Org enablement: MCP/Copilot pilots, playbooks, guardrails</li>
+                      <li>Impact: usage telemetry and measurable time savings</li>
+                    </ul>
+                    <div class="badges">
+                      <span class="badge">MCP</span>
+                      <span class="badge">Copilot</span>
+                      <span class="badge">AI Enablement</span>
+                      <span class="badge">Playbooks</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card">
+                  <div class="thumb" aria-hidden="true"></div>
+                  <div class="project-content">
+                    <h3>Enzyme → RTL “Flambé” & HVG</h3>
+                    <small class="year">2022–2024</small>
+                    <p>Codemods and a staged migration to RTL. Hook‑View‑Glue architecture for cleaner components, fewer flakes, faster CI.</p>
+                    <ul class="project-details">
+                      <li>RTL migration + HVG pattern</li>
+                      <li>Fewer flakes, faster CI</li>
+                    </ul>
+                    <div class="badges">
+                      <span class="badge">RTL</span>
+                      <span class="badge">HVG</span>
+                      <span class="badge">Codemods</span>
+                      <span class="badge">CI</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card">
                   <picture>
                     <source srcset="public/img/petfinder-demo/preview.webp" type="image/webp">
                     <source srcset="public/img/petfinder-demo/preview.gif" type="image/gif">
-                    <img src="public/img/petfinder-demo/cover.png" alt="Petfinder Pet Quiz preview" />
+                  <img src="public/img/petfinder-demo/cover.png" alt="Petfinder Pet Quiz preview" width="1200" height="675" loading="lazy" />
                   </picture>
                   <div class="project-content">
-                    <h3>Petfinder Pet Quiz (Jul 2020–Mar 2022)</h3>
-                    <p>Guided adoption flow: friendly, low‑friction steps that help people find great matches fast.</p>
+                    <h3>Petfinder Pet Quiz</h3>
+                    <small class="year">2020–2022</small>
+                    <p>Friendly, low‑friction quiz that helps people find great matches fast.</p>
                     <ul class="project-details">
-                      <li>Role: UX engineering, rapid prototyping</li>
-                      <li>Capture: Playwright + compressed animated WebP</li>
-                      <li>Focus: Clarity, speed, and approachability</li>
+                      <li>Capture: Playwright → animated WebP</li>
+                      <li>Focus: clarity, speed, approachability</li>
                     </ul>
                     <div class="badges">
                       <span class="badge">Playwright</span>
@@ -81,30 +123,32 @@
                     </div>
                   </div>
                   <div class="project-actions"></div>
-                  <p class="tip">Tip: On Petfinder, select an available pet and click “Start your inquiry”.</p>
                 </article>
                 <article class="project-card">
-                  <img src="public/img/caringbridge-placeholder.svg" alt="CaringBridge project thumbnail" />
+                  <img src="public/img/caringbridge-placeholder.svg" alt="CaringBridge project thumbnail" width="1200" height="675" loading="lazy" />
                   <div class="project-content">
-                    <h3>CaringBridge (Jan 2019–Jul 2020)</h3>
-                    <p>Front‑end leadership for a nonprofit health support platform — accessibility, performance budgets, and UX modernization.</p>
+                    <h3>CaringBridge</h3>
+                    <small class="year">2019–2020</small>
+                    <p>Front‑end leadership for a nonprofit platform — accessibility, performance budgets, UX modernization.</p>
                     <div class="badges">
                       <span class="badge">A11y</span>
                       <span class="badge">Perf</span>
                       <span class="badge">UX</span>
                     </div>
                   </div>
-                  <div class="project-actions">
-                    <a class="btn" href="#case-caringbridge">Deep Dive</a>
-                  </div>
+                  <div class="project-actions"></div>
                 </article>
                 <article class="project-card">
-                  <img src="public/img/3mhorses/horse_and_flag.png" alt="3M Sales Derby screenshot" />
+                  <picture>
+                    <source srcset="public/img/3mhorses/horse_and_flag.webp" type="image/webp">
+                    <img src="public/img/3mhorses/horse_and_flag.png" alt="3M Sales Derby screenshot" width="1200" height="675" loading="lazy" />
+                  </picture>
                   <div class="project-content">
-                    <h3>3M Sales Derby (Jul 2015)</h3>
+                    <h3>3M Sales Derby</h3>
+                    <small class="year">2015</small>
                     <p>Animated dashboard powering a global sales incentive challenge for 3M Infection Prevention Division.</p>
                     <ul class="project-details">
-                      <li>Motion: lightweight keyframes for “horse race” feel</li>
+                      <li>Lightweight motion for a “horse race” feel</li>
                       <li>Stack: Node, Express, Bootstrap (era)</li>
                     </ul>
                     <div class="badges">
@@ -118,13 +162,14 @@
                   </div>
                 </article>
                 <article class="project-card">
-                  <img src="public/img/predictor/predictor14.gif" alt="Predictor app animation" />
+                  <img src="public/img/predictor/predictor14.gif" alt="Predictor app animation" width="1200" height="675" loading="lazy" />
                   <div class="project-content">
-                    <h3>Predictor! (Dec 2014)</h3>
+                    <h3>Predictor!</h3>
+                    <small class="year">2014</small>
                     <p>Johns Hopkins Data Science capstone — predictive text designed for low‑spec mobile devices.</p>
                     <ul class="project-details">
-                      <li>Accuracy ≈15%, sub‑2s responses</li>
-                      <li>Built in R/Shiny; compact models</li>
+                      <li>≈15% accuracy · sub‑2s responses</li>
+                      <li>R/Shiny · compact models</li>
                     </ul>
                     <div class="badges">
                       <span class="badge">R</span>

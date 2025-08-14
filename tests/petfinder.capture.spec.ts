@@ -1,12 +1,12 @@
 import { test, expect, devices } from '@playwright/test';
 
 const URL = process.env.PLAYWRIGHT_CAPTURE_URL ||
-  'https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044';
+  'https://www.petfinder.com/cat/ezra-75122044/il/chicago/cat-care-and-rescue-inc-il957/';
 
 const EMAIL = process.env.PETFINDER_EMAIL;
 const PASSWORD = process.env.PETFINDER_PASSWORD;
 
-test('Petfinder quiz capture', async ({ page, browser }) => {
+test('Petfinder quiz capture (Ezra flow)', async ({ page, browser }) => {
   // Phase 1: Open page, dismiss cookies without recording
   await page.goto(URL, { waitUntil: 'load' });
   await page.waitForLoadState('networkidle');
@@ -30,7 +30,16 @@ test('Petfinder quiz capture', async ({ page, browser }) => {
     }
   }
 
-  // Persist cookies/consent, then start a fresh context with video recording
+  // Click "Start your Inquiry" to enter the flow if present
+  try {
+    const startInquiry = page.locator('role=button[name=/start your inquiry/i], text=/start your inquiry/i').first();
+    if (await startInquiry.count()) {
+      await startInquiry.click({ timeout: 3000 });
+      await page.waitForLoadState('networkidle');
+    }
+  } catch {}
+
+  // Persist cookies/consent and any pre-navigation state, then start a fresh context with video recording
   const info = test.info();
   const statePath = info.outputPath('state.json');
   await page.context().storageState({ path: statePath });
@@ -52,12 +61,10 @@ test('Petfinder quiz capture', async ({ page, browser }) => {
   });
 
   const selectors = [
-    'text=Continue',
-    'text=Next',
-    'text=Get started',
-    'text=Get Started',
-    'text=Start',
+    'role=button[name=/start your inquiry/i]',
+    'text=/Start your Inquiry/i',
     'role=button[name="Continue"]',
+    'text=/Continue|Next|Get started|Get Started|Start/i',
   ];
 
   let advanced = false;
@@ -95,14 +102,17 @@ test('Petfinder quiz capture', async ({ page, browser }) => {
     const loginForm = recPage.locator('input[type="email"], form >> text=/log\s*in|sign\s*in/i');
     if (await loginForm.count()) break;
 
-    // Attempt to interact with a SELECT or combobox to show form interaction
+    // Attempt to interact with a SELECT or combobox to show form interaction (and keyboard navigation)
     try {
       const select = recPage.locator('select').first();
       if (await select.count()) {
         const options = await select.locator('option').count();
         if (options > 1) {
           await select.selectOption({ index: 1 });
-          await page.waitForTimeout(500);
+          await recPage.waitForTimeout(300);
+          await select.focus();
+          await recPage.keyboard.press('ArrowDown');
+          await recPage.keyboard.press('Enter');
         }
       } else {
         // ARIA combobox pattern
@@ -112,7 +122,10 @@ test('Petfinder quiz capture', async ({ page, browser }) => {
           const option = recPage.locator('[role="option"], li[role="option"], [role="listbox"] [role="option"]').first();
           if (await option.count()) {
             await option.click({ timeout: 1500 });
-            await recPage.waitForTimeout(500);
+            await recPage.waitForTimeout(300);
+            await combo.first().focus();
+            await recPage.keyboard.press('ArrowDown');
+            await recPage.keyboard.press('Enter');
           }
         }
       }

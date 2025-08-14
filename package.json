@@ -29,6 +29,7 @@
     "serve": "python3 -m http.server",
     "gif:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf \"fps=18,scale=720:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]paletteuse=dither=sierra2_4a\" -loop 0 public/img/petfinder-demo/preview.gif",
     "webp:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf fps=18,scale=720:-1:flags=lanczos -c:v libwebp -lossless 0 -qscale 60 -preset picture -loop 0 -an -vsync 0 public/img/petfinder-demo/preview.webp",
+    "webp:images": "find public/img -type f \\(-iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg'\\) -not -iname '*.webp' -exec sh -c 'for f; do ffmpeg -y -i \"$f\" -c:v libwebp -qscale 75 \"${f%.*}.webp\"; done' sh {} +",
     "capture:petfinder:video": "PLAYWRIGHT_CAPTURE_URL='https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044' npx playwright test tests/petfinder.capture.spec.ts --project=chromium && node scripts/export-latest-video.js"
   },
   "repository": {

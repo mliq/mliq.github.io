@@ -1,6 +1,9 @@
 # Repository Guidelines
 
 ▌using the playwright MCP look at the page you have created at file:///Users/mliquori/mliq.github.io/index.html.using the playwright MCP look at the page you have created at file:///Users/mliquori/mliq.github.io/index.html. Deeply think about all the messiness and problems and how it doesn't match the PRD or TODO and rewrite those so we can iterate to perfection
+
+continue to iterate on TODOS.md. Check off when done. Add new ones as you come up with them. Delete the ones that have been checked off in the past.
+
 ▌Site Review & Iteration Plan
 
 After reviewing index.html, here are the key mismatches and areas for improvement compared to the PRD and TODO:
