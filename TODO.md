@@ -36,12 +36,12 @@ Open Questions
 
 ## Hero / About
 
-* [ ] Update **hero subtitle** (mention scale & scope):
+* [x] Update **hero subtitle** (mention scale & scope):
 
   ```html
   <p class="subtitle">Principal Front-End Engineer. I lead teams to ship fast, accessible, well-tested web experiences at scale (serving ~450K MAU). Org-level enablement, design systems, performance.</p>
   ```
-* [ ] Replace **About** text with impact-first summary:
+* [x] Replace **About** text with impact-first summary:
 
   ```html
   <ul class="hero-bullets">
@@ -53,12 +53,12 @@ Open Questions
 
 ## About section copy
 
-* [ ] Replace the About paragraph with a tighter, impact-forward version:
+* [x] Replace the About paragraph with a tighter, impact-forward version:
 
   ```html
   <p>I turn gnarly front-end problems into crisp, testable components and repeatable playbooks. Recent focus areas: AI enablement (MCP, Copilot), test modernization (Enzyme → RTL with Hook-View-Glue), performance profiling, and BFF contracts. I care about the craft, the result, and leaving teams stronger.</p>
   ```
-* [ ] Add a single sentence that names scope explicitly:
+* [x] Add a single sentence that names scope explicitly:
 
   ```html
   <p>Operating at Senior Staff scope: org-level adoption, cross-team coaching, and guardrails that stick.</p>
