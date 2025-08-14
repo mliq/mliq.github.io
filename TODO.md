@@ -239,7 +239,7 @@ Open Questions
 
 ## Code and semantics
 
-* [ ] Move `<section id="contact">` inside `<main>` or adjust semantics by wrapping it in a `<footer>` sub-section for consistency.
+* [x] Move `<section id="contact">` inside `<main>` or adjust semantics by wrapping it in a `<footer>` sub-section for consistency.
 * [ ] Ensure only one `<h1>` appears. If any card uses an `<h3>` without an `<h2>` context, keep the section `<h2>` visible for assistive tech (already present).
 * [ ] Keep lists short and parallel. Avoid repeating “Stack:” labels; use badges for that information.
 
@@ -464,7 +464,7 @@ Open Questions
 
 ## Code organization
 
-* [ ] Move `<section id="contact">` **inside `<main>`** (or mark as `<footer>` sub-section) for semantic consistency.
+* [x] Move `<section id="contact">` **inside `<main>`** (or mark as `<footer>` sub-section) for semantic consistency.
 * [ ] Create `/case-studies/` folder with stub pages for **AI Enablement** and **Flambé/HVG**; link from card CTAs.
 * [ ] Add `/public/Michael_Liquori_Resume.pdf`; wire the hero + contact buttons.
 
@@ -651,7 +651,7 @@ Goal: a tasteful, fast, single-page portfolio that highlights your **org-level i
 
 ## 🧱 Code & semantics
 
-* [ ] Move `#contact` inside `<main>` (landmarks: header → main → footer).
+* [x] Move `#contact` inside `<main>` (landmarks: header → main → footer).
 * [ ] Keep scripts at the end and minimal; no blocking resources above the fold.
 * [ ] Add small utility classes documented in `public/styles/site.css` (buttons, chips, actions).
 
