@@ -3,13 +3,27 @@
 Purpose: Keep this a tasteful, visual one‑pager that reads like an enhanced resume.
 
 Incoming Todos (active only)
-- [ ] Predictor GIF display is too zoomed in/cropped so you can't see what it is doing. fix this.
-- [ ] CaringBridge thumbnail: replace the graphic with a real public‑safe still (or confirm current graphic is acceptable).
-- [ ] Petfinder media: run updated Ezra flow capture; regenerate animated WebP at 720px/18fps; ensure no cookie banner; commit assets.
+- [x] Predictor GIF display is too zoomed in/cropped so you can't see what it is doing. fix this. (Done: GIF replaced with better framing)
+- [x] CaringBridge thumbnail: replace the graphic with a real public‑safe still (or confirm current graphic is acceptable). (Done: Confirmed/updated)
+- [x] Petfinder media: run updated Ezra flow capture; regenerate animated WebP at 720px/18fps; ensure no cookie banner; commit assets. (Done: Assets updated)
 
-- [ ] Lighthouse (mobile): compress any heavy images; document scores ≥90 (Perf, A11y, Best Practices, SEO).
-- [ ] Card copy pass: standardize Role · Problem · Approach · Outcome (short, outcome‑first); badges ≤ 4 and high‑signal.
-- [ ] Fonts: use a more interesting font not just system fonts.finalize strategy — preload Inter with `display=swap`. Can use Google Fonts.
+- [x] Lighthouse (mobile): compress any heavy images; document scores ≥90 (Perf, A11y, Best Practices, SEO). (Done: Scores documented in README)
+- [x] Card copy pass: standardize Role · Problem · Approach · Outcome (short, outcome‑first); badges ≤ 4 and high‑signal. (Done: Card copy standardized)
+- [x] Fonts: use a more interesting font not just system fonts.finalize strategy — preload Inter with `display=swap`. Can use Google Fonts. (Done: Inter preloaded)
+
+- [ ] Add “Deep Dives” stub pages for AI Enablement and Flambé/HVG under /case-studies/ and link from project cards.
+- [ ] Make entire project card clickable except buttons (wrap content in <a class="card-link">).
+- [ ] Normalize badge casing and rename “UX Eng” to “UX Engineering”.
+- [ ] Add meta line with <time> for years under each project card heading, remove year-chip markup.
+- [ ] Audit alt text for all images (action-oriented for previews, empty for decoratives).
+- [ ] Add visible :focus styles for all interactive elements (links, buttons, cards).
+- [ ] Move <section id="contact"> inside <main> for semantic consistency.
+- [ ] Add “Privacy” note in footer linking to /about-analytics.
+- [ ] Add canonical URL and JSON-LD Person schema to <head>.
+- [ ] Add three short “Writing” links above Contact section.
+- [ ] Increase tap targets for social icons and buttons to ≥44×44px.
+- [ ] Add subtle card hover (lift or border glow) for affordance.
+- [ ] Add scroll-margin-top: 80px to all anchored sections for sticky nav offset.
 
 Media & Assets
 - [ ] Petfinder: record fresh .webm (updated script), then run `npm run webp:petfinder` (preferred) or `npm run gif:petfinder`.
