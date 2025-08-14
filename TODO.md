@@ -3,7 +3,6 @@
 Purpose: Keep this a tasteful, visual one‑pager that reads like an enhanced resume.
 
 Incoming Todos (active only)
-- [ ] Predictor GIF display is too zoomed in/cropped so you can't see what it is doing. fix this.
 - [ ] CaringBridge thumbnail: replace the graphic with a real public‑safe still (or confirm current graphic is acceptable).
 - [ ] Petfinder media: run updated Ezra flow capture; regenerate animated WebP at 720px/18fps; ensure no cookie banner; commit assets.
 
