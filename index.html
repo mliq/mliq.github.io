@@ -4,22 +4,18 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-640Q4NQ24V"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-640Q4NQ24V');
         </script>
+        
 
-        <title>Michael Liquori</title>
-        <link rel="stylesheet" href="public/vendor/readable/bootstrap.min.css">
-        <link rel="stylesheet" href="public/vendor/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="public/vendor/animate/animate.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
-        <link rel="stylesheet" href="public/styles/custom.css">
+        <title>Michael Liquori — Portfolio</title>
+        <link rel="stylesheet" href="public/styles/site.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Michael Liquori — Principal Front-End Engineer. Selected projects, UX demos, and resume.">
         <meta property="og:title" content="Michael Liquori — Portfolio">
@@ -35,176 +31,133 @@
 
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
-        <header role="banner" class="container site-hero">
-            <div class="row">
-                <div class="col-sm-8 col-xs-12">
-                    <h1 class="heading text-left text-xs-center">Michael Liquori</h1>
-                </div>
-                <div class="col-sm-4 col-xs-12 text-right text-xs-center">
-                    <div class="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:liquori@gmail.com"
-                            class="icon-text">liquori@gmail.com</a></div>
-                    <div class="contact"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:13528701905" class="icon-text">+1 (352) 870
-                            1905</a><span class="tab"></span></div>
-                </div>
+        <header id="home">
+          <nav class="container nav" aria-label="Primary">
+            <a href="#home" class="logo">Michael&nbsp;Liquori</a>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <section class="hero container">
+            <div class="identity">
+              <img class="avatar" src="public/img/michael-headshot-header.webp" alt="Michael Liquori headshot" width="96" height="96"/>
+              <div class="intro">
+                <h1>Hi, I'm <span class="highlight">Michael</span>.</h1>
+                <p class="subtitle">Principal Front‑End Engineer. Senior Staff Engineer @ Grubhub. I lead teams to ship accessible, high‑impact experiences at scale.</p>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class='role text-center'>Senior Staff Engineer @ <a href='https://www.grubhub.com'><img
-                                src='public/svg/grubhub.svg' class="grubhub-logo" alt="Grubhub"></a></h2>
-                    <!-- To hide the resume CTA, comment out the block below. Layout remains intact. -->
-                    <p>
-                        <a class="btn btn-link" href="./Michael Liquori Resume CV 2025.pdf" aria-label="View Resume PDF">View Resume</a>
-                    </p>
-                </div>
-            </div>
+          </section>
         </header>
 
-        <h2 class="heading2 text-center">
-            <div class="heading-title animated fadeInDown"><span>What I've Made</span></div>
-        </h2>
-        <p class="text-center lead" aria-label="Site introduction">Principal Front-End Engineer. I lead teams to ship fast,
-            accessible experiences at scale.</p>
-
         <main id="main">
-            <section id="projects" class="projects-section container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <article class="project-card" role="group" aria-labelledby="petfinder-card-title">
-                            <picture>
-                                <source srcset="public/img/petfinder-demo/preview.gif" type="image/gif">
-                                <img src="public/img/petfinder-demo/cover.png" alt="Animated preview of the Petfinder Pet Quiz flow"
-                                    loading="lazy" decoding="async" />
-                            </picture>
-                            <div class="body">
-                                <h3 id="petfinder-card-title" class="title">Petfinder Pet Quiz</h3>
-                                <p class="subtitle">Interactive UX demo</p>
-                                <p class="summary">A quick, friendly quiz to help adopters discover great matches.</p>
-                            </div>
-                            <div class="actions">
-                                <a class="btn btn-default btn-sm" target="_blank" rel="noopener noreferrer" href="https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044">
-                                    <i class="fa fa-external-link"></i> Live (volatile)
-                                </a>
-                                <a class="btn btn-primary btn-sm" href="#case-petfinder">
-                                    <i class="fa fa-star-o"></i> Deep Dive
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <article class="project-card" role="group" aria-labelledby="predictor-card-title">
-                            <img src="public/img/predictor/predictor14.gif" alt="Animated demo of the Predictor app showing next-word suggestions"
-                                loading="lazy" decoding="async">
-                            <div class="body">
-                                <h3 id="predictor-card-title" class="title">Predictor!</h3>
-                                <p class="subtitle">Johns Hopkins Data Science Capstone</p>
-                                <p class="summary">Predictive text app designed for low-spec mobile devices.</p>
-                            </div>
-                            <div class="actions">
-                                <a class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" href="https://mliq.shinyapps.io/Predictor">
-                                    <i class="fa fa-external-link"></i> Demo
-                                </a>
-                                <a class="btn btn-default btn-sm" target="_blank" rel="noopener noreferrer" href="https://github.com/mliq/Predictor">
-                                    <i class="fa fa-github"></i> Code
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <article class="project-card" role="group" aria-labelledby="sales-derby-card-title">
-                            <img src="public/img/3mhorses/horse_and_flag.png" class="horse-anim" alt="International Sales Derby dashboard with animated horses and country flags"
-                                loading="lazy" decoding="async">
-                            <div class="body">
-                                <h3 id="sales-derby-card-title" class="title">International Sales Derby</h3>
-                                <p class="subtitle">3M Health, Infection Prevention Division</p>
-                                <p class="summary">Animated dashboard powering a global sales incentive challenge.</p>
-                            </div>
-                            <div class="actions">
-                                <a class="btn btn-default btn-sm" target="_blank" rel="noopener noreferrer" href="https://github.com/mliq/prime_solo_project">
-                                    <i class="fa fa-github"></i> Code
-                                </a>
-                            </div>
-                            <p class="navy smaller" style="margin:6px 12px 0;">Note: Formerly hosted on Heroku; demo link retired.</p>
-                        </article>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <article class="project-card" role="group" aria-labelledby="caringbridge-card-title">
-                            <div class="body">
-                                <h3 id="caringbridge-card-title" class="title">CaringBridge</h3>
-                                <p class="subtitle">Nonprofit health support platform</p>
-                                <p class="summary">Front‑end leadership across accessibility, performance, and UX modernization.</p>
-                            </div>
-                            <div class="actions">
-                                <a class="btn btn-primary btn-sm" href="#case-caringbridge">
-                                    <i class="fa fa-star-o"></i> Deep Dive
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+            <section id="about" class="about container" aria-labelledby="about-title">
+              <h2 id="about-title">About Me</h2>
+              <p>I build modern, performant UIs and lead cross‑functional teams to deliver with clarity and speed. Focus areas include accessibility, design systems, and web performance. Previously delivered at scale for Grubhub and nonprofits like CaringBridge.</p>
             </section>
-            <section id="case-studies" class="container">
-                <h2 class="text-center">Deep Dives</h2>
-            </section>
-            <section id="case-petfinder" class="container" aria-labelledby="petfinder-demo-title">
-                <h3 id="petfinder-demo-title" class="text-center">Petfinder Pet Quiz — Deep Dive</h3>
-                <p class="text-center navy">Recorded capture of the happy path (cookie banner dismissed, early form selection). Live link can break as pets are adopted.</p>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-                        <a href="https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044" target="_blank" rel="noopener noreferrer">
-                            <picture>
-                                <source srcset="public/img/petfinder-demo/preview.gif" type="image/gif">
-                                <img src="public/img/petfinder-demo/cover.png" alt="Petfinder Pet Quiz preview showing cookie banner dismissal and early form steps"
-                                    style="max-width:100%;height:auto;" loading="lazy" decoding="async" />
-                            </picture>
-                        </a>
-                        <p class="navy" style="margin-top:8px;">
-                            <a href="public/video/petfinder-demo.webm" target="_blank" rel="noopener noreferrer"><i class="fa fa-play"></i> Watch capture (WebM)</a>
-                        </p>
-                        <div class="case-study">
-                            <h4>Goals</h4>
-                            <ul>
-                                <li>Guide adopters to great matches with a friendly, low-friction flow.</li>
-                                <li>Demonstrate interactions clearly: cookie banner dismissal, early form selection.</li>
-                            </ul>
-                            <h4>Notes</h4>
-                            <ul>
-                                <li>Capture scripted via Playwright; recording stops before login screens.</li>
-                                <li>Primary homepage visual uses a compressed animated GIF (with WebM available).</li>
-                            </ul>
-                        </div>
+            <section id="portfolio" class="portfolio container" aria-labelledby="portfolio-title">
+              <h2 id="portfolio-title">Projects</h2>
+              <div class="projects">
+                <article class="project-card">
+                  <picture>
+                    <source srcset="public/img/petfinder-demo/preview.webp" type="image/webp">
+                    <source srcset="public/img/petfinder-demo/preview.gif" type="image/gif">
+                    <img src="public/img/petfinder-demo/cover.png" alt="Petfinder Pet Quiz preview" />
+                  </picture>
+                  <div class="project-content">
+                    <h3>Petfinder Pet Quiz (Jul 2020–Mar 2022)</h3>
+                    <p>Guided adoption flow: friendly, low‑friction steps that help people find great matches fast.</p>
+                    <ul class="project-details">
+                      <li>Role: UX engineering, rapid prototyping</li>
+                      <li>Capture: Playwright + compressed animated WebP</li>
+                      <li>Focus: Clarity, speed, and approachability</li>
+                    </ul>
+                    <div class="badges">
+                      <span class="badge">Playwright</span>
+                      <span class="badge">WebP</span>
+                      <span class="badge">UX Eng</span>
                     </div>
-                </div>
-            </section>
-            <section id="case-caringbridge" class="container" aria-labelledby="caringbridge-title">
-                <h3 id="caringbridge-title" class="text-center">CaringBridge — Deep Dive</h3>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                        <div class="case-study">
-                            <h4>Overview</h4>
-                            <p>CaringBridge provides a platform for people facing health journeys to communicate and receive support. This case study highlights front‑end leadership work across accessibility, performance, and UX modernization.</p>
-                            <h4>Highlights</h4>
-                            <ul>
-                                <li>Accessibility: Visible focus states and color contrast compliance across core flows.</li>
-                                <li>Performance: Baseline budgets and image optimization; improved perceived load.</li>
-                                <li>UX: Simplified navigation and clearer IA to reduce friction for key tasks.</li>
-                            </ul>
-                            <p class="navy smaller">Note: Some details are generalized; proprietary information is excluded. Public artifacts to be added.</p>
-                        </div>
+                  </div>
+                  <div class="project-actions"></div>
+                  <p class="tip">Tip: On Petfinder, select an available pet and click “Start your inquiry”.</p>
+                </article>
+                <article class="project-card">
+                  <img src="public/img/caringbridge-placeholder.svg" alt="CaringBridge project thumbnail" />
+                  <div class="project-content">
+                    <h3>CaringBridge (Jan 2019–Jul 2020)</h3>
+                    <p>Front‑end leadership for a nonprofit health support platform — accessibility, performance budgets, and UX modernization.</p>
+                    <div class="badges">
+                      <span class="badge">A11y</span>
+                      <span class="badge">Perf</span>
+                      <span class="badge">UX</span>
                     </div>
-                </div>
+                  </div>
+                  <div class="project-actions">
+                    <a class="btn" href="#case-caringbridge">Deep Dive</a>
+                  </div>
+                </article>
+                <article class="project-card">
+                  <img src="public/img/3mhorses/horse_and_flag.png" alt="3M Sales Derby screenshot" />
+                  <div class="project-content">
+                    <h3>3M Sales Derby (Jul 2015)</h3>
+                    <p>Animated dashboard powering a global sales incentive challenge for 3M Infection Prevention Division.</p>
+                    <ul class="project-details">
+                      <li>Motion: lightweight keyframes for “horse race” feel</li>
+                      <li>Stack: Node, Express, Bootstrap (era)</li>
+                    </ul>
+                    <div class="badges">
+                      <span class="badge">Node</span>
+                      <span class="badge">Express</span>
+                      <span class="badge">CSS Animations</span>
+                    </div>
+                  </div>
+                  <div class="project-actions">
+                    <a class="btn secondary" href="https://github.com/mliq/prime_solo_project" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </article>
+                <article class="project-card">
+                  <img src="public/img/predictor/predictor14.gif" alt="Predictor app animation" />
+                  <div class="project-content">
+                    <h3>Predictor! (Dec 2014)</h3>
+                    <p>Johns Hopkins Data Science capstone — predictive text designed for low‑spec mobile devices.</p>
+                    <ul class="project-details">
+                      <li>Accuracy ≈15%, sub‑2s responses</li>
+                      <li>Built in R/Shiny; compact models</li>
+                    </ul>
+                    <div class="badges">
+                      <span class="badge">R</span>
+                      <span class="badge">Shiny</span>
+                      <span class="badge">Data Science</span>
+                    </div>
+                  </div>
+                  <div class="project-actions">
+                    <a class="btn secondary" href="https://mliq.shinyapps.io/Predictor" target="_blank" rel="noopener">Demo</a>
+                    <a class="btn secondary" href="https://github.com/mliq/Predictor" target="_blank" rel="noopener">Code</a>
+                  </div>
+                </article>
+              </div>
             </section>
+            
         </main>
-        <footer>
-            <h2 class="text-center">
-                Connect:
-                <a href="https://www.linkedin.com/in/liquori" aria-label="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="https://github.com/mliq" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="http://stackexchange.com/users/2706904/mliqu?tab=accounts" aria-label="Stack Exchange"><i
-                        class="fa fa-stack-exchange" aria-hidden="true"></i></a>
-            </h2>
+        <section id="contact" class="contact container" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+          <p class="call">Let's work together</p>
+          <p class="email"><a href="mailto:liquori@gmail.com">liquori@gmail.com</a></p>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/liquori" class="icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zM4.943 13.394V6.169H2.542v7.225zM3.743 5.182c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.823 0-1.342.539-1.342 1.247 0 .694.521 1.249 1.327 1.249zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193V7.19h-2.4v6.204z"/></svg>
+            </a>
+            <a href="https://github.com/mliq" class="icon" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <p>© 2025 Michael Liquori. All rights reserved.</p>
+          </div>
         </footer>
     </body>
 

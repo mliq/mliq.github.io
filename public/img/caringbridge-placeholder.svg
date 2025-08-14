@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="CaringBridge placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d2330"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <g fill="#82aaff" font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="330" font-size="42" font-weight="700">CaringBridge</text>
+    <text x="600" y="370" font-size="20" fill="#8b949e">Accessibility • Performance • UX</text>
+  </g>
+</svg>

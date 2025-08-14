@@ -51,7 +51,7 @@ This repository powers a lightweight, static site for mliq.github.io. Keep contr
 
 ## Evergreen Guidelines (for agents/contributors)
 - Verify design quality across all breakpoints (XS/SM/MD/LG) after each change.
-- Author styles in `public/styles/custom.scss`. Compiled CSS in `public/styles/custom.css` is generated and should not be edited directly.
+- Author styles in `public/styles/site.css` (plain CSS only).
 - Prefer descriptive alt text and maintain visible keyboard focus; respect `prefers-reduced-motion`.
 - Use Playwright to render `index.html` and capture artifacts under `artifacts/` during reviews.
 - Use “Deep Dives” instead of “Case Studies” or “Preview” for narrative sections.

@@ -19,15 +19,17 @@
     "playwright": "^1.54.2"
   },
   "scripts": {
-    "build": "npx sass ./public/styles",
+    "build": "echo 'No build step needed (plain CSS)'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "playwright:install": "npx playwright install chromium",
     "test:e2e": "npx playwright test",
     "capture:petfinder": "PLAYWRIGHT_CAPTURE_URL='https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044' npx playwright test tests/petfinder.capture.spec.ts --project=chromium",
     "capture:petfinder:mobile": "PLAYWRIGHT_CAPTURE_URL='https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044' npx playwright test tests/petfinder.capture.spec.ts --project=mobile-chrome",
-    "watch": "npx sass --watch public/styles",
+    "watch": "echo 'No watch needed (plain CSS)'",
     "serve": "python3 -m http.server",
-    "gif:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf \"fps=12,scale=360:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse\" -loop 0 public/img/petfinder-demo/preview.gif"
+    "gif:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf \"fps=18,scale=720:-1:flags=lanczos,split[s0][s1];[s0]palettegen=stats_mode=single[p];[s1][p]paletteuse=dither=sierra2_4a\" -loop 0 public/img/petfinder-demo/preview.gif",
+    "webp:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf fps=18,scale=720:-1:flags=lanczos -c:v libwebp -lossless 0 -qscale 60 -preset picture -loop 0 -an -vsync 0 public/img/petfinder-demo/preview.webp",
+    "capture:petfinder:video": "PLAYWRIGHT_CAPTURE_URL='https://www.petfinder.com/user/profile/create/?experience=loginAtEnd&source=adoptionInquiry&animalId=75122044' npx playwright test tests/petfinder.capture.spec.ts --project=chromium && node scripts/export-latest-video.js"
   },
   "repository": {
     "type": "git",
