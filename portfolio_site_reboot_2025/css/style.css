@@ -1,0 +1,259 @@
+/*
+  Base styles for the personal portfolio site.
+
+  The design leans into a dark, editor‑inspired palette to mirror the
+  colours of the user's favourite theme.  Typography is kept clean
+  and spacious, with generous line heights and margins to aid
+  readability.  Project cards are arranged in a responsive grid that
+  collapses gracefully on narrow screens.  Icons are sized with
+  rem units so they scale with the base font.
+*/
+
+/* CSS variables allow colours to be tweaked from a single place. */
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --card-bg: #161b22;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --accent-purple: #c792ea;
+  --accent-blue: #82aaff;
+  --accent-pink: #f07178;
+  --spacing: 1rem;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing) 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--accent-purple);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-blue);
+}
+
+/* Hero section */
+header {
+  /* Apply a subtle overlay on top of the abstract background to improve text contrast. */
+  background-image: linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.85)), url('../assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0 6rem;
+  margin-bottom: 4rem;
+}
+
+.hero {
+  text-align: left;
+  padding-top: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--accent-purple);
+}
+
+.hero .highlight {
+  color: var(--accent-blue);
+}
+
+.hero .subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 32rem;
+}
+
+/* Section headings */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-purple);
+}
+
+/* About section */
+.about {
+  margin-bottom: 4rem;
+}
+
+.about p {
+  max-width: 60ch;
+  color: var(--text-secondary);
+}
+
+/* Portfolio */
+.portfolio {
+  margin-bottom: 4rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--accent-blue);
+}
+
+.project-content p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Contact section */
+.contact {
+  margin-bottom: 4rem;
+}
+
+.contact .call {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent-pink);
+}
+
+.contact .email a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+}
+
+.contact .social {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.icon:hover {
+  color: var(--accent-blue);
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 0;
+  background-color: var(--surface);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
+
+/* Ensure the SVG within the social icon fills the container */
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Colour the social icons so that they stand out on the dark background. */
+.contact .social .icon {
+  color: var(--accent-blue);
+}
+

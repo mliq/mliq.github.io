@@ -49,6 +49,14 @@ Next Steps for Iteration:
 Iterate on these areas to move the site toward PRD/TODO perfection.
 This repository powers a lightweight, static site for mliq.github.io. Keep contributions simple, fast, and readable, with minimal dependencies and clear structure.
 
+## Evergreen Guidelines (for agents/contributors)
+- Verify design quality across all breakpoints (XS/SM/MD/LG) after each change.
+- Author styles in `public/styles/custom.scss`. Compiled CSS in `public/styles/custom.css` is generated and should not be edited directly.
+- Prefer descriptive alt text and maintain visible keyboard focus; respect `prefers-reduced-motion`.
+- Use Playwright to render `index.html` and capture artifacts under `artifacts/` during reviews.
+- Use “Deep Dives” instead of “Case Studies” or “Preview” for narrative sections.
+- Keep `README.md` user-facing and minimal. Product specs live in `PRD.md`; engineering instructions live here.
+
 ## Project Structure & Module Organization
 - `index.html`: Main page and markup.
 - `public/styles/custom.scss` ➜ compiled to `public/styles/custom.css`.
@@ -80,4 +88,3 @@ This repository powers a lightweight, static site for mliq.github.io. Keep contr
 - Do not commit secrets or API keys; this is a static site.
 - Use relative asset paths under `public/`.
 - Optimize images before adding (`public/img/`), prefer SVGs where possible (`public/svg/`).
-
