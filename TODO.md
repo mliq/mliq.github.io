@@ -9,7 +9,7 @@ Incoming Todos (active only)
 
 - [ ] Lighthouse (mobile): compress any heavy images; document scores ≥90 (Perf, A11y, Best Practices, SEO).
 - [ ] Card copy pass: standardize Role · Problem · Approach · Outcome (short, outcome‑first); badges ≤ 4 and high‑signal.
-- [ ] Fonts: use a more interesting font not just system fonts.finalize strategy — preload Inter with `display=swap`. Can use Google Fonts.
+- [x] Fonts: preload Inter via Google Fonts with `display=swap`.
 
 Spec alignment
 - [x] PRD: update Build & Tooling to CSS‑only (remove SCSS compile/watch); note vendor theme not referenced by `index.html`.
