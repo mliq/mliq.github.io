@@ -26,6 +26,8 @@ header{position:static;background:none;border-bottom:none}
 .hero h1{font-size:3rem;font-weight:700;margin-bottom:1rem;color:var(--accent-purple)}
 .hero .highlight{color:var(--accent-blue)}
 .hero .subtitle{font-size:1.25rem;font-weight:400;color:var(--text-secondary);max-width:40rem}
+.hero-bullets{margin-top:1rem;margin-left:1.25rem;color:var(--text-secondary)}
+.hero-bullets li{margin:.25rem 0}
 .cta{margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap}
 .btn.primary{background:linear-gradient(90deg,var(--accent-purple),var(--accent-blue));border:none}
 /* Sections */
