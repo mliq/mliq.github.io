@@ -491,3 +491,368 @@ Open Questions
 ---
 
 When these are in, you’ll have tighter copy, clearer outcomes, better a11y/SEO, and stronger recruiter signal—without adding bloat.
+
+Here’s a refined **`TODOs.md`** you can drop in. I merged everything from your current list, tightened the wording, and added concrete, high-impact tasks (copy, media, a11y, SEO, perf, and metrics pulled from your resume and CaringBridge slides).
+
+---
+
+# 2025 Portfolio — Killer One-Pager Plan
+
+Goal: a tasteful, fast, single-page portfolio that highlights your **org-level impact** with crisp data and credible visuals so hiring managers can say “yes” in 30 seconds.
+
+---
+
+## 🔴 Ship-blockers (do these first)
+
+* [ ] **Petfinder capture**
+
+  * Record fresh `.webm` of the Ezra flow (no cookie banner; signed-out state).
+  * Generate 720p, \~18fps **animated WebP** and a lightweight poster image.
+  * Wire `<picture>` with `type="image/webp"` and fallback GIF only if needed.
+* [ ] **CaringBridge thumbnail**
+
+  * Export a public-safe still: “Performance | Time to Interactive” chart from slides 43–56.
+  * Save as `public/img/caringbridge-tti.png` (16:9, 1200×675) with alt:
+    *“CaringBridge performance: Time to Interactive improvement after removing render-blocking resources.”*
+* [ ] **Predictor GIF**
+
+  * Recreate capture so the UI is readable (zoom out; add 1200×675 canvas).
+  * Replace `public/img/predictor/predictor14.gif` with WebP animation + poster.
+* [ ] **Lighthouse (mobile)** ≥90 across Perf, A11y, Best Practices, SEO.
+
+  * Compress any heavy images; ensure `loading="lazy"` and explicit `width/height`.
+
+---
+
+## ✍️ Copy upgrades (outcomes first, numbers up front)
+
+* [ ] **Hero subtitle** (clarify scope + scale):
+
+  ```html
+  Principal Front-End Engineer. I lead teams to ship fast, accessible, well-tested web experiences at scale (serving ~450K MAU). Org enablement, design systems, and performance.
+  ```
+* [ ] **About** (impact-forward):
+
+  ```html
+  I turn gnarly front-end problems into crisp, testable components and repeatable playbooks. Recent wins: AI enablement, Enzyme→RTL with Hook-View-Glue, performance profiling, and BFF contracts — with measurable impact.
+  ```
+* [ ] **Project cards — standardize** to **Outcome → Role → Approach** (≤70 words). Keep badges ≤4.
+
+### Project copy (paste into each `.project-content`)
+
+* [ ] **AI Enablement at Grubhub**
+  Outcome: **3,000+ developer hours saved** projected as adoption scales; target **5,000+ files** ( **250+ migrated**).
+  Role: Senior Staff (org enablement).
+  Approach: MCP & Copilot pilots, playbooks, guardrails, usage telemetry.
+
+* [ ] **Enzyme → RTL “Flambé” & HVG**
+  Outcome: **+38%** release cadence (**1.3→1.8/wk**), **–66%** E2E failures (**7k→2.4k**) with no prod bug increase; SLO response **2h→10m**; runbooks across **55 SLOs / 11 apps**.
+  Role: Tech lead, Frontend platform.
+  Approach: codemods + staged Enzyme→RTL, Hook-View-Glue, CI guardrails.
+
+* [ ] **Petfinder Pet Quiz (Nestlé Purina)**
+  Outcome: **+66%** Time-to-Interactive improvement; **WCAG 2.1 AA** for a property serving **110M users**.
+  Role: Lead engineer, consumer experience.
+  Approach: perf audit & tuning, modern stack, accessible low-friction quiz.
+
+* [ ] **CaringBridge**
+  Outcome: **+70% user engagement** (lower bounce, higher activation & return) and **WCAG 2.1 AA** on a platform with **42M users**.
+  Role: Front-end lead.
+  Approach: performance budgets, a11y audits, UX modernization (Next.js/React/GraphQL).
+
+* [ ] **3M Sales Derby**
+  Outcome: delivered under budget; praised for **“Apple-like” UX**; animated dashboard for a global sales challenge.
+  Role: Full-stack, client delivery.
+  Approach: lightweight motion; responsive SPA; secure Excel upload.
+
+* [ ] **Predictor!**
+  Outcome: ≈**15%** next-word accuracy; **<2s** response on low-spec devices; **<10MB** memory.
+  Role: Solo, JHU capstone.
+  Approach: compact n-gram models with pruning; R/Shiny on AWS.
+
+> CaringBridge slides 43–56 — add these to the CaringBridge **case study** page or a sub-bullet on the card:
+>
+> * **Render-blocking JS 176 KB → 23.1 KB** (≈87% cut) and CSS down to **\~3.2 KB**.
+> * **Activations/day 116 → 192 (+65%)**, **bounces 8,000 → 2,400 (–70%)**.
+> * Added **visual regression testing** to prevent UI drift.
+
+---
+
+## 🖼 Media & assets
+
+* [ ] Bulk convert PNG/JPG to WebP (`npm run webp:images`); keep originals as fallbacks in `<picture>`.
+* [ ] Ensure every `<img>`/`<source>` has explicit `width`/`height`; keep hero avatar non-lazy.
+* [ ] Replace “CaringBridge” SVG placeholder with `caringbridge-tti.png` (above).
+* [ ] Normalize all badges to consistent style and casing; rename “UX Eng” → “UX” or “UX Engineering”.
+
+---
+
+## 🧭 Information architecture
+
+* [ ] Add `/case-studies/ai-enablement.html` and `/case-studies/flambe-rtl.html` (stub now, 3–5 short sections each).
+
+  * CTA buttons: **Overview** (AI Enablement) and **Case study** (Flambé) on cards.
+* [ ] Optional **Writing** strip above Contact with three short links:
+
+  * A practical playbook for AI enablement
+  * How to kill flaky tests without boiling the ocean
+  * BFF contracts that speed up front-ends
+
+---
+
+## ♿ Accessibility (keep it AAA-clean where possible)
+
+* [ ] Confirm a single `<h1>`; each section has `<h2>` and `aria-labelledby`.
+* [ ] Alt text audit: decorative thumbs `alt=""`; previews get action-oriented alt.
+* [ ] Keyboard: strong `:focus-visible` on links, buttons, cards; visible skip link.
+* [ ] Respect `prefers-reduced-motion` (disable hover lifts/animations).
+* [ ] Add `aria-current="page"` to nav when sections intersect (already scaffolded; verify thresholds).
+
+---
+
+## ⚡ Performance
+
+* [ ] Font strategy: preload Inter with `display=swap`; add system fallback; consider local hosting later.
+* [ ] Keep total JS minimal; analytics deferred; zero layout-thrashing JS.
+* [ ] Image budgets: hero ≤90KB; cards ≤120KB each; animated WebP ≤1.5MB.
+* [ ] Validate CLS (no shift) via explicit dimensions and `font-display: swap`.
+* [ ] Re-run Lighthouse and record scores in `README` (screenshot + numbers).
+
+---
+
+## 🔐 Analytics & privacy
+
+* [ ] Respect DNT: set `window['ga-disable-G-640Q4NQ24V']=true` when `navigator.doNotTrack==='1'`.
+* [ ] Consider swapping GA for Plausible/Fathom (no cookies, lighter script).
+* [ ] Add a tiny “Privacy” note in footer linking to an `/about-analytics` blurb.
+
+---
+
+## 🔎 SEO & social
+
+* [ ] Ensure canonical `<link rel="canonical" href="https://mliq.github.io/">`.
+* [ ] Absolute OG/Twitter images (already done); create a clean **social card** with your headshot + title.
+* [ ] Add `<meta name="theme-color" content="#0f1216">`.
+* [ ] Add JSON-LD `Person` (+ optional `WebSite`) schema with LinkedIn & GitHub.
+
+---
+
+## 🎯 UX polish
+
+* [ ] Make entire project card clickable (except buttons); add subtle hover lift.
+* [ ] Year chips for all cards: `2024–2025`, `2022–2024`, `2020–2022`, `2019–2020`, `2015`, `2014`.
+* [ ] Normalize bullet punctuation (pick none or periods; keep consistent).
+* [ ] Increase social icon hit areas to ≥44×44; ensure hover + focus states.
+* [ ] `scroll-margin-top: 80px` for all anchored sections (sticky nav offset).
+
+---
+
+## 🧱 Code & semantics
+
+* [ ] Move `#contact` inside `<main>` (landmarks: header → main → footer).
+* [ ] Keep scripts at the end and minimal; no blocking resources above the fold.
+* [ ] Add small utility classes documented in `public/styles/site.css` (buttons, chips, actions).
+
+---
+
+## 📄 Assets to collect (from resume/decks)
+* [ ] CaringBridge: export a **second** still (engagement deltas) for a case study image.
+
+---
+
+## ✅ QA checklist (before push)
+
+* [ ] Manual pass on iPhone SE, iPhone 14 Pro, Pixel 7, and a small laptop viewport.
+* [ ] VoiceOver/NVDA basic flow: nav → projects → contact; headings read correctly.
+* [ ] Links and CTAs keyboard-accessible; skip link jumps to `#main`.
+* [ ] Lighthouse ≥90 four categories (note scores in README).
+
+---
+
+## 💡 Nice-to-haves (after ship)
+
+* [ ] Add a “light theme” toggle (CSS `data-theme` attribute).
+* [ ] “Print resume” friendly CSS for the case studies.
+* [ ] Tiny email obfuscation for scrapers (JS or HTML entities).
+
+totally—years don’t have to be “chips.” Here’s a tiny, PR-ready TODO to switch to a subtle, typographic treatment that reads cleanly and feels more professional.
+
+# TODO — Make years subtle (no chips)
+
+## 1) Replace any `year-chip` markup with a meta line that uses `<time>`
+
+* [ ] In each project card, **remove** `<span class="year-chip">…</span>`.
+* [ ] **Add** a single meta line under the `<h3>` (preferred pattern):
+
+  ```html
+  <p class="meta">
+    <time datetime="2024">2024</time>–<time datetime="2025">2025</time> · Senior Staff · Org enablement
+  </p>
+  ```
+
+  * For single years:
+
+    ```html
+    <p class="meta"><time datetime="2015">2015</time> · Full-stack · Client delivery</p>
+    ```
+
+## 2) Add/adjust CSS for the new meta line
+
+* [ ] In `public/styles/site.css`, **delete** any `.year-chip` rules.
+* [ ] **Add/ensure** this meta style (muted, compact, not chip-like):
+
+  ```css
+  .project-content .meta{
+    margin:.15rem 0 .4rem;
+    font-size:.9rem;
+    color:var(--subtle, #9aa3ad);
+    letter-spacing:.01em;
+  }
+  .project-card h3{ margin-bottom:.1rem; } /* tighten spacing above the meta line */
+  ```
+
+## 3) Apply pattern to all cards (examples to paste)
+
+* **AI Enablement at Grubhub**
+
+  ```html
+  <h3>AI Enablement at Grubhub</h3>
+  <p class="meta"><time datetime="2024">2024</time>–<time datetime="2025">2025</time> · Senior Staff · Org enablement</p>
+  ```
+* **Enzyme → RTL “Flambé” & HVG**
+
+  ```html
+  <h3>Enzyme → RTL “Flambé” & HVG</h3>
+  <p class="meta"><time datetime="2022">2022</time>–<time datetime="2024">2024</time> · Tech lead · Frontend platform</p>
+  ```
+* **Petfinder Pet Quiz**
+
+  ```html
+  <h3>Petfinder Pet Quiz</h3>
+  <p class="meta"><time datetime="2020">2020</time>–<time datetime="2022">2022</time> · Lead engineer · Consumer experience</p>
+  ```
+* **CaringBridge**
+
+  ```html
+  <h3>CaringBridge</h3>
+  <p class="meta"><time datetime="2019">2019</time>–<time datetime="2020">2020</time> · Front-end lead</p>
+  ```
+* **3M Sales Derby**
+
+  ```html
+  <h3>3M Sales Derby</h3>
+  <p class="meta"><time datetime="2015">2015</time> · Full-stack · Client delivery</p>
+  ```
+* **Predictor!**
+
+  ```html
+  <h3>Predictor!</h3>
+  <p class="meta"><time datetime="2014">2014</time> · Solo · JHU capstone</p>
+  ```
+
+## 4) (Optional) Put years in the heading instead (if you like that look)
+
+* [ ] Alternate pattern—year as a quiet suffix:
+
+  ```html
+  <h3>Enzyme → RTL “Flambé” & HVG <span class="meta-year">· 2022–2024</span></h3>
+  ```
+
+  ```css
+  .meta-year{ font-weight:400; font-size:.9rem; color:var(--subtle, #9aa3ad) }
+  ```
+
+  Use this only if you want to save vertical space; the meta line is usually more readable.
+
+## 5) SEO/A11y niceties (since we’re touching years anyway)
+
+* [ ] Keep the `<time datetime="YYYY">` elements for machine-readable dates.
+* [ ] If you make case-study pages later, add JSON-LD with `datePublished`/`dateModified` using those years.
+
+Great question. For tiny card thumbnails, **dense charts die** and **one giant number sings**. From your CaringBridge slides (43–56), the clearest, high-signal stat at glance is:
+
+**“Activations/day +65% (116 → 192)”**
+
+That’s positive, easy to parse, and credible. “Bounce −70%” also works, but positive framing usually lands better.
+
+Here are two winning options—pick one:
+
+## Option A (recommended): Big-stat tile
+
+Use a custom stat tile instead of a chart. One short line, huge number.
+
+* Text: **“CaringBridge — Activations/day +65%”**
+* Subtext (tiny): “After perf & a11y overhaul”
+* Works at 160–220px width; strong at a glance.
+
+**Drop-in SVG (save as `public/img/caringbridge-card.svg`):**
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2130"/>
+      <stop offset="1" stop-color="#0f1216"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c792ea"/>
+      <stop offset="1" stop-color="#82aaff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <!-- Accent bar -->
+  <rect x="48" y="60" width="240" height="10" rx="5" fill="url(#a)" opacity=".9"/>
+  <text x="48" y="120" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="40" fill="#c9d6e2" letter-spacing=".02em">
+    CaringBridge
+  </text>
+
+  <!-- Big metric -->
+  <text x="48" y="340" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+        font-weight="700" font-size="96" fill="#e6eef6" letter-spacing="-.5px">
+    Activations/day +65%
+  </text>
+  <text x="48" y="420" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+        font-size="46" fill="#a6b2c3">
+    116 → 192
+  </text>
+
+  <!-- Tiny caption -->
+  <text x="48" y="560" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+        font-size="28" fill="#9aa3ad">
+    After performance & accessibility overhaul
+  </text>
+</svg>
+```
+
+**Alt text to use:**
+
+> CaringBridge: Activations per day increased 116 → 192 (+65%) after performance and accessibility overhaul.
+
+## Option B: Minimal “before → after” bars (still tiny-friendly)
+
+* Two horizontal bars, “116” and “192,” with a rightward arrow and **+65%** label.
+* Keep labels large; no axes, no gridlines.
+
+If you want that instead, crop just the numeric bars—no full slide—so it reads at card size.
+
+---
+
+### Wire it into your card
+
+```html
+<picture>
+  <source srcset="public/img/caringbridge-card.svg" type="image/svg+xml">
+  <img src="public/img/caringbridge-card.svg"
+       alt="CaringBridge: Activations per day increased 116 → 192 (+65%) after performance and accessibility overhaul."
+       width="1200" height="675" loading="lazy">
+</picture>
+```
+
+### Why this will sing
+
+* **One idea** per image (no tiny text).
+* **Huge, credible number** from the slide set.
+* **Positive framing** that tracks to business value.
+* **Brand-agnostic** styling that matches your site’s VS-Code palette.
+
+If you want, I can also generate a second variant for “Bounce −70%” and you can A/B which pops more in your grid.
