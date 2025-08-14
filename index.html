@@ -4,7 +4,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-640Q4NQ24V"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -22,11 +22,11 @@
         <meta property="og:description" content="Fast, accessible UIs; AI enablement; testing modernization; performance.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://mliq.github.io/">
-        <meta property="og:image" content="public/img/social-card.png">
+        <meta property="og:image" content="https://mliq.github.io/public/img/social-card.png">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Michael Liquori — Portfolio">
         <meta name="twitter:description" content="Fast, accessible UIs; AI enablement; testing modernization; performance.">
-        <meta name="twitter:image" content="public/img/social-card.png">
+        <meta name="twitter:image" content="https://mliq.github.io/public/img/social-card.png">
     </head>
 
     <body>
@@ -85,7 +85,10 @@
                   </div>
                 </article>
                 <article class="project-card">
-                  <div class="thumb" aria-hidden="true"></div>
+                  <picture>
+                    <source srcset="public/img/flambe_ascii_cat.webp" type="image/webp">
+                    <img src="public/img/flambe_ascii_cat.png" alt="Enzyme to RTL migration (Flambé)" width="1200" height="675" loading="lazy" />
+                  </picture>
                   <div class="project-content">
                     <h3>Enzyme → RTL “Flambé” & HVG</h3>
                     <small class="year">2022–2024</small>
@@ -125,7 +128,7 @@
                   <div class="project-actions"></div>
                 </article>
                 <article class="project-card">
-                  <img src="public/img/caringbridge-placeholder.svg" alt="CaringBridge project thumbnail" width="1200" height="675" loading="lazy" />
+                  <img src="public/img/caringbridge-thumb.svg" alt="CaringBridge project thumbnail" width="1200" height="675" loading="lazy" />
                   <div class="project-content">
                     <h3>CaringBridge</h3>
                     <small class="year">2019–2020</small>
@@ -204,6 +207,20 @@
             <p>© 2025 Michael Liquori. All rights reserved.</p>
           </div>
         </footer>
+        <script>
+          (function(){
+            var link = document.querySelector('nav a[href="#portfolio"]');
+            var section = document.getElementById('portfolio');
+            if (!link || !section || !('IntersectionObserver' in window)) return;
+            var obs = new IntersectionObserver(function(entries){
+              entries.forEach(function(e){
+                if (e.isIntersecting) { link.setAttribute('aria-current','page'); }
+                else { link.removeAttribute('aria-current'); }
+              });
+            }, { rootMargin: '-20% 0px -70% 0px', threshold: [0, 1] });
+            obs.observe(section);
+          })();
+        </script>
     </body>
 
 </html>

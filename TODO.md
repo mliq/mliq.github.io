@@ -2,54 +2,43 @@
 
 Purpose: Keep this a tasteful, visual one‑pager that reads like an enhanced resume.
 
-Incoming Todos
-- [ ] use flambe_ascii_cat.png for Flambe project.
-- [ ] CaringBridge thumbnail: replace placeholder with a public‑safe image (or remove image).
-- [ ] Petfinder media: run updated capture (Ezra flow), regenerate animated WebP at 720px/18fps, verify no cookie banner; commit assets.
-- [x] Tighten mobile spacing (XS): reduce gaps below titles, adjust badge wrap margins for cleaner stacking.
+Incoming Todos (active only)
+- [ ] Predictor GIF display is too zoomed in/cropped so you can't see what it is doing. fix this.
+- [ ] CaringBridge thumbnail: replace the graphic with a real public‑safe still (or confirm current graphic is acceptable).
+- [ ] Petfinder media: run updated Ezra flow capture; regenerate animated WebP at 720px/18fps; ensure no cookie banner; commit assets.
+
 - [ ] Lighthouse (mobile): compress any heavy images; document scores ≥90 (Perf, A11y, Best Practices, SEO).
-- [x] Image dimensions: add `width`/`height` to common images to reduce CLS (avatar + card media updated).
-- [x] Hero copy: tighten subtitle to a crisp value prop (fast, accessible UIs; AI enablement; testing; performance).
-- [x] Hero CTAs: add Email / LinkedIn (and optional Resume) buttons next to subtitle.
-- [ ] Card copy pass: standardize Role · Problem · Approach · Outcome (short, outcomes first); keep badges ≤ 4 and high-signal.
-- [ ] Add `aria-current="page"` to “Projects” link when `#portfolio` in view (optional, IntersectionObserver).
-- [ ] Fonts: either preload Inter with `display=swap` or move fully to system stack to remove remote dependency.
+- [ ] Card copy pass: standardize Role · Problem · Approach · Outcome (short, outcome‑first); badges ≤ 4 and high‑signal.
+- [ ] Fonts: use a more interesting font not just system fonts.finalize strategy — preload Inter with `display=swap`. Can use Google Fonts.
 
 Media & Assets
-- [ ] CaringBridge: provide/derive a public‑safe still.
 - [ ] Petfinder: record fresh .webm (updated script), then run `npm run webp:petfinder` (preferred) or `npm run gif:petfinder`.
-- [ ] Bulk image conversion: run `npm run webp:images` and wire additional `<picture>` sources where it helps.
+- [ ] Bulk image conversion: run `npm run webp:images` for remaining PNG/JPG and wire additional `<picture>` sources where useful.
 
 Accessibility & Performance
-- [ ] Verify a11y: one `<h1>`, section headings present, `alt` text correct (decorative images `alt=""`).
-- [ ] Reduced motion: confirm hover zoom and transitions respect prefers‑reduced‑motion (already partially handled).
-- [ ] Validate CLS improvements after adding image dimensions.
+- [ ] Verify a11y: single `<h1>`, section headings present, correct `alt` (decoratives `alt=""`).
+- [ ] Reduced motion: confirm hover zoom/transitions respect prefers‑reduced‑motion.
+- [ ] Validate CLS is stable after adding image dimensions.
 
 Open Questions
-- Final heading font choice? Keep Inter or introduce a display serif for titles.
+- Heading font: keep current stack or try a display serif accent for titles?
 - Provide CaringBridge/public thumbnail?
-- Any other legacy projects worth a small card?
+- Any additional legacy projects worth a small card?
 
-# New TODOs
-# TODO — Portfolio page copy, structure, and polish
+# TODO — Drop resume stats into the site (copy-only, ready for Codex CLI)
 
-## Hero and top of page
+> All numbers below are pulled from your resume. Each block shows exactly what to paste into the card body inside `.project-content` (replace the existing `<p>` + `<ul>`). Keep badges as-is.
 
-* [ ] Tighten subtitle to a crisp value prop. Replace the current `<p class="subtitle">` with:
+---
 
-  ```html
-  <p class="subtitle">Principal Front-End Engineer. I lead teams to ship fast, accessible, well-tested web experiences at scale. AI enablement, design systems, and performance are my home turf.</p>
-  ```
-* [ ] Add a direct CTA next to the hero copy:
+## Hero / About
+
+* [ ] Update **hero subtitle** (mention scale & scope):
 
   ```html
-  <div class="cta">
-    <a class="btn primary" href="mailto:liquori@gmail.com">Email me</a>
-    <a class="btn" href="https://www.linkedin.com/in/liquori/">LinkedIn</a>
-    <a class="btn" href="public/Michael_Liquori_Resume.pdf">Resume</a>
-  </div>
+  <p class="subtitle">Principal Front-End Engineer. I lead teams to ship fast, accessible, well-tested web experiences at scale (serving ~450K MAU). Org-level enablement, design systems, performance.</p>
   ```
-* [ ] Add one-liner bullets for instant scannability under the subtitle:
+* [ ] Replace **About** text with impact-first summary:
 
   ```html
   <ul class="hero-bullets">
@@ -72,64 +61,81 @@ Open Questions
   <p>Operating at Senior Staff scope: org-level adoption, cross-team coaching, and guardrails that stick.</p>
   ```
 
-## Projects section — structure and copy
+---
 
-* [ ] Standardize every card to **Role, Problem, Approach, Outcome**. Use short lines, numbers first where possible.
-* [ ] **AI Enablement at Grubhub**: replace the paragraph and bullets with:
+## Projects
+
+### 1) AI Enablement at Grubhub
+
+* [ ] Replace copy with outcome → role → problem → approach (add year chip `2024–2025` if you like):
 
   ```html
-  <p><strong>Outcome:</strong> Thousands of developer hours saved across multiple teams.</p>
+  <p><strong>Outcome:</strong> Projected to save <strong>3,000+ developer hours</strong> (≈2+ years) as adoption scales. Targets <strong>5,000+ files</strong>; <strong>250+</strong> already migrated.</p>
   <ul class="project-details">
     <li><strong>Role:</strong> Senior Staff · Org enablement</li>
-    <li><strong>Problem:</strong> Curiosity about AI, uneven adoption</li>
-    <li><strong>Approach:</strong> MCP and Copilot pilots, playbooks, guardrails, usage telemetry</li>
+    <li><strong>Problem:</strong> High AI interest but uneven adoption</li>
+    <li><strong>Approach:</strong> MCP & Copilot pilots, playbooks, guardrails, usage telemetry</li>
   </ul>
   ```
-* [ ] **Enzyme → RTL “Flambé” & HVG**: replace with:
+
+### 2) Enzyme → RTL “Flambé” & HVG
+
+* [ ] Swap text for these resume metrics:
 
   ```html
-  <p><strong>Outcome:</strong> Fewer flakes and faster CI. Cleaner components.</p>
+  <p><strong>Outcome:</strong> <strong>38%</strong> increase in release velocity (<strong>1.3→1.8</strong>/week), <strong>66%</strong> fewer E2E failures (<strong>7k→2.4k</strong>) with no increase in prod bugs.</p>
   <ul class="project-details">
     <li><strong>Role:</strong> Tech lead · Frontend platform</li>
-    <li><strong>Problem:</strong> Brittle Enzyme tests, slow feedback</li>
-    <li><strong>Approach:</strong> Codemods + staged migration, Hook-View-Glue architecture, CI guardrails</li>
+    <li><strong>Approach:</strong> Codemods, staged Enzyme→RTL migration, Hook-View-Glue, CI guardrails</li>
+    <li><strong>Ops:</strong> SLO response time <strong>2h→10m</strong>; runbooks across <strong>55 SLOs / 11 apps</strong></li>
   </ul>
   ```
-* [ ] **Petfinder Pet Quiz**: replace with:
+
+### 3) Petfinder Pet Quiz (Nestlé Purina)
+
+* [ ] Insert performance & accessibility stats:
 
   ```html
-  <p><strong>Outcome:</strong> High completion and click-through to live listings.</p>
+  <p><strong>Outcome:</strong> Site performance improved by <strong>66%</strong> (Time-to-Interactive). WCAG 2.1 AA achieved for a property serving <strong>110M users</strong>.</p>
   <ul class="project-details">
     <li><strong>Role:</strong> Lead engineer · Consumer experience</li>
-    <li><strong>Problem:</strong> Help adopters find great matches quickly</li>
-    <li><strong>Approach:</strong> Fast UI, accessible controls, shareable results; Playwright capture → animated WebP</li>
+    <li><strong>Approach:</strong> Perf audit & tuning, modern stack migration; accessible, low-friction quiz UX</li>
   </ul>
   ```
-* [ ] **CaringBridge**: replace with:
+
+### 4) CaringBridge
+
+* [ ] Replace body with engagement & a11y results:
 
   ```html
-  <p><strong>Outcome:</strong> Faster pages and clearer flows for a large nonprofit platform.</p>
+  <p><strong>Outcome:</strong> <strong>+70% user engagement</strong> (lower bounce, higher activation & return) while reaching <strong>WCAG 2.1 AA</strong> on a property with <strong>42M users</strong>.</p>
   <ul class="project-details">
     <li><strong>Role:</strong> Front-end lead</li>
-    <li><strong>Focus:</strong> Accessibility audits, performance budgets, UX modernization</li>
+    <li><strong>Approach:</strong> Performance budgets, accessibility audits, UX modernization (Next.js/React/GraphQL)</li>
   </ul>
   ```
-* [ ] **3M Sales Derby**: replace with:
+
+### 5) 3M Sales Derby
+
+* [ ] Keep succinct and outcome-first:
 
   ```html
-  <p><strong>Outcome:</strong> Delivered under budget; praised for “Apple-like” UX.</p>
+  <p><strong>Outcome:</strong> Delivered under budget; praised for “Apple-like” UX. Animated dashboard for a global sales incentive challenge.</p>
   <ul class="project-details">
     <li><strong>Role:</strong> Full-stack · Client delivery</li>
-    <li><strong>Approach:</strong> Lightweight motion, responsive SPA, secure Excel upload</li>
+    <li><strong>Approach:</strong> Lightweight motion; responsive SPA; secure Excel upload</li>
   </ul>
   ```
-* [ ] **Predictor!**: replace with:
+
+### 6) Predictor!
+
+* [ ] Lock in metrics inline:
 
   ```html
-  <p><strong>Outcome:</strong> ≈15% accuracy · sub-2s response on low-spec devices.</p>
+  <p><strong>Outcome:</strong> ≈<strong>15%</strong> next-word accuracy; <strong><2s</strong> response on low-spec devices; <strong><10MB</strong> memory.</p>
   <ul class="project-details">
     <li><strong>Role:</strong> Solo · JHU capstone</li>
-    <li><strong>Approach:</strong> Compact n-gram models with pruning; R/Shiny UI on AWS</li>
+    <li><strong>Approach:</strong> Compact n-gram models with pruning; R/Shiny on AWS</li>
   </ul>
   ```
 * [ ] Make the **badges** purposeful. Keep ≤4 per card, all high-signal. Example for AI Enablement: `MCP`, `Copilot`, `Playbooks`, `Guardrails`.
