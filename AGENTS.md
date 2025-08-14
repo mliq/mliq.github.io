@@ -1,94 +1,75 @@
-# Repository Guidelines
+# Agent Guide (Up‑to‑Date)
 
-▌using the playwright MCP look at the page you have created at file:///Users/mliquori/mliq.github.io/index.html.using the playwright MCP look at the page you have created at file:///Users/mliquori/mliq.github.io/index.html. Deeply think about all the messiness and problems and how it doesn't match the PRD or TODO and rewrite those so we can iterate to perfection
+Last updated: 2025-08-14 · See also: PRD.md (product requirements), TODO.md (live backlog)
 
-Iterate means (DEFAULT CODEX PROMPT):
-Continue to iterate on TODO.md. Check off when done. Add new ones as you come up with them. Delete the ones that have been checked off in the past.
+Purpose: Keep this static portfolio tight, fast, and accessible. Iterate by rendering the site locally, capturing review artifacts, and updating `TODO.md` as the single source of work.
 
-▌Site Review & Iteration Plan
+Iteration loop
+- Open `index.html` with Playwright MCP at `file:///Users/mliquori/mliq.github.io/index.html`.
+- Capture full‑page screenshots at common breakpoints to `artifacts/` (e.g., 375×812, 768×1024, 1280×800, 1440×900).
+- Compare against `PRD.md` (acceptance criteria) and `TODO.md`; tighten copy, a11y, and visuals.
+- Update `TODO.md`: check off verified items, add new ones, and remove completed ones.
 
-After reviewing index.html, here are the key mismatches and areas for improvement compared to the PRD and TODO:
+Current state snapshot (post cd5086fa)
+- Theme: Dark, editor‑inspired palette authored in plain CSS (`public/styles/site.css`). No SCSS build step is active.
+- Markup: Semantic `header`/`main`/`section`/`footer`; one `<h1>`; section `<h2>`s; skip link present.
+- Navigation: IntersectionObserver sets `aria-current="page"` for “Projects” when in view.
+- Media: All images include descriptive `alt`, explicit `width`/`height`, and `loading="lazy"` (non‑hero).
+- IA: Project order is AI Enablement, Flambé/HVG, Petfinder, CaringBridge, 3M, Predictor.
+- Assets: Review screenshots live under `artifacts/`.
+- Note: `#contact` currently sits outside `<main>`; see TODO to relocate for landmark consistency.
 
-1. Visual Revamp & IA
-	- 'Work' heading lacks a distinctive W or custom font.
-	- Project card spacing and animation affordances need refinement; may not match custom.scss or Animate.css.
-	- Color scale tokens and accessible hover/focus states are missing.
-	- IA improvements needed: reorder projects, add intro sentence, optimize resume link placement.
+What changed since cd5086fa72f9c4a32cc4f07f754a9e42b423e644
+- Styles moved from SCSS (`public/styles/custom.scss`) to a single plain CSS file (`public/styles/site.css`).
+- Build/watch are no‑ops; the site serves as static HTML/CSS.
+- Vendor theming (Bootswatch/Animate.css) is not referenced by `index.html`.
+- Playwright capture workflow added, with artifacts checked into `artifacts/`.
+- PRD still references SCSS and Bootswatch; defer alignment or update PRD to match the current CSS‑only approach.
 
-2. Petfinder Quiz Capture
-	- GIF is not the main homepage image; video is WebM, not MP4/GIF as primary.
-	- Cookie banner dismissal and form selection interaction are not shown in preview.
-	- Caption for live link volatility is present.
+Evergreen guidelines
+- Verify visual quality across XS/SM/MD/LG after each change.
+- Author styles in `public/styles/site.css` (plain CSS). Keep utilities small; respect `prefers-reduced-motion`.
+- Maintain visible `:focus-visible` rings. Keep skip link focusable and high‑contrast.
+- Prefer precise alt text; use empty `alt=""` for decorative images.
+- Keep diffs small and targeted; don’t edit `public/vendor/*` unless intentionally updating from upstream.
 
-3. Legacy Projects Restoration
-	- Legacy projects listed, but demo links may be dead; concise cards/notes about Heroku are missing.
-
-4. Resume Alignment
-	- Resume link present, but themes and artifacts are not surfaced.
-
-5. Content & Copy Polish
-	- Summaries are concise, but alt text could be more descriptive.
-	- Social links for Instagram/SoundCloud are placeholders.
-	- Meta description and social cards are present.
-
-6. Build, Tooling, and Quality Gates
-	- No visible build/tooling info on page (should be in README).
-
-7. Accessibility & Performance
-	- Skip link present, but keyboard navigation, focus outlines, and reduced motion support need verification.
-	- Image compression and Lighthouse scores are not visible.
-
-Next Steps for Iteration:
-- Update 'Work' heading with custom font and style.
-- Refine project card layout, spacing, and add subtle animations.
-- Implement color tokens and accessible states in CSS.
-- Reorder projects and add a short intro sentence.
-- Make GIF the main homepage image for Petfinder demo; show form interaction and cookie banner dismissal in preview.
-- Curate legacy project cards, update links, and add Heroku notes.
-- Surface resume themes and link to supporting artifacts.
-- Improve alt text for all images.
-- Add working social links for Instagram/SoundCloud.
-- Verify accessibility features and optimize performance (Lighthouse, image compression).
-
-Iterate on these areas to move the site toward PRD/TODO perfection.
-This repository powers a lightweight, static site for mliq.github.io. Keep contributions simple, fast, and readable, with minimal dependencies and clear structure.
-
-## Evergreen Guidelines (for agents/contributors)
-- Verify design quality across all breakpoints (XS/SM/MD/LG) after each change.
-- Author styles in `public/styles/site.css` (plain CSS only).
-- Prefer descriptive alt text and maintain visible keyboard focus; respect `prefers-reduced-motion`.
-- Use Playwright to render `index.html` and capture artifacts under `artifacts/` during reviews.
-- Use “Deep Dives” instead of “Case Studies” or “Preview” for narrative sections.
-- Keep `README.md` user-facing and minimal. Product specs live in `PRD.md`; engineering instructions live here.
-
-## Project Structure & Module Organization
-- `index.html`: Main page and markup.
-- `public/styles/custom.scss` ➜ compiled to `public/styles/custom.css`.
+Project structure
+- `index.html`: Main page.
+- `public/styles/site.css`: All site styles (single file).
 - `public/img/`, `public/svg/`: Images and icons.
-- `public/vendor/`: Third‑party CSS/themes (Bootswatch “Readable”, Font Awesome, Animate.css). Avoid editing vendor files; update from upstream as needed.
-- `package.json`: Scripts and dependencies.
+- `public/vendor/`: Bootswatch/Font Awesome/Animate (legacy; not currently used by `index.html`).
+- `tests/`: Playwright specs for captures and social cards.
+- `artifacts/`: Saved review screenshots.
 
-## Build, Test, and Development Commands
-- `npm install`: Install local dependencies.
-- `npm run build`: Compile SCSS in `public/styles/` to CSS via Sass.
-- `npx sass --watch public/styles`: Optional watch mode during development.
-- `python3 -m http.server`: Serve the repo locally at `http://localhost:8000/` (or open `index.html` directly).
+Commands
+- Install Playwright: `npm run playwright:install`
+- Serve locally: `npm run serve` then open `http://localhost:8000` (or open `index.html` directly)
+- E2E smoke (captures/social): `npm run test:e2e`
+- Petfinder capture (desktop): `npm run capture:petfinder`
+- Petfinder capture (mobile): `npm run capture:petfinder:mobile`
+- Export Petfinder animated assets: `npm run webp:petfinder` or `npm run gif:petfinder`
+- Bulk WebP conversion: `npm run webp:images`
 
-## Coding Style & Naming Conventions
-- **Indentation**: 4 spaces for HTML/SCSS (match existing files).
-- **CSS/SCSS**: Use variables (see `custom.scss`), limit nesting to 1–2 levels, prefer small utility classes. Class names in kebab-case (e.g., `project-card`, `section-title`).
-- **HTML**: Use semantic tags (`header`, `main`, `section`, `footer`); attributes in double quotes.
-- **JavaScript**: None today; if added, use camelCase for functions/variables and PascalCase for components.
+Linkbacks
+- Product requirements and acceptance criteria: see `PRD.md` (Accessibility & Performance, IA, Metadata).
+- Backlog and current iteration scope: see `TODO.md`.
 
-## Testing Guidelines
-- No automated tests currently. For UI changes, include manual verification steps and before/after screenshots in PRs.
-- If introducing tests, prefer lightweight browser smoke tests (e.g., Playwright). Name files like `tests/*.spec.{js,ts}` and document run commands in the PR.
+A11y & performance checks (quick pass each PR)
+- One `<h1>`; each major section has an `<h2>` with `aria-labelledby` where applicable.
+- Keyboard: visible focus on links/buttons/cards; skip link jumps to `#main`.
+- Motion: hover lifts/zoom disabled under `prefers-reduced-motion`.
+- Media: all non‑hero images have `loading="lazy"` and explicit `width`/`height`.
+- Lighthouse (mobile): target ≥90 for Performance, A11y, Best Practices, SEO; compress images as needed.
 
-## Commit & Pull Request Guidelines
-- **Commits**: Short, imperative messages (e.g., "fix mobile viewport", "add alert banner"). Keep commits focused.
-- **PRs**: Clear description, linked issues, screenshots for visual changes, and local verification steps. Keep diffs small; avoid formatting-only churn.
+Conventions
+- HTML: semantic tags; attributes in double quotes; 4‑space indentation.
+- CSS: small utilities; kebab‑case class names; keep selectors shallow.
+- JS: minimal; place small helpers at the end of `index.html`.
 
-## Security & Configuration Tips
-- Do not commit secrets or API keys; this is a static site.
-- Use relative asset paths under `public/`.
-- Optimize images before adding (`public/img/`), prefer SVGs where possible (`public/svg/`).
+PRs & commits
+- Commits: short, imperative (e.g., `fix mobile viewport`, `add skip link`).
+- PRs: include screenshots at two breakpoints and a brief verification checklist.
+
+Security & assets
+- No secrets; static site only. Use relative paths under `public/`.
+- Optimize images before committing; prefer WebP where possible.

@@ -42,6 +42,7 @@ p{margin-bottom:1rem}
 .thumb::after{content:"";position:absolute;inset:14px;border-radius:12px;background:linear-gradient(135deg, rgba(199,146,234,.35), rgba(130,170,255,.28));filter:blur(2px)}
 .project-card img{width:100%;height:240px;object-fit:cover;transition:transform .3s ease}
 .project-card:hover img{transform:scale(1.02)}
+.project-card img.media-preview{height:auto;object-fit:contain}
 .media-preview{width:100%;max-width:720px;height:auto;display:block;margin:0 auto 12px;border-radius:6px}
 .project-content{padding:1rem 1rem .5rem}
 .project-content h3{margin-bottom:.5rem;font-size:1.25rem;color:var(--accent-blue)}

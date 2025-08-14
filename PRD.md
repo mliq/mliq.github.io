@@ -7,6 +7,7 @@ NON-GOALS
 ---
 
 PRODUCT REQUIREMENTS
+Last updated: 2025-08-14 · See also: AGENTS.md (workflow/how), TODO.md (live backlog)
 
 - Visual System: Cohesive typography (current: Noto Sans JP with a distinctive Raleway treatment for the “Work” label), consistent spacing, clean card layout.
 - Project Cards: Image/GIF, title, subtitle, short summary, and actions; keyboard-focusable and clear hover/focus states.
@@ -35,8 +36,13 @@ ACCESSIBILITY & PERFORMANCE
 - Perf: Compressed media, optimized GIF (lower fps + scaled), Lighthouse ≥90 on mobile/desktop for Performance, Accessibility, Best Practices, and SEO.
 
 BUILD & TOOLING
-- Styles: Author in `public/styles/custom.scss`; compile to CSS via `npm run build` or `npm run watch`.
-- Capture: Keep Playwright test and capture scripts; document usage in README.
+- Styles: Author in `public/styles/site.css` (plain CSS). No build step required; keep styles in a single, minified file. Legacy `public/styles/custom.scss` and vendor themes are not referenced by `index.html`.
+- Serve: `python3 -m http.server` (or open `index.html` directly).
+- Capture: Use Playwright for screenshots and Petfinder flow captures. Scripts live in `package.json` (e.g., `playwright:install`, `test:e2e`, `capture:petfinder`, `webp:images`). Document usage briefly in `README.md`.
+- Artifacts: Save review screenshots under `artifacts/` for PRs.
+
+Docs ownership
+- PRD.md defines the “what/why” (requirements, acceptance criteria). AGENTS.md defines the “how” (workflows, commands) and links back here. TODO.md is the single live backlog.
 
 ACCEPTANCE CRITERIA
 - Three polished project cards in the specified order; Petfinder uses GIF-first media.

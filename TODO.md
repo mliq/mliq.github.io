@@ -11,6 +11,9 @@ Incoming Todos (active only)
 - [ ] Card copy pass: standardize Role · Problem · Approach · Outcome (short, outcome‑first); badges ≤ 4 and high‑signal.
 - [ ] Fonts: use a more interesting font not just system fonts.finalize strategy — preload Inter with `display=swap`. Can use Google Fonts.
 
+Spec alignment
+- [x] PRD: update Build & Tooling to CSS‑only (remove SCSS compile/watch); note vendor theme not referenced by `index.html`.
+
 Media & Assets
 - [ ] Petfinder: record fresh .webm (updated script), then run `npm run webp:petfinder` (preferred) or `npm run gif:petfinder`.
 - [ ] Bulk image conversion: run `npm run webp:images` for remaining PNG/JPG and wire additional `<picture>` sources where useful.
