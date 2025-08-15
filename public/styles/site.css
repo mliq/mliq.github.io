@@ -74,6 +74,9 @@ p{margin-bottom:1rem}
 /* Footer */
 .footer{padding:2rem 0;background-color:var(--surface);text-align:center;color:var(--text-secondary);font-size:.85rem}
 @media (prefers-reduced-motion: reduce){
+  .project-card,
+  .project-card img,
+  .nav-links a{transition:none}
   .project-card:hover{transform:none;box-shadow:0 4px 10px rgba(0,0,0,.25)}
   .project-card:hover img{transform:none}
 }

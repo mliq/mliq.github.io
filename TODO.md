@@ -19,7 +19,7 @@ Media & Assets
 
 Accessibility & Performance
 - [ ] Verify a11y: single `<h1>`, section headings present, correct `alt` (decoratives `alt=""`).
-- [ ] Reduced motion: confirm hover zoom/transitions respect prefers‑reduced‑motion.
+- [x] Reduced motion: confirm hover zoom/transitions respect prefers‑reduced‑motion.
 - [ ] Validate CLS is stable after adding image dimensions.
 
 Open Questions
