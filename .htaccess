@@ -1,0 +1,32 @@
+# Enable compression for text files
+<ifModule mod_deflate.c>
+    # HTML, CSS, JavaScript, JSON
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript text/javascript application/json
+    
+    # Web fonts
+    AddOutputFilterByType DEFLATE font/woff font/woff2
+    
+    # SVG
+    AddOutputFilterByType DEFLATE image/svg+xml
+</ifModule>
+
+# Cache static assets
+<ifModule mod_expires.c>
+    ExpiresActive on
+    
+    # Images
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"  
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts
+    ExpiresByType font/woff "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+</ifModule>
