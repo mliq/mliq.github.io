@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Performance and Accessibility Improvements</title>
+  <desc id="desc">From and To columns aligned. From values colored per Lighthouse tiers: red poor, yellow needs improvement. To values green. Arrows indicate improvement from left to right.</desc>
+
+  <rect x="0" y="0" width="960" height="540" rx="28" fill="#0F141A"/>
+
+  <style>
+    .title { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 800; fill: #E6EDF3; }
+    .kicker { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 600; fill: #8A97A6; letter-spacing: .4px; }
+    .rowlabel { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 700; fill: #C8D1DC; }
+    .box { fill: #121923; rx: 12; }
+    .fromPoor { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 900; fill: #F85149; }   /* red */
+    .fromWarn { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 900; fill: #FFB020; }  /* yellow */
+    .toGood { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 900; fill: #2ECC71; }     /* green */
+    .colh { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif; font-weight: 700; fill: #8A97A6; }
+    .outline { stroke: #1E2834; stroke-width: 1; }
+    .arrow { stroke-width: 3; fill: none; stroke-linecap: round; }
+    .arrow-glow { stroke: rgba(130,170,255,0.22); stroke-width: 8; fill: none; stroke-linecap: round; }
+  </style>
+
+  <defs>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7A49C3"/>
+      <stop offset="100%" stop-color="#82AAFF"/>
+    </linearGradient>
+    <marker id="arrowHead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#82AAFF" />
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <text class="title" x="480" y="84" text-anchor="middle" font-size="36">Performance and Accessibility</text>
+
+  <!-- Column headers -->
+  <text class="colh" x="500" y="138" text-anchor="middle" font-size="18">From</text>
+  <text class="colh" x="710" y="138" text-anchor="middle" font-size="18">To</text>
+
+  <!-- Rows -->
+  <g transform="translate(120,170)">
+    <text class="rowlabel" x="0" y="60" font-size="22">Performance</text>
+    <rect class="box outline" x="320" y="16" width="120" height="70"/>
+    <text class="fromPoor" x="380" y="66" text-anchor="middle" font-size="44">46</text>
+
+    <rect class="box outline" x="520" y="16" width="140" height="70"/>
+    <text class="toGood" x="590" y="66" text-anchor="middle" font-size="48">89</text>
+    <!-- Improvement arrow from From to To -->
+    <path class="arrow-glow" d="M440,51 C468,48 492,48 520,51" />
+    <path class="arrow" d="M440,51 C468,48 492,48 520,51" stroke="url(#arrowGrad)" marker-end="url(#arrowHead)" />
+  </g>
+
+  <g transform="translate(120,270)">
+    <text class="rowlabel" x="0" y="60" font-size="22">Accessibility</text>
+    <rect class="box outline" x="320" y="16" width="120" height="70"/>
+    <text class="fromWarn" x="380" y="66" text-anchor="middle" font-size="44">77</text>
+
+    <rect class="box outline" x="520" y="16" width="140" height="70"/>
+    <text class="toGood" x="590" y="66" text-anchor="middle" font-size="48">98</text>
+    <path class="arrow-glow" d="M440,51 C468,48 492,48 520,51" />
+    <path class="arrow" d="M440,51 C468,48 492,48 520,51" stroke="url(#arrowGrad)" marker-end="url(#arrowHead)" />
+  </g>
+
+  <g transform="translate(120,370)">
+    <text class="rowlabel" x="0" y="60" font-size="22">Best Practices</text>
+    <rect class="box outline" x="320" y="16" width="120" height="70"/>
+    <text class="fromWarn" x="380" y="66" text-anchor="middle" font-size="44">86</text>
+
+    <rect class="box outline" x="520" y="16" width="140" height="70"/>
+    <text class="toGood" x="590" y="66" text-anchor="middle" font-size="48">100</text>
+    <path class="arrow-glow" d="M440,51 C468,48 492,48 520,51" />
+    <path class="arrow" d="M440,51 C468,48 492,48 520,51" stroke="url(#arrowGrad)" marker-end="url(#arrowHead)" />
+  </g>
+
+  <text class="kicker" x="480" y="510" text-anchor="middle" font-size="14">Lighthouse color semantics. Higher is better.</text>
+</svg>

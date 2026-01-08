@@ -2,22 +2,23 @@
   "name": "mliq.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
-  "dependencies": {
-    "bootstrap": "^3.3.4",
-    "bootswatch": "^3.3.5",
-    "express": "^4.12.3",
-    "font-awesome": "^4.3.0",
-    "grunt": "^0.4.5",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-uglify": "^0.9.1",
-    "jquery": "^2.1.4",
-    "path": "^0.11.14"
+  
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "playwright": "^1.54.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "build": "npx sass ./public/styles",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:e2e",
+    "playwright:install": "npx playwright install chromium",
+  "test:e2e": "npx playwright test",
+    "lh:mobile": "npx -y lighthouse http://localhost:8000 --only-categories=performance,accessibility,best-practices,seo --emulated-form-factor=mobile --chrome-flags=\"--headless=new --no-sandbox\" --quiet --no-enable-error-reporting --output=json --output-path=artifacts/lh-mobile.json || true",
+    "lh:desktop": "npx -y lighthouse http://localhost:8000 --only-categories=performance,accessibility,best-practices,seo --preset=desktop --chrome-flags=\"--headless=new --no-sandbox\" --quiet --no-enable-error-reporting --output=json --output-path=artifacts/lh-desktop.json || true",
+    "lh:run": "(python3 -m http.server 8000 &) && sleep 2 && npm run lh:mobile && npm run lh:desktop; kill %1 2>/dev/null || true",
+    "serve": "python3 -m http.server 8000",
+    "webp:images": "find public/img -type f \\(-iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg'\\) -not -iname '*.webp' -exec sh -c 'for f; do ffmpeg -y -i \"$f\" -c:v libwebp -qscale 75 \"${f%.*}.webp\"; done' sh {} +",
+    "poster:petfinder": "ffmpeg -y -i public/video/petfinder-demo.webm -vf 'select=eq(n\\,0),scale=w=trunc(iw*min(1200/iw\\,675/ih)/2)*2:h=trunc(ih*min(1200/iw\\,675/ih)/2)*2:flags=lanczos,pad=w=1200:h=675:x=(1200-iw)/2:y=(675-ih)/2:color=black' -frames:v 1 public/img/petfinder-demo/cover.png",
+    "video:assets": "npm run -s poster:petfinder && npm run -s webp:images",
+    "video:ingest": "node scripts/ingest-video.js"
   },
   "repository": {
     "type": "git",

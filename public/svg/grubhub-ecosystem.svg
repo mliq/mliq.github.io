@@ -1,0 +1,50 @@
+<svg width="420" height="240" viewBox="0 0 420 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="420" height="240" rx="8" fill="#FAFAFA"/>
+  
+  <!-- Modern Grubhub Logo -->
+  <rect x="20" y="20" width="120" height="32" rx="4" fill="#FF8000"/>
+  <text x="80" y="40" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700">GRUBHUB</text>
+  
+  <!-- Title -->
+  <text x="20" y="75" fill="#1A1A1A" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600">Platform Ecosystem Scale</text>
+  
+  <!-- Central Circle - Daily Volume -->
+  <circle cx="210" cy="140" r="42" fill="#FF8000"/>
+  <text x="210" y="135" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">500K+</text>
+  <text x="210" y="150" text-anchor="middle" fill="white" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">orders/day</text>
+  
+  <!-- Restaurants Box -->
+  <rect x="40" y="100" width="80" height="60" rx="8" fill="#FFF1E6" stroke="#FF8000" stroke-width="2"/>
+  <text x="80" y="120" text-anchor="middle" fill="#FF8000" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700">400K</text>
+  <text x="80" y="135" text-anchor="middle" fill="#666" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">restaurants</text>
+  <text x="80" y="148" text-anchor="middle" fill="#666" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">4,000+ cities</text>
+  
+  <!-- Drivers Box -->
+  <rect x="300" y="100" width="80" height="60" rx="8" fill="#FFF1E6" stroke="#FF8000" stroke-width="2"/>
+  <text x="340" y="120" text-anchor="middle" fill="#FF8000" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700">200K+</text>
+  <text x="340" y="135" text-anchor="middle" fill="#666" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">drivers</text>
+  <text x="340" y="148" text-anchor="middle" fill="#666" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">nationwide</text>
+  
+  <!-- Diners Box -->
+  <rect x="160" y="190" width="100" height="40" rx="8" fill="#FFF1E6" stroke="#FF8000" stroke-width="2"/>
+  <text x="210" y="208" text-anchor="middle" fill="#FF8000" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700">21M diners</text>
+  <text x="210" y="220" text-anchor="middle" fill="#666" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="400">5M active monthly</text>
+  
+  <!-- Connection Lines -->
+  <line x1="120" y1="130" x2="168" y2="140" stroke="#FF8000" stroke-width="2" opacity="0.6"/>
+  <line x1="252" y1="140" x2="300" y2="130" stroke="#FF8000" stroke-width="2" opacity="0.6"/>
+  <line x1="210" y1="182" x2="210" y2="190" stroke="#FF8000" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Platform Stats -->
+  <rect x="20" y="190" width="130" height="40" rx="6" fill="#F8F9FA" stroke="#E5E7EB"/>
+  <text x="25" y="205" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Front-end Platform:</text>
+  <text x="25" y="217" fill="#6B7280" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500">45+ sub-apps</text>
+  <text x="25" y="227" fill="#6B7280" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500">Modular architecture</text>
+  
+  <!-- Performance Stats -->
+  <rect x="270" y="190" width="130" height="40" rx="6" fill="#F8F9FA" stroke="#E5E7EB"/>
+  <text x="275" y="205" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="600">Daily Revenue Impact:</text>
+  <text x="275" y="217" fill="#6B7280" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500">$21M+ orders</text>
+  <text x="275" y="227" fill="#6B7280" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500">Zero-downtime deploys</text>
+</svg>
